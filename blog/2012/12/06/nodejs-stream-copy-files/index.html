@@ -5,52 +5,105 @@
   
   <title>使用 Stream 來拷貝檔案 | Zespia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="og:type" content="blog">
+<meta name="og:title" content="使用 Stream 來拷貝檔案">
+<meta name="og:url" content="http://zespia.tw/blog/2012/12/06/nodejs-stream-copy-files/">
+<meta name="og:image" content="http://i.minus.com/iFFlrSnC6IrC8.jpg">
+<meta name="og:site_name" content="Zespia">
+<meta name="og:description" content="Stream [strim] n. [C] 小河、溪流
+
+因為 Stream 有這樣的意思，所以找了一張有溪流的圖片當做頁首圖片，要在 Pixiv 上找一張非 R-18 的濕身圖片真難。
+雖然 Hexo 本來就很快了，不過在 0.1.8 使用 Stream 代替原本的檔案複製方法，使靜態檔案的生成速度更加快速。
+
+
+原本的檔案複製方式是：
+1
+2
+3
+4
+5
+6
+function copy(s">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="tommy351">
+  
+    <link rel="alternative" href="/atom.xml" title="Zespia" type="application/atom+xml">
+  
+  
   <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4910098-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
 </head>
 <body>
-  <header id="header">
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
   <div id="banner"></div>
-  <h1 id="logo-wrap">
-    <a href="/" id="logo">Zespia</a>
-  </h1>
-  <div id="header-shadow"></div>
-  <div class="outer">
-    <nav id="main-nav" class="inner">
-      <ul class="main-nav-list">
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Zespia</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
         
-          <li class="main-nav-item">
-            <a class="main-nav-link" href="/">Home</a>
-          </li>
+          <a class="main-nav-link" href="/">Home</a>
         
-          <li class="main-nav-item">
-            <a class="main-nav-link" href="/archives">Archives</a>
-          </li>
+          <a class="main-nav-link" href="/archives">Archives</a>
         
-          <li class="main-nav-item">
-            <a class="main-nav-link" href="https://github.com/tommy351">GitHub</a>
-          </li>
+          <a class="main-nav-link" href="https://github.com/tommy351">GitHub</a>
         
-      </ul>
-    </nav>
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://zespia.tw"></form>
+      </div>
+    </div>
   </div>
 </header>
-  <div class="outer">
-    <div class="inner"><article class="article article-type-post">
-  <a href="/blog/2012/12/06/nodejs-stream-copy-files/" class="article-date">
-  <time datetime="2012-12-05T16:14:46.000Z">2012/12/6</time>
+      <div class="outer">
+        <section id="main"><article id="post-nodejs-stream-copy-files" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2012/12/06/nodejs-stream-copy-files/" class="article-date">
+  <time datetime="2012-12-05T16:14:46.000Z" itemprop="datePublished">2012/12/6</time>
 </a>
+    
+  </div>
   <div class="article-inner">
-    <header class="article-header">
-      
+    
+    
+      <header class="article-header">
+        
   
-    <h1 class="article-title">使用 Stream 來拷貝檔案</h1>
+    <h1 class="article-title" itemprop="name">
+      使用 Stream 來拷貝檔案
+    </h1>
   
 
-    </header>
-    <div class="article-entry">
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
       
         <p><img src="http://i.minus.com/iFFlrSnC6IrC8.jpg" alt="K 子 - ぬれ早苗 (id=16398495)"></p>
 <blockquote>
@@ -68,7 +121,7 @@
 5
 6
 </pre></td><td class="code"><pre><span class="function"><span class="keyword">function</span> <span class="title">copy</span><span class="params">(source, destination, callback)</span>{</span>
-  fs.readFile(source, <span class="keyword">function</span>(err, file){
+  fs.readFile(source, <span class="function"><span class="keyword">function</span><span class="params">(err, file)</span>{</span>
     <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;
     fs.writeFile(destination, file, callback);
   });
@@ -91,16 +144,16 @@
 11
 12
 </pre></td><td class="code"><pre><span class="function"><span class="keyword">function</span> <span class="title">copy</span><span class="params">(source, destination, callback)</span>{</span>
-  var rs = <span class="transposed_variable">fs.</span>createReadStream(source),
-    ws = <span class="transposed_variable">fs.</span>createWriteStream(destination);
+  <span class="keyword">var</span> rs = fs.createReadStream(source),
+    ws = fs.createWriteStream(destination);
     
-  <span class="transposed_variable">rs.</span>pipe(ws).on(<span class="string">'error'</span>, <span class="keyword">function</span>(err)<span class="cell">{
-    if (err) throw err;
-  }</span>);
+  rs.pipe(ws).on(<span class="string">'error'</span>, <span class="function"><span class="keyword">function</span><span class="params">(err)</span>{</span>
+    <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;
+  });
   
-  <span class="transposed_variable">ws.</span>on(<span class="string">'close'</span>, callback).on(<span class="string">'error'</span>, <span class="keyword">function</span>(err)<span class="cell">{
-    if (err) throw err;
-  }</span>);
+  ws.on(<span class="string">'close'</span>, callback).on(<span class="string">'error'</span>, <span class="function"><span class="keyword">function</span><span class="params">(err)</span>{</span>
+    <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;
+  });
 }
 </pre></td></tr></table></figure>
 
@@ -113,7 +166,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zespia.tw/blog/2012/12/06/nodejs-stream-copy-files/" data-id="gdbj77q0w4b2zof9" class="article-share-link">Share</a>
+      <a data-url="http://zespia.tw/blog/2012/12/06/nodejs-stream-copy-files/" data-id="30jqbrbbikuy6qjz" class="article-share-link">Share</a>
       
         <a href="http://zespia.tw/blog/2012/12/06/nodejs-stream-copy-files/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -123,11 +176,16 @@
     </footer>
   </div>
   
-    <nav id="article-nav">
+    
+<nav id="article-nav">
   
     <a href="/blog/2012/12/07/hexo-theme-phase/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">Phase — 史上最漂亮也最吃資源的主題</div>
+      <div class="article-nav-title">
+        
+          Phase — 史上最漂亮也最吃資源的主題
+        
+      </div>
     </a>
   
   
@@ -137,6 +195,7 @@
     </a>
   
 </nav>
+
   
 </article>
 
@@ -146,17 +205,29 @@
     <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
 </section>
-</div>
-  </div>
-  <footer id="footer">
+</section>
+        
+      </div>
+      <footer id="footer">
+  
   <div class="outer">
-    <div class="inner">
-      <div id="footer-copyright">&copy; 2013 SkyArrow</div>
+    <div id="footer-info" class="inner">
+      &copy; 2014 SkyArrow<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
-
-
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="https://github.com/tommy351" class="mobile-nav-link">GitHub</a>
+  
+</nav>
+    
 <script>
   var disqus_shortname = 'zespiatw';
   
@@ -180,5 +251,6 @@
 
 
 <script type="text/javascript" src="/js/script.js"></script>
+  </div>
 </body>
 </html>

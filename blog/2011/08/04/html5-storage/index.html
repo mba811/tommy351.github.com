@@ -5,52 +5,95 @@
   
   <title>HTML5 Storage 的使用彙整 | Zespia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="og:type" content="blog">
+<meta name="og:title" content="HTML5 Storage 的使用彙整">
+<meta name="og:url" content="http://zespia.tw/blog/2011/08/04/html5-storage/">
+<meta name="og:image" content="http://i.minus.com/ich1TucSOe08P.jpg">
+<meta name="og:site_name" content="Zespia">
+<meta name="og:description" content="當初寫 Google+ Hover Zoom 這腳本時，壓根沒想過可以用 Greasemonkey 內建的參數來儲存資料，於是就選用 HTML5 的 Storage 功能來儲存資料，然而此功能僅能儲存字串（String），讓我花了好些時間上網找資料才能掌握此功能的使用方式。
+
+
+Storage 的功能基本上與 cookie 大致相同，然而儲存空間比 cookie 大多了，cookie 僅有 4K">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="tommy351">
+  
+    <link rel="alternative" href="/atom.xml" title="Zespia" type="application/atom+xml">
+  
+  
   <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4910098-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
 </head>
 <body>
-  <header id="header">
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
   <div id="banner"></div>
-  <h1 id="logo-wrap">
-    <a href="/" id="logo">Zespia</a>
-  </h1>
-  <div id="header-shadow"></div>
-  <div class="outer">
-    <nav id="main-nav" class="inner">
-      <ul class="main-nav-list">
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Zespia</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
         
-          <li class="main-nav-item">
-            <a class="main-nav-link" href="/">Home</a>
-          </li>
+          <a class="main-nav-link" href="/">Home</a>
         
-          <li class="main-nav-item">
-            <a class="main-nav-link" href="/archives">Archives</a>
-          </li>
+          <a class="main-nav-link" href="/archives">Archives</a>
         
-          <li class="main-nav-item">
-            <a class="main-nav-link" href="https://github.com/tommy351">GitHub</a>
-          </li>
+          <a class="main-nav-link" href="https://github.com/tommy351">GitHub</a>
         
-      </ul>
-    </nav>
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://zespia.tw"></form>
+      </div>
+    </div>
   </div>
 </header>
-  <div class="outer">
-    <div class="inner"><article class="article article-type-post">
-  <a href="/blog/2011/08/04/html5-storage/" class="article-date">
-  <time datetime="2011-08-04T10:01:00.000Z">2011/8/4</time>
+      <div class="outer">
+        <section id="main"><article id="post-html5-storage" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2011/08/04/html5-storage/" class="article-date">
+  <time datetime="2011-08-04T10:01:00.000Z" itemprop="datePublished">2011/8/4</time>
 </a>
+    
+  </div>
   <div class="article-inner">
-    <header class="article-header">
-      
+    
+    
+      <header class="article-header">
+        
   
-    <h1 class="article-title">HTML5 Storage 的使用彙整</h1>
+    <h1 class="article-title" itemprop="name">
+      HTML5 Storage 的使用彙整
+    </h1>
   
 
-    </header>
-    <div class="article-entry">
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
       
         <p><img src="http://i.minus.com/ich1TucSOe08P.jpg" alt=" 找不到相關的圖，各位就把小惡魔胸前的脂肪塊當做 Storage 吧！（id=21000433）"></p>
 <p>當初寫 Google+ Hover Zoom 這腳本時，壓根沒想過可以用 Greasemonkey 內建的參數來儲存資料，於是就選用 HTML5 的 Storage 功能來儲存資料，然而此功能僅能儲存字串（String），讓我花了好些時間上網找資料才能掌握此功能的使用方式。</p>
@@ -58,10 +101,10 @@
 
 <p>Storage 的功能基本上與 cookie 大致相同，然而儲存空間比 cookie 大多了，cookie 僅有 4KB 的空間，Storage 卻有 5MB 的空間，讓開發者能夠好好善用。此功能的使用方式非常簡單，分為：Local Storage 與 Session Storage，顧名思義，兩者都是將資料儲存於用戶端的功能，然而前者能儲存的時間較長，直到使用者清除快取前都不會被刪除，而後者在使用者關閉分頁後資料就會被刪除；兩者的使用方式完全相同，以下皆以 Local Storage 作為示範。</p>
 <p>下文皆使用 jQuery 1.7.1。<del>（因為我只會 jQuery）</del></p>
-<h2>基礎</h2>
-<h3>設定資料</h3>
+<h2 id=" 基礎 ">基礎</h2>
+<h3 id=" 設定資料 ">設定資料</h3>
 <p>以下三種方式擇一即可，下文亦同。</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 </pre></td><td class="code"><pre>localStorage[<span class="string">'test'</span>] = testValue;
@@ -69,8 +112,8 @@ localStorage.setItem(<span class="string">'test'</span>, testValue);
 localStorage.test = testValue;
 </pre></td></tr></table></figure>
 
-<h3>取得資料</h3>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<h3 id=" 取得資料 ">取得資料</h3>
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 </pre></td><td class="code"><pre>localStorage[<span class="string">'test'</span>];
@@ -78,20 +121,20 @@ localStorage.getItem(<span class="string">'test'</span>);
 localStorage.test;
 </pre></td></tr></table></figure>
 
-<h3>刪除資料</h3>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<h3 id=" 刪除資料 ">刪除資料</h3>
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>localStorage.removeItem(<span class="string">'test'</span>);
 </pre></td></tr></table></figure>
 
-<h3>資料全部清除</h3>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<h3 id=" 資料全部清除 ">資料全部清除</h3>
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>localStorage.clear();
 </pre></td></tr></table></figure>
 
-<h2>勾選框（checkbox）</h2>
-<h3>設定資料</h3>
+<h2 id=" 勾選框（checkbox）">勾選框（checkbox）</h2>
+<h3 id=" 設定資料 -1">設定資料</h3>
 <p>由於 Storage 僅支援字串，必須使用<code>toString()</code>函數，將 Boolean 值轉為字串才可儲存。</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -101,9 +144,9 @@ localStorage.test;
 localStorage[<span class="string">'test'</span>] = $(<span class="string">'#test'</span>).attr(<span class="string">'checked'</span>).toString();
 </pre></td></tr></table></figure>
 
-<h3>取得資料</h3>
+<h3 id=" 取得資料 -1">取得資料</h3>
 <p>使用<code>===</code>判斷資料。</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 </pre></td><td class="code"><pre><span class="keyword">if</span> ( localStorage[<span class="string">'test'</span>] === <span class="string">'true'</span> ) {
@@ -111,18 +154,18 @@ localStorage[<span class="string">'test'</span>] = $(<span class="string">'#test
 }
 </pre></td></tr></table></figure>
 
-<h2>下拉式選單（select）</h2>
-<h3>設定資料</h3>
+<h2 id=" 下拉式選單（select）">下拉式選單（select）</h2>
+<h3 id=" 設定資料 -2">設定資料</h3>
 <p>取得選單中<code>:selected</code>的值，並儲存即可。</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>localStorage[<span class="string">'test'</span>] = $(<span class="string">'#test'</span>).find(<span class="string">':selected'</span>).val();
 </pre></td></tr></table></figure>
 
-<h2>陣列（array）</h2>
-<h3>設定資料</h3>
+<h2 id=" 陣列（array）">陣列（array）</h2>
+<h3 id=" 設定資料 -3">設定資料</h3>
 <p>陣列大概是讓我最頭痛的部份，同前文所述，Storage 僅支援字串，所以必須先以特殊的分隔符號來隔開每個元素。<em>（如|, $, ; 等符號，隨你喜歡）</em></p>
 <p>如果你在下面的陣列中看到德文，那只是我突然中二病發作而已，<del>如果你看得懂的話代表你也是個廚二</del>。</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -144,9 +187,9 @@ localStorage[<span class="string">'test'</span>] = storage.join(<span class="str
 localStorage[<span class="string">'test'</span>] = storage.join(<span class="string">'|||'</span>);
 </pre></td></tr></table></figure>
 
-<h3>取得資料</h3>
+<h3 id=" 取得資料 -2">取得資料</h3>
 <p>利用<code>split</code>函數分割字串。</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -176,13 +219,13 @@ localStorage[<span class="string">'test'</span>] = storage.join(<span class="str
 }
 </pre></td></tr></table></figure>
 
-<h2>後記</h2>
+<h2 id=" 後記 ">後記</h2>
 <p>最近因為課業繁忙，網誌都放著生灰超過一個月了，於是心血來潮將最近寫腳本的心得寫成文章，可能會有錯誤，請多見諒。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zespia.tw/blog/2011/08/04/html5-storage/" data-id="eadp9mzq94u01ukq" class="article-share-link">Share</a>
+      <a data-url="http://zespia.tw/blog/2011/08/04/html5-storage/" data-id="4wvoexajtoo5u7c5" class="article-share-link">Share</a>
       
         <a href="http://zespia.tw/blog/2011/08/04/html5-storage/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -192,11 +235,16 @@ localStorage[<span class="string">'test'</span>] = storage.join(<span class="str
     </footer>
   </div>
   
-    <nav id="article-nav">
+    
+<nav id="article-nav">
   
     <a href="/blog/2011/09/17/google-scripts-2/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">Google+ Motionless &amp; Filter</div>
+      <div class="article-nav-title">
+        
+          Google+ Motionless &amp; Filter
+        
+      </div>
     </a>
   
   
@@ -206,6 +254,7 @@ localStorage[<span class="string">'test'</span>] = storage.join(<span class="str
     </a>
   
 </nav>
+
   
 </article>
 
@@ -215,17 +264,29 @@ localStorage[<span class="string">'test'</span>] = storage.join(<span class="str
     <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
 </section>
-</div>
-  </div>
-  <footer id="footer">
+</section>
+        
+      </div>
+      <footer id="footer">
+  
   <div class="outer">
-    <div class="inner">
-      <div id="footer-copyright">&copy; 2013 SkyArrow</div>
+    <div id="footer-info" class="inner">
+      &copy; 2014 SkyArrow<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
-
-
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="https://github.com/tommy351" class="mobile-nav-link">GitHub</a>
+  
+</nav>
+    
 <script>
   var disqus_shortname = 'zespiatw';
   
@@ -249,5 +310,6 @@ localStorage[<span class="string">'test'</span>] = storage.join(<span class="str
 
 
 <script type="text/javascript" src="/js/script.js"></script>
+  </div>
 </body>
 </html>

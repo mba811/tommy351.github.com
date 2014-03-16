@@ -5,66 +5,108 @@
   
   <title>Zespia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="og:type" content="blog">
+<meta name="og:title">
+<meta name="og:url" content="http://zespia.tw/page/4/">
+<meta name="og:image">
+<meta name="og:site_name" content="Zespia">
+<meta name="og:description">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="tommy351">
+  
+    <link rel="alternative" href="/atom.xml" title="Zespia" type="application/atom+xml">
+  
+  
   <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4910098-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
 </head>
 <body>
-  <header id="header">
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
   <div id="banner"></div>
-  <h1 id="logo-wrap">
-    <a href="/" id="logo">Zespia</a>
-  </h1>
-  <div id="header-shadow"></div>
-  <div class="outer">
-    <nav id="main-nav" class="inner">
-      <ul class="main-nav-list">
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Zespia</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
         
-          <li class="main-nav-item">
-            <a class="main-nav-link" href="/">Home</a>
-          </li>
+          <a class="main-nav-link" href="/">Home</a>
         
-          <li class="main-nav-item">
-            <a class="main-nav-link" href="/archives">Archives</a>
-          </li>
+          <a class="main-nav-link" href="/archives">Archives</a>
         
-          <li class="main-nav-item">
-            <a class="main-nav-link" href="https://github.com/tommy351">GitHub</a>
-          </li>
+          <a class="main-nav-link" href="https://github.com/tommy351">GitHub</a>
         
-      </ul>
-    </nav>
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://zespia.tw"></form>
+      </div>
+    </div>
   </div>
 </header>
-  <div class="outer">
-    <div class="inner">
+      <div class="outer">
+        <section id="main">
   
-    <article class="article article-type-post">
-  <a href="/blog/2012/01/21/jquery-tabs/" class="article-date">
-  <time datetime="2012-01-21T10:10:00.000Z">2012/1/21</time>
+    <article id="post-jquery-tabs" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2012/01/21/jquery-tabs/" class="article-date">
+  <time datetime="2012-01-21T10:10:00.000Z" itemprop="datePublished">2012/1/21</time>
 </a>
+    
+  </div>
   <div class="article-inner">
-    <header class="article-header">
-      
+    
+    
+      <header class="article-header">
+        
   
-    <h1><a class="article-title" href="/blog/2012/01/21/jquery-tabs/">如何利用 jQuery 製作頁籤？</a></h1>
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/2012/01/21/jquery-tabs/">如何利用 jQuery 製作頁籤？</a>
+    </h1>
   
 
-    </header>
-    <div class="article-entry">
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
       
         <p><img src="http://i.minus.com/i3hFGFugcShjF.jpg" alt=" 在文章中放入不相干的圖片好像已經成為定番？隨便啦 "></p>
 <p>最近花了一週的時間，終於完成 Octopress 的佈景主題，並搬移舊站（zespia.twbbs.org）的文章及留言，發現自已以前的文章實在有夠中二，看得連自己都想揍螢幕，於是偷偷撤下了部分文章。</p>
 <p>為了慶祝新站落成，便決定寫一篇超級簡易（大概啦）的 jQuery 頁籤製作教學，<del>懷著感恩的心看吧！</del></p>
 
-        <p class="article-more-link">
-          <a href="/blog/2012/01/21/jquery-tabs/#more">Read more</a>
-        </p>
+        
+          <p class="article-more-link">
+            <a href="/blog/2012/01/21/jquery-tabs/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zespia.tw/blog/2012/01/21/jquery-tabs/" data-id="57bkh8mo94tsdnfh" class="article-share-link">Share</a>
+      <a data-url="http://zespia.tw/blog/2012/01/21/jquery-tabs/" data-id="j4dtbwija94fduv5" class="article-share-link">Share</a>
       
         <a href="http://zespia.tw/blog/2012/01/21/jquery-tabs/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -78,19 +120,27 @@
 
 
   
-    <article class="article article-type-post">
-  <a href="/blog/2012/01/14/hello-octopress/" class="article-date">
-  <time datetime="2012-01-14T07:52:00.000Z">2012/1/14</time>
+    <article id="post-hello-octopress" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2012/01/14/hello-octopress/" class="article-date">
+  <time datetime="2012-01-14T07:52:00.000Z" itemprop="datePublished">2012/1/14</time>
 </a>
+    
+  </div>
   <div class="article-inner">
-    <header class="article-header">
-      
+    
+    
+      <header class="article-header">
+        
   
-    <h1><a class="article-title" href="/blog/2012/01/14/hello-octopress/">Hello Octopress!</a></h1>
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/2012/01/14/hello-octopress/">Hello Octopress!</a>
+    </h1>
   
 
-    </header>
-    <div class="article-entry">
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
       
         <p><img src="http://i.minus.com/i4CFI4qZAFEct.png" alt=""></p>
 <p><a href="http://www.acsite.net/tw/" target="_blank">ACSite</a> 的空間即將在 2012/1/31 到期，而我又懶得續約，這時看到愈來愈多部落客都從 <a href="http://wordpress.org/" target="_blank">WordPress</a> 轉移到 <a href="http://octopress.org/" target="_blank">Octopress</a>，便開始試用 <a href="http://octopress.org/" target="_blank">Octopress</a>。</p>
@@ -115,13 +165,15 @@
 </ul>
 <p>以下將簡單介紹 <a href="http://octopress.org/" target="_blank">Octopress</a> 的安裝與使用。</p>
 
-        <p class="article-more-link">
-          <a href="/blog/2012/01/14/hello-octopress/#more">Read more</a>
-        </p>
+        
+          <p class="article-more-link">
+            <a href="/blog/2012/01/14/hello-octopress/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zespia.tw/blog/2012/01/14/hello-octopress/" data-id="jwuk4r0lpujku78v" class="article-share-link">Share</a>
+      <a data-url="http://zespia.tw/blog/2012/01/14/hello-octopress/" data-id="y02z6lqh1xlzaf2h" class="article-share-link">Share</a>
       
         <a href="http://zespia.tw/blog/2012/01/14/hello-octopress/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -135,33 +187,41 @@
 
 
   
-    <article class="article article-type-post">
-  <a href="/blog/2011/09/17/google-scripts-2/" class="article-date">
-  <time datetime="2011-09-17T00:00:00.000Z">2011/9/17</time>
+    <article id="post-google-scripts-2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2011/09/17/google-scripts-2/" class="article-date">
+  <time datetime="2011-09-17T00:00:00.000Z" itemprop="datePublished">2011/9/17</time>
 </a>
+    
+  </div>
   <div class="article-inner">
-    <header class="article-header">
-      
+    
+    
+      <header class="article-header">
+        
   
-    <h1><a class="article-title" href="/blog/2011/09/17/google-scripts-2/">Google+ Motionless &amp; Filter</a></h1>
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/2011/09/17/google-scripts-2/">Google+ Motionless &amp; Filter</a>
+    </h1>
   
 
-    </header>
-    <div class="article-entry">
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
       
         <p><img src="http://i.minus.com/ieJceSDuuo3RS.png" alt=" サイノウサンプラー | ryosios（id=21795820）"></p>
 <p>最近課業繁重，無法抽出時間撰寫網誌，於是 <del>寫這篇文章來騙人氣</del> 再介紹一次之前寫的 2 個 Google+ 腳本。上圖與本文毫無關係，純粹是在 Pixiv 上隨便抓一張圖片而已。</p>
-<h2>Google+ Motionless</h2>
+<h2 id="Google+_Motionless">Google+ Motionless</h2>
 <p>看圖、影片或閱讀文章時，因為訊息串的快速更新，常會使畫面不斷上下抽動，不只妨礙視覺，有時還會誤按連結，因此當做練功寫了這個腳本，並於 1.0.4 版新增「自動載入下頁」功能。</p>
 <p><a href="http://userscripts.org/scripts/show/111484" target="_blank">下載（Ver. 1.0.4）</a></p>
-<h2>Google+ Fxxking Filter</h2>
+<h2 id="Google+_Fxxking_Filter">Google+ Fxxking Filter</h2>
 <p>「樹大必有枯枝，人多必有白痴」，有時在訊息串上會看到令人很不爽的發言，透過這腳本可以將不想看到的訊息過濾，還給使用者一片乾淨的訊息串。</p>
 <p><a href="http://userscripts.org/scripts/show/111206" target="_blank">下載（Ver. 1.0.1）</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zespia.tw/blog/2011/09/17/google-scripts-2/" data-id="z7yhzudcqqhuf5ug" class="article-share-link">Share</a>
+      <a data-url="http://zespia.tw/blog/2011/09/17/google-scripts-2/" data-id="f15710xvaj62g6c5" class="article-share-link">Share</a>
       
         <a href="http://zespia.tw/blog/2011/09/17/google-scripts-2/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -175,30 +235,40 @@
 
 
   
-    <article class="article article-type-post">
-  <a href="/blog/2011/08/04/html5-storage/" class="article-date">
-  <time datetime="2011-08-04T10:01:00.000Z">2011/8/4</time>
+    <article id="post-html5-storage" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2011/08/04/html5-storage/" class="article-date">
+  <time datetime="2011-08-04T10:01:00.000Z" itemprop="datePublished">2011/8/4</time>
 </a>
+    
+  </div>
   <div class="article-inner">
-    <header class="article-header">
-      
+    
+    
+      <header class="article-header">
+        
   
-    <h1><a class="article-title" href="/blog/2011/08/04/html5-storage/">HTML5 Storage 的使用彙整</a></h1>
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/2011/08/04/html5-storage/">HTML5 Storage 的使用彙整</a>
+    </h1>
   
 
-    </header>
-    <div class="article-entry">
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
       
         <p><img src="http://i.minus.com/ich1TucSOe08P.jpg" alt=" 找不到相關的圖，各位就把小惡魔胸前的脂肪塊當做 Storage 吧！（id=21000433）"></p>
 <p>當初寫 Google+ Hover Zoom 這腳本時，壓根沒想過可以用 Greasemonkey 內建的參數來儲存資料，於是就選用 HTML5 的 Storage 功能來儲存資料，然而此功能僅能儲存字串（String），讓我花了好些時間上網找資料才能掌握此功能的使用方式。</p>
 
-        <p class="article-more-link">
-          <a href="/blog/2011/08/04/html5-storage/#more">Read more</a>
-        </p>
+        
+          <p class="article-more-link">
+            <a href="/blog/2011/08/04/html5-storage/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zespia.tw/blog/2011/08/04/html5-storage/" data-id="eadp9mzq94u01ukq" class="article-share-link">Share</a>
+      <a data-url="http://zespia.tw/blog/2011/08/04/html5-storage/" data-id="4wvoexajtoo5u7c5" class="article-share-link">Share</a>
       
         <a href="http://zespia.tw/blog/2011/08/04/html5-storage/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -212,31 +282,41 @@
 
 
   
-    <article class="article article-type-post">
-  <a href="/blog/2011/07/13/firefox-google-plus-plugins/" class="article-date">
-  <time datetime="2011-07-13T00:00:00.000Z">2011/7/13</time>
+    <article id="post-firefox-google-plus-plugins" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2011/07/13/firefox-google-plus-plugins/" class="article-date">
+  <time datetime="2011-07-13T00:00:00.000Z" itemprop="datePublished">2011/7/13</time>
 </a>
+    
+  </div>
   <div class="article-inner">
-    <header class="article-header">
-      
+    
+    
+      <header class="article-header">
+        
   
-    <h1><a class="article-title" href="/blog/2011/07/13/firefox-google-plus-plugins/">Google+ Hide Comments &amp; Hover Zoom</a></h1>
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/2011/07/13/firefox-google-plus-plugins/">Google+ Hide Comments &amp; Hover Zoom</a>
+    </h1>
   
 
-    </header>
-    <div class="article-entry">
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
       
         <p><img src="http://i.minus.com/ihQ0s0iWJDgNU.jpeg" alt=""></p>
 <p>大約在兩週前，Google 發表了新的社群服務「Google+」，雖然很多人都說 Facebook 和 Google+ 有很大的不同，不過對我而言 Google+ 就是個宅宅版的 Facebook 罷了，我懶得去分析什麼社群網站的情勢了，今天的重點也不在這裡。</p>
 <p>雖然 Google+ 已經發表了一段時間，針對 Firefox 所做的擴充元件還是很少，幾乎沒有，反倒是 Chrome 的擴充套件數量不斷提昇，因此上週六（7/9）我吃飽太閒試著用 jQuery 寫了生平第一個瀏覽器腳本「Google+ Hide Comments」，一個行數不到 40 行的簡單腳本，本來想試著研究 Firefox 擴充套件，但最後太複雜還要先裝一堆擴充套件於是作罷。</p>
 
-        <p class="article-more-link">
-          <a href="/blog/2011/07/13/firefox-google-plus-plugins/#more">Read more</a>
-        </p>
+        
+          <p class="article-more-link">
+            <a href="/blog/2011/07/13/firefox-google-plus-plugins/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zespia.tw/blog/2011/07/13/firefox-google-plus-plugins/" data-id="8kubrz16brcj5ip0" class="article-share-link">Share</a>
+      <a data-url="http://zespia.tw/blog/2011/07/13/firefox-google-plus-plugins/" data-id="ydawnpbe6cte29ck" class="article-share-link">Share</a>
       
         <a href="http://zespia.tw/blog/2011/07/13/firefox-google-plus-plugins/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -252,20 +332,32 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" href="/page/3/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="extend next" href="/page/5/">Next &raquo;</a>
+      <a class="extend prev" href="/page/3/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" href="/page/5/">Next &raquo;</a>
     </nav>
   
-</div>
-  </div>
-  <footer id="footer">
+</section>
+        
+      </div>
+      <footer id="footer">
+  
   <div class="outer">
-    <div class="inner">
-      <div id="footer-copyright">&copy; 2013 SkyArrow</div>
+    <div id="footer-info" class="inner">
+      &copy; 2014 SkyArrow<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
-
-
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="https://github.com/tommy351" class="mobile-nav-link">GitHub</a>
+  
+</nav>
+    
 <script>
   var disqus_shortname = 'zespiatw';
   
@@ -287,5 +379,6 @@
 
 
 <script type="text/javascript" src="/js/script.js"></script>
+  </div>
 </body>
 </html>

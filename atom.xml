@@ -1,17 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title><![CDATA[Zespia]]></title>
-  <link href="http://zespia.tw/atom.xml" rel="self"/>
-  <link href="http://zespia.tw"/>
-  <updated>2013-11-10T09:37:18.639Z</updated>
+  
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://zespia.tw/"/>
+  <updated>2014-03-16T04:59:29.373Z</updated>
   <id>http://zespia.tw/</id>
+  
   <author>
     <name><![CDATA[SkyArrow]]></name>
     <email><![CDATA[tommy351@gmail.com]]></email>
   </author>
-  <generator uri="http://zespia.tw/hexo">Hexo</generator>
+  
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
   <entry>
-    <title type="html"><![CDATA[魔龍寶冠]]></title>
+    <title><![CDATA[魔龍寶冠]]></title>
     <link href="http://zespia.tw/blog/2013/11/10/dragons-crown/"/>
     <id>http://zespia.tw/blog/2013/11/10/dragons-crown/</id>
     <published>2013-11-10T09:32:36.000Z</published>
@@ -24,7 +28,7 @@
 <p>去年看到宣傳影片時，並沒有引起我的共鳴，所以當日文版於今年 7 月發售時我沒有入手。得知中文版即將在 10 月發行時，為了支持中文版，加上手邊的《Persona 4》和《重力異想世界》都玩膩了，便決定入手中文版。</p>
 <p><img src="http://i.minus.com/iKjGavqV77i77.jpg" alt=""></p>
 <p>雖無日文版對照，不過中文版的翻譯看起來沒什麼毛病，平常的字體使用粗明體，而較小的字體則使用細黑體。</p>
-<h2>系統</h2>
+<h2 id=" 系統 ">系統</h2>
 <p>本作的系統十分容易上手，地圖間的切換速度十分迅速，可惜的是 PSV 版本的優化不良，戰鬥場景中若有大量魔法特效會有明顯 Lag。</p>
 <p><img src="http://i.minus.com/iTGIpB6cO9G1z.jpg" alt=""></p>
 <p>遊戲中共分為六種職業：</p>
@@ -45,7 +49,7 @@
 <p><img src="http://i.minus.com/ibeBhwuliSW3ds.png" alt=""></p>
 <p>亞馬遜女戰士使用雙手斧做為武器，斧頭兼具攻擊和防禦的效果，攻擊及移動速度很慢，然而狂化後攻擊力提昇、移動速度大幅增加。奔跑時的動作十分有勁，翹臀真是他媽的太棒了，胸部什麼的只不過是屁股的山寨品罷了。</p>
 <p>戰鬥時由 1~4 人組成小隊出征，可連線與朋友共同遊玩，或是從路邊撿拾骨頭至教堂復活。AI 隊友的智商非常低，眼前即便有陷阱還是會直接走過去，因為 AI 只會跟著主角走，導致受傷扣血，閃避技巧也非常差，打王時常常不知不覺的就只剩下我一人了。</p>
-<h2>劇情</h2>
+<h2 id=" 劇情 ">劇情</h2>
 <p>本作的劇情很短，跑完 9 張地圖後主線劇情就幾乎完成了，所有地圖會開啟 B 路線，B 路線較 A 路線困難許多，玩家必須打敗所有 B 路線的 Boss，取得 9 顆寶石後，<del>就能達成願望</del>，就能前往虛幻之境，打敗上古巨龍。</p>
 <p>主線劇情完成後：</p>
 <ul>
@@ -58,15 +62,23 @@
 <p>難度提昇後，9 張地圖的路線相同，怪物完全沒有改變，只是等級提昇罷了，一樣需要打敗所有 B 路線的 Boss，集齊 9 顆寶石打敗上古巨龍。</p>
 <p>在普通難度下，等級上限是 35 級，一旦到達等級上限後就無法再繼續累積經驗值，提升到困難難度後，等級上限會提升到 65 級，地獄難度則是 99 級。</p>
 <p>混沌迷宮是由 9 張地圖隨機混搭的區域，一共有 99 層，通關後可獲得獎勵，整體來說並不困難，唯一需要的是耐心。</p>
-<h2>結語</h2>
+<h2 id=" 結語 ">結語</h2>
 <p>雖然主線劇情本身還算有趣，但是真的太短了，而且沒有角色專屬劇情，6 種職業都是相同的劇情，實在令人乏味，主線劇情結束後，就只有壓力摳米的混沌迷宮和收集藝廊 CG，希望日後能開放新地圖或劇情的 DLC。</p>
 <p>下集預告：<a href="http://atelier-ps3.jp/escha-logy/" target="_blank">《愛絲卡 &amp; 羅吉的煉金工房》</a></p>
 ]]></content>
-    <category scheme="http://zespia.tw/tags/遊戲/" term="遊戲"/>
-    <category scheme="http://zespia.tw/tags/PS Vita/" term="PS Vita"/>
+    <summary type="html"><![CDATA[<p><img src="http://i.minus.com/ibtrnhwgpr0qD5.png" alt=""></p>
+<p>本站已經將近一年沒更新了，身為 Hexo 的作者卻不常使用 Hexo，這樣好像有點不太對勁？因此我在 10 月時決定再度提筆撰寫新文，可惜諸事繁忙，<del>加上每次寫文時都會手癢想改佈景主題</del>，導致這篇文章直到 11 月才正式動筆。</p>
+<p>《魔龍寶冠》是一部非常細緻的 2D 橫向 RPG，由 VanillaWare 製作，在 PS3 和 PSV 平台上發行，為了能夠在通勤時遊玩，我選擇 PSV 版本。</p>
+]]></summary>
+    
+      <category term="遊戲" scheme="http://zespia.tw/tags/%E9%81%8A%E6%88%B2/"/>
+    
+      <category term="PS Vita" scheme="http://zespia.tw/tags/PS%20Vita/"/>
+    
   </entry>
+  
   <entry>
-    <title type="html"><![CDATA[Phase — 史上最漂亮也最吃資源的主題]]></title>
+    <title><![CDATA[Phase — 史上最漂亮也最吃資源的主題]]></title>
     <link href="http://zespia.tw/blog/2012/12/07/hexo-theme-phase/"/>
     <id>http://zespia.tw/blog/2012/12/07/hexo-theme-phase/</id>
     <published>2012-12-07T10:36:03.000Z</published>
@@ -84,45 +96,45 @@
 <p>Phase Beam 動態背景的效果非常絢麗，但是也非常吃資源，電腦或瀏覽器效能不佳的使用者開啟時可能會當機，至於 IE8，<del>你何時產生了我曾經積極支援過它的錯覺？</del></p>
 <a id="more"></a>
 
-<h2>安裝</h2>
+<h2 id=" 安裝 ">安裝</h2>
 <p>Octopress 版本：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 3
 4
-</pre></td><td class="code"><pre><span class="title">cd</span> octopress
-<span class="title">git</span> clone git://github.com/tommy351/octopress-theme-phase.git .themes/phase
-<span class="title">rake</span> install['phase']
-<span class="title">rake</span> generate
+</pre></td><td class="code"><pre>cd octopress
+git <span class="keyword">clone</span> git:<span class="comment">//github.com/tommy351/octopress-theme-phase.git .themes/phase</span>
+rake install[<span class="string">'phase'</span>]
+rake generate
 </pre></td></tr></table></figure>
 
 <p>為了推廣 Hexo，順便把主題移植過去了，往後的主題開發都會以 Hexo 為主，但仍會以 MIT License 開放原始碼，想要在 Octopress 使用的人可以自行開發移植版本。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
-</pre></td><td class="code"><pre><span class="title">cd</span> hexo
-git clone <span class="url">git://github.com/tommy351/hexo-theme-phase.git</span> themes/phase
+</pre></td><td class="code"><pre>cd hexo
+git <span class="keyword">clone</span> git:<span class="comment">//github.com/tommy351/hexo-theme-phase.git themes/phase</span>
 </pre></td></tr></table></figure>
 
 <p>Hexo 版本安裝後別忘了將<code>_config.yml</code>內的<code>theme</code>參數調整為<code>phase</code>。</p>
-<h2>FAQ</h2>
-<h3>Octopress 版和 Hexo 版有什麼差別？</h3>
+<h2 id="FAQ">FAQ</h2>
+<h3 id="Octopress 版和 Hexo 版有什麼差別？">Octopress 版和 Hexo 版有什麼差別？</h3>
 <ul>
 <li>Octopress 版沒有相簿（photo）和連結（link）兩種布局</li>
 <li>部分樣式的微妙差別</li>
 <li><del>Octopress 速度比較慢</del></li>
 </ul>
-<h3>如何編輯選單？</h3>
+<h3 id=" 如何編輯選單？">如何編輯選單？</h3>
 <ul>
 <li>Octopress 版本：編輯<code>source/_includes/custom/navigation.html</code>。</li>
 <li>Phase 版本：編輯<code>_config.yml</code>的<code>menu</code>參數。</li>
 </ul>
-<h3>如何關閉 Fancybox？</h3>
+<h3 id=" 如何關閉 Fancybox？">如何關閉 Fancybox？</h3>
 <p>對於 Chrome 來說，同時執行 Phase Beam 和 Fancybox 的動畫似乎是一件很吃力的事情，所以你也可以選擇關閉 Fancybox 功能。</p>
 <ul>
 <li>Octopress 版本：刪除<code>source/_includes/after_footer.html</code>的第 1 行。</li>
 <li>Hexo 版本：<code>_config.yml</code>的<code>fancybox</code>參數調整為<code>false</code>。</li>
 </ul>
-<h3>如何關閉 Phase Beam？</h3>
+<h3 id=" 如何關閉 Phase_Beam？">如何關閉 Phase Beam？</h3>
 <p>我覺得用 Phase 還關閉 Phase Beam 實在是一件很沒有意義的事情，關閉了 Phase Beam 的 Phase 就只是一個背景黑漆漆的 Slash 而已，沒有任何特色，相較於 Slash 還少了一些功能，但是我還是稍微說明吧。</p>
 <ul>
 <li>Octopress 版本：刪除<code>source/_includes/after_footer.html</code>的第 2 行。</li>
@@ -130,12 +142,29 @@ git clone <span class="url">git://github.com/tommy351/hexo-theme-phase.git</span
 </ul>
 <p>如果還有其他問題或想法，歡迎在下方留言。</p>
 ]]></content>
-    <category scheme="http://zespia.tw/tags/Hexo/" term="Hexo"/>
-    <category scheme="http://zespia.tw/tags/Octopress/" term="Octopress"/>
-    <category scheme="http://zespia.tw/tags/Node.js/" term="Node.js"/>
+    <summary type="html"><![CDATA[<p><img src="http://i.minus.com/icsKsGRjMpstw.png" alt=""></p>
+<p>在轉到 Hexo 之前，我一直都在使用這個<a href="http://zespia.tw/blog/2012/05/02/new-theme-phase/">私用主題 Phase</a>，曾經承諾過我用膩了就公開發佈，於是今天就有這篇文章了。</p>
+<p>這個主題是以 <a href="http://zespia.tw/Octopress-Theme-Slash/index_tw.html">Slash</a> 為基礎開發的，所以大部分的特性都繼承下來了，除了 Responsive Design 和 Twitter Live Stream 以外。</p>
+<ul>
+<li>Phase Beam 動態背景</li>
+<li>自動讀取圖片的<code>alt</code>屬性，並在圖片下方顯示註解。</li>
+<li>內建 <a href="http://fancyapps.com/fancybox/" target="_blank">Fancybox</a>，讓您輕鬆展示您的作品。</li>
+<li>自動將 HTML5 video、iframe、object 等嵌入式影片縮放至頁面寬度。</li>
+<li><a href="http://zespia.tw/hexo-theme-phase">預覽…</a></li>
+</ul>
+<p>Phase Beam 動態背景的效果非常絢麗，但是也非常吃資源，電腦或瀏覽器效能不佳的使用者開啟時可能會當機，至於 IE8，<del>你何時產生了我曾經積極支援過它的錯覺？</del></p>
+]]></summary>
+    
+      <category term="Hexo" scheme="http://zespia.tw/tags/Hexo/"/>
+    
+      <category term="Octopress" scheme="http://zespia.tw/tags/Octopress/"/>
+    
+      <category term="Node.js" scheme="http://zespia.tw/tags/Node.js/"/>
+    
   </entry>
+  
   <entry>
-    <title type="html"><![CDATA[使用 Stream 來拷貝檔案]]></title>
+    <title><![CDATA[使用 Stream 來拷貝檔案]]></title>
     <link href="http://zespia.tw/blog/2012/12/06/nodejs-stream-copy-files/"/>
     <id>http://zespia.tw/blog/2012/12/06/nodejs-stream-copy-files/</id>
     <published>2012-12-05T16:14:46.000Z</published>
@@ -156,7 +185,7 @@ git clone <span class="url">git://github.com/tommy351/hexo-theme-phase.git</span
 5
 6
 </pre></td><td class="code"><pre><span class="function"><span class="keyword">function</span> <span class="title">copy</span><span class="params">(source, destination, callback)</span>{</span>
-  fs.readFile(source, <span class="keyword">function</span>(err, file){
+  fs.readFile(source, <span class="function"><span class="keyword">function</span><span class="params">(err, file)</span>{</span>
     <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;
     fs.writeFile(destination, file, callback);
   });
@@ -179,16 +208,16 @@ git clone <span class="url">git://github.com/tommy351/hexo-theme-phase.git</span
 11
 12
 </pre></td><td class="code"><pre><span class="function"><span class="keyword">function</span> <span class="title">copy</span><span class="params">(source, destination, callback)</span>{</span>
-  var rs = <span class="transposed_variable">fs.</span>createReadStream(source),
-    ws = <span class="transposed_variable">fs.</span>createWriteStream(destination);
+  <span class="keyword">var</span> rs = fs.createReadStream(source),
+    ws = fs.createWriteStream(destination);
     
-  <span class="transposed_variable">rs.</span>pipe(ws).on(<span class="string">'error'</span>, <span class="keyword">function</span>(err)<span class="cell">{
-    if (err) throw err;
-  }</span>);
+  rs.pipe(ws).on(<span class="string">'error'</span>, <span class="function"><span class="keyword">function</span><span class="params">(err)</span>{</span>
+    <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;
+  });
   
-  <span class="transposed_variable">ws.</span>on(<span class="string">'close'</span>, callback).on(<span class="string">'error'</span>, <span class="keyword">function</span>(err)<span class="cell">{
-    if (err) throw err;
-  }</span>);
+  ws.on(<span class="string">'close'</span>, callback).on(<span class="string">'error'</span>, <span class="function"><span class="keyword">function</span><span class="params">(err)</span>{</span>
+    <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;
+  });
 }
 </pre></td></tr></table></figure>
 
@@ -198,11 +227,22 @@ git clone <span class="url">git://github.com/tommy351/hexo-theme-phase.git</span
 <p><img src="http://i.minus.com/iwucHChl9EUD0.png" alt=""></p>
 <p>根據這種方式實作的 Hexo 0.1.8，實測出來的速度是 1007 ms，而舊版為 2038 ms，平均大約快了 1.5~2 倍左右，只要改寫一點程式碼就能獲得這麼高的效能提昇，非常值得。</p>
 ]]></content>
-    <category scheme="http://zespia.tw/tags/Node.js/" term="Node.js"/>
-    <category scheme="http://zespia.tw/tags/JavaScript/" term="JavaScript"/>
+    <summary type="html"><![CDATA[<p><img src="http://i.minus.com/iFFlrSnC6IrC8.jpg" alt="K 子 - ぬれ早苗 (id=16398495)"></p>
+<blockquote>
+<p><strong>Stream</strong> [strim] n. [C] 小河、溪流</p>
+</blockquote>
+<p>因為 Stream 有這樣的意思，所以找了一張有溪流的圖片當做頁首圖片，<del>要在 Pixiv 上找一張非 R-18 的濕身圖片真難</del>。</p>
+<p>雖然 <a href="http://zespia.tw/hexo">Hexo</a> 本來就很快了，不過在 <a href="https://github.com/tommy351/hexo/commit/1bfc6324285d7cadeb30f2c4bf4e8ea5fc451d5e" target="_blank">0.1.8</a> 使用 <a href="http://nodejs.org/api/stream.html" target="_blank">Stream</a> 代替原本的檔案複製方法，使靜態檔案的生成速度更加快速。</p>
+]]></summary>
+    
+      <category term="Node.js" scheme="http://zespia.tw/tags/Node.js/"/>
+    
+      <category term="JavaScript" scheme="http://zespia.tw/tags/JavaScript/"/>
+    
   </entry>
+  
   <entry>
-    <title type="html"><![CDATA[命運石之門（Steins;Gate）中文版]]></title>
+    <title><![CDATA[命運石之門（Steins;Gate）中文版]]></title>
     <link href="http://zespia.tw/blog/2012/11/19/steins-gate/"/>
     <id>http://zespia.tw/blog/2012/11/19/steins-gate/</id>
     <published>2012-11-18T16:36:38.000Z</published>
@@ -213,7 +253,7 @@ git clone <span class="url">git://github.com/tommy351/hexo-theme-phase.git</span
 <p>也許是因為 PS3 版的原因造成了中文版的延誤，然而 Xbox 360 的不幸可不僅止於此，發售前夕，Xbox 360 版因為日本生產進度延誤，導致遊戲發售日延後至 11 月底（<a href="http://xboxlife.tw/show.php?fid=2&amp;tid=3417" target="_blank">來源</a>）。</p>
 <a id="more"></a>
 
-<h2>外觀</h2>
+<h2 id=" 外觀 ">外觀</h2>
 <p>我購買的是 PS3 一般版，雖然換了新手機，不過照相技術還是一樣爛，有什麼好方法可以減少噪點？</p>
 <p><img src="http://i.minus.com/ieXCDLObbv4Be.jpg" alt=""></p>
 <p>正面和日版差不了多少，只是 Logo 稍微換了位置和上面加了「命運石之門」五個中文字而已。</p>
@@ -222,7 +262,7 @@ git clone <span class="url">git://github.com/tommy351/hexo-theme-phase.git</span
 <p><img src="http://i.minus.com/iVP40V4XKbRWR.jpg" alt=""></p>
 <p><img src="http://i.minus.com/ib1nYxaR7RS0Lp.jpg" alt=""></p>
 <p>光碟的外觀沒有什麼差別，內附一本非常薄的中文說明書以及「命運石之門 感謝台灣」演唱會的資訊和光榮代理遊戲一貫會有的意見表。</p>
-<h2>內容</h2>
+<h2 id=" 內容 ">內容</h2>
 <p>比起外觀，內容更加重要，命運石之門的中文化非常徹底，也非常的在地化。</p>
 <p><img src="http://i.minus.com/ifRU1iaiiFNgB.jpg" alt=""></p>
 <p>TIPS 內的用語說明全中文化，而且還特別做了注音索引，可以用注音來查找用語。日本鄉民的常用語也被翻譯成台灣鄉民的常用語，令人遊玩時不禁會心一笑。</p>
@@ -233,17 +273,26 @@ git clone <span class="url">git://github.com/tommy351/hexo-theme-phase.git</span
 
 
 <p>至於中文版獨家的中文 OP，在遊戲標題畫面中，會先播放日文 OP 再播放中文 OP；遊戲內則是播放日文 OP，比我想的好多了。</p>
-<h2>結語</h2>
+<h2 id=" 結語 ">結語</h2>
 <p><img src="http://i.minus.com/i7CuYrSU6Ou2m.jpg" alt=" あっきー人 - シュタインズゲート記念 (id=26694282)"></p>
 <p>雖然等待了這麼久中文版才終於發售，不過中文化的翻譯品質讓人覺得這段等待時間非常值得，要是外傳《比翼雙飛的戀人（比翼恋理のだーりん）》也能中文化就好了。</p>
 <p>經過 14 小時的奮鬥後，目前已經解出鈴羽結局了，剩餘的五個結局感覺還需要好些時間才能破完。</p>
 <p><a href="http://masterwiki.net/steinsgate/index.php" target="_blank">Steins;Gate/ シュタインズ・ゲート 攻略・考察 Wiki</a></p>
 ]]></content>
-    <category scheme="http://zespia.tw/tags/PS3/" term="PS3"/>
-    <category scheme="http://zespia.tw/tags/遊戲/" term="遊戲"/>
+    <summary type="html"><![CDATA[<p><img src="http://i.minus.com/iFsuGusXg32tv.jpg" alt=""></p>
+<p>各位可還記得，5pb 的社長在去年的 FF18 宣布 Steins;Gate 即將推出中文化的<a href="http://gnn.gamer.com.tw/9/56049.html" target="_blank">消息</a>，然而說好的 2012 年春季到了，令人望眼欲穿的中文版依然沒有任何消息。</p>
+<p>直到前幾個月，官方突然發佈了一個簡陋的<a href="http://www.gamecity.com.tw/steinsgate/" target="_blank">官方網站</a>，這才確定了中文版的發售日期──11 月 15 日，而且 PS3 版也將有中文版。</p>
+<p>也許是因為 PS3 版的原因造成了中文版的延誤，然而 Xbox 360 的不幸可不僅止於此，發售前夕，Xbox 360 版因為日本生產進度延誤，導致遊戲發售日延後至 11 月底（<a href="http://xboxlife.tw/show.php?fid=2&amp;tid=3417" target="_blank">來源</a>）。</p>
+]]></summary>
+    
+      <category term="PS3" scheme="http://zespia.tw/tags/PS3/"/>
+    
+      <category term="遊戲" scheme="http://zespia.tw/tags/%E9%81%8A%E6%88%B2/"/>
+    
   </entry>
+  
   <entry>
-    <title type="html"><![CDATA[新手機 Xperia S]]></title>
+    <title><![CDATA[新手機 Xperia S]]></title>
     <link href="http://zespia.tw/blog/2012/11/12/xperia-s/"/>
     <id>http://zespia.tw/blog/2012/11/12/xperia-s/</id>
     <published>2012-11-12T05:48:14.000Z</published>
@@ -266,33 +315,39 @@ git clone <span class="url">git://github.com/tommy351/hexo-theme-phase.git</span
 <li>電池：1750mAh</li>
 </ul>
 <p>性能看起來不算差，不過 Sony 的調校有點廢就是了，目前正在考慮要不要刷機。</p>
-<h2>優點</h2>
-<h3>相機</h3>
+<h2 id=" 優點 ">優點</h2>
+<h3 id=" 相機 ">相機</h3>
 <p>1200 萬畫素應該足以應付一般的照片拍攝了，而且這支手機附有快門鍵，可以像一般的數位相機一樣半按對焦、全按拍攝，不過缺點就是對焦的速度有點慢，而且有些過度修飾。</p>
-<h3>螢幕超讚</h3>
+<h3 id=" 螢幕超讚 ">螢幕超讚</h3>
 <p>不得不說，這螢幕真他媽的讚，342 dpi 根本看不到半點鋸齒或顆粒，真希望我的電腦螢幕也有這麼高的 dpi。（窮學生可買不起 Macbook Pro with Retina Display 啊！）</p>
-<h3>喇叭很大聲 <del>你在大聲什麼啦</del></h3>
+<h3 id=" 喇叭很大聲 _<del>你在大聲什麼啦</del>">喇叭很大聲 <del>你在大聲什麼啦</del></h3>
 <p><img src="http://i.minus.com/i76S8YXKlmHM1.jpg" alt=""></p>
 <p>上一支手機的喇叭很小聲，震動也很小，<del>根本不能拿來當按摩器用</del>，害我常常漏接電話。</p>
 <p>Xperia S 的鈴聲就非常大聲了，大概是因為有 xLOUD 技術加持的地步。</p>
-<h2>缺點</h2>
-<h3>透明光帶</h3>
+<h2 id=" 缺點 ">缺點</h2>
+<h3 id=" 透明光帶 ">透明光帶</h3>
 <p><img src="http://i.minus.com/idbYLZD3wdZIt.jpg" alt=""></p>
 <p>這是優點也是缺點，當初就是被透明光帶的外觀所吸引，然而 Xperia S 的按鍵卻不是放在透明光帶上，也不是放在透明光帶上的那三個小點，而是這兩者之間一個非常曖昧的位置，所以要按這三個按鍵最好的方式就是──從光帶的位置往上滑動。</p>
-<h3>不能插記憶卡</h3>
+<h3 id=" 不能插記憶卡 ">不能插記憶卡</h3>
 <p><img src="http://i.minus.com/iJFQWYEGu8zoa.png" alt="32GB 中有 2GB 可用來安裝應用程式，其他使用者可用的部份為 25.8GB"></p>
 <p>雖然這是個缺點，不過並不會對我帶來太大麻煩，內建的 32GB 對我而言已經非常足夠了。</p>
-<h3>不能換電池</h3>
+<h3 id=" 不能換電池 ">不能換電池</h3>
 <p><img src="http://i.minus.com/ibuURr9UHsmu42.png" alt=""></p>
 <p>雖然用到目前尚未出現非得更換電池的狀況，不過這的確是一個滿機車的設定，現在的手機怎麼都學起 iPhone 來了。</p>
 <p>而智慧型手機這種東西，令人懷疑是不是設有漏電裝置之類的，只是用網路看漫畫而已，就能在一小時內減少 10% 電力。</p>
-<h2>結論</h2>
+<h2 id=" 結論 ">結論</h2>
 <p>雖然有些缺點，不過依然瑕不掩瑜，空機價只要不到 13000 元，真的是一支 CP 值很高的手機。</p>
 ]]></content>
-    <category scheme="http://zespia.tw/tags/Android/" term="Android"/>
+    <summary type="html"><![CDATA[<p><img src="http://i.minus.com/iZPlBKqBYIzo4.jpg" alt=" 因為手邊沒相機，所以拿網路上的照片代替 "></p>
+<p>經過我三年的摧殘，上一支手機 <a href="http://www.sogi.com.tw/product/productInfo.aspx?pno=6621" target="_blank">Sony Ericsson S312</a> 終於壽終正寢，因為 <a href="http://en.wikipedia.org/wiki/FastPort" target="_blank">FastPort</a> 接觸不良而無法充電，這好像是 SE 社的手機很常發生的問題？</p>
+]]></summary>
+    
+      <category term="Android" scheme="http://zespia.tw/tags/Android/"/>
+    
   </entry>
+  
   <entry>
-    <title type="html"><![CDATA[Hexo 更新至 0.1]]></title>
+    <title><![CDATA[Hexo 更新至 0.1]]></title>
     <link href="http://zespia.tw/blog/2012/10/29/hexo-update-0.1/"/>
     <id>http://zespia.tw/blog/2012/10/29/hexo-update-0.1/</id>
     <published>2012-10-28T16:25:37.000Z</published>
@@ -303,16 +358,16 @@ git clone <span class="url">git://github.com/tommy351/hexo-theme-phase.git</span
 <p>其實是因為這兩週我都在製作 0.1 版的更新，主要是為了修改之前的 bug，並增加擴充性。</p>
 <a id="more"></a>
 
-<h2>0.0 → 0.1</h2>
+<h2 id="0-0_→_0-1">0.0 → 0.1</h2>
 <p>我盡量不讓使用方式的變更幅度太大，不過為了擴充性，還是得稍微改變一下，那麼，該如何從 0.0.6 升級到 0.1 呢？</p>
 <ol>
 <li><p>透過 <a href="https://npmjs.org/" target="_blank">npm</a> 將 Hexo 升級至 0.1。</p>
-<pre><code> npm <span class="operator"><span class="keyword">update</span> -g</code></pre>
-</li>
+<pre><code> npm <span class="operator"><span class="keyword">update</span> -g</span>
+</code></pre></li>
 <li><p>升級內建的 <a href="https://github.com/tommy351/hexo-theme-light" target="_blank">Light</a> 主題。</p>
-<pre><code> cd themes/<span class="shader"><span class="keyword">light</span>
- git pull</code></pre>
-</li>
+<pre><code> <span class="built_in">cd</span> themes/light
+ git pull
+</code></pre></li>
 <li><p>更新 <code>_config.yml</code>，以下是 0.1 版的預設配置，請依照個人需求自行調整。</p>
 </li>
 <li><p>修改 <code>package.json</code>。</p>
@@ -321,9 +376,9 @@ git clone <span class="url">git://github.com/tommy351/hexo-theme-phase.git</span
 </li>
 </ol>
 <p><strong>以上步驟完成後，即可使用 0.1 的 Hexo 了！</strong></p>
-<h2>新功能</h2>
+<h2 id=" 新功能 ">新功能</h2>
 <p>0.1 當然不是白升級的，我加入了一些 <del>無關緊要的</del> 新功能。</p>
-<h3>Heroku 佈署</h3>
+<h3 id="Heroku_ 佈署 ">Heroku 佈署</h3>
 <p>除了 <a href="https://github.com" target="_blank">GitHub</a> 之外，0.1 新增了 <a href="http://www.heroku.com/" target="_blank">Heroku</a> 的支援，雖然 <a href="http://www.heroku.com/" target="_blank">Heroku</a> 的使用本來就非常簡易，但身為一名 <del>懶人</del>，能夠輕鬆設定當然是再好也不過了。</p>
 <p>我將佈署寫成了附加元件（Extension）的形式，因此日後所有的佈署方式應該都只需要三個步驟便能完成設定。</p>
 <ol>
@@ -332,16 +387,16 @@ git clone <span class="url">git://github.com/tommy351/hexo-theme-phase.git</span
 </li>
 <li><p>建立</p>
 <p>執行以下指令。</p>
-<pre><code> <span class="title">hexo</span> setup_deploy</code></pre>
-<p>Hexo 便會在資料夾中建立 <code>Procfile</code> 和 <code>app.js</code> 兩個檔案。Hexo 使用 <a href="http://www.senchalabs.org/connect/" target="_blank">Connect</a> 處理靜態檔案。</p>
+<pre><code> hexo setup_deploy
+</code></pre><p>Hexo 便會在資料夾中建立 <code>Procfile</code> 和 <code>app.js</code> 兩個檔案。Hexo 使用 <a href="http://www.senchalabs.org/connect/" target="_blank">Connect</a> 處理靜態檔案。</p>
 </li>
 <li><p>佈署</p>
 <p>執行以下指令。</p>
-<pre><code> <span class="title">hexo</span> deploy</code></pre>
-<p>然後就可以去泡杯咖啡等佈署完成了！</p>
+<pre><code> hexo deploy
+</code></pre><p>然後就可以去泡杯咖啡等佈署完成了！</p>
 </li>
 </ol>
-<h3>附加元件</h3>
+<h3 id=" 附加元件 ">附加元件</h3>
 <p>0.1 新增了更多種的附加元件（Extension），所有能夠分離的模組幾乎都成為了附加元件，目前總共有 7 種附加元件，分別是：</p>
 <ul>
 <li><strong>Generator</strong>：負責建立靜態檔案</li>
@@ -427,19 +482,19 @@ git clone <span class="url">git://github.com/tommy351/hexo-theme-phase.git</span
 </ul>
 <p>使用 <code>npm install &lt;plugin&gt;</code> 安裝完畢之後，在 <code>_config.yml</code> 的 <code>plugins</code> 新增外掛名稱即可使用。</p>
 <p>附加元件的寫法可以參照 <a href="https://github.com/tommy351/hexo/tree/master/lib" target="_blank">原始碼</a>。</p>
-<h2>小改變</h2>
-<h3>伺服器新增記錄功能</h3>
+<h2 id=" 小改變 ">小改變</h2>
+<h3 id=" 伺服器新增記錄功能 ">伺服器新增記錄功能</h3>
 <p>Hexo 利用 <a href="http://www.senchalabs.org/connect/" target="_blank">Connect</a> 內建的 <a href="http://www.senchalabs.org/connect/logger.html" target="_blank">logger</a> 功能來顯示記錄，使用方式非常簡單，修改 <code>_config.yml</code> 即可開啟。</p>
-<figure class="highlight lang-yaml"><table><tr><td class="gutter"><pre>1
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre>1
 2
 </pre></td><td class="code"><pre><span class="attribute">logger</span>: <span class="string">true</span>
-<span class="attribute">logger_format:
+<span class="attribute">logger_format:</span>
 </pre></td></tr></table></figure>
 
 <p>記錄的格式 <code>logger_format</code> 可參考 Connect 的 <a href="http://www.senchalabs.org/connect/logger.html" target="_blank">文件</a> 自行修改。</p>
-<h3>i18n</h3>
+<h3 id="i18n">i18n</h3>
 <p>雖然相關的程式碼已經寫好了，不過還沒有寫出「載入語言檔」的功能，目前僅能套用於 <a href="http://momentjs.com/" target="_blank">Moment.js</a>，也就是 Hexo 用來解析、顯示時間的模組上。修改 <code>_config.yml</code> 中的 <code>language</code> 即可使用此功能（請使用 <a href="http://www.w3.org/International/articles/language-tags/" target="_blank">IETF 格式</a>，例如正體中文即為 <code>zh-TW</code>）。</p>
-<h2>改進</h2>
+<h2 id=" 改進 ">改進</h2>
 <p>Hexo 發佈後，立刻就有很多評論指出我沒有發現到的 Bug，非常感謝各位 <del>白老鼠</del> 大大的支持，0.1 修復了以下的問題。</p>
 <ul>
 <li>無文章時無法建立檔案</li>
@@ -449,15 +504,25 @@ git clone <span class="url">git://github.com/tommy351/hexo-theme-phase.git</span
 <li>以及一些修到一半忘記了的 Bug…</li>
 </ul>
 <p>如果還有任何問題的話，歡迎在 GitHub 上開 <a href="https://github.com/tommy351/hexo/issues" target="_blank">issue</a> 或提交 <a href="https://github.com/tommy351/hexo/pulls" target="_blank">pull request</a>。</p>
-<h2>結論</h2>
+<h2 id=" 結論 ">結論</h2>
 <p>0.1 似乎僅完成了上篇文章中開發目標的其中三項，看來未來仍有一段路要走。我最近發現，Render 似乎占了 Generate 很大一部分的時間，如果把模版改為 <a href="http://paularmstrong.github.com/swig/" target="_blank">Swig</a> 不知道會不會好些。</p>
 ]]></content>
-    <category scheme="http://zespia.tw/tags/Node.js/" term="Node.js"/>
-    <category scheme="http://zespia.tw/tags/JavaScript/" term="JavaScript"/>
-    <category scheme="http://zespia.tw/tags/Hexo/" term="Hexo"/>
+    <summary type="html"><![CDATA[<p><img src="http://i.minus.com/ibn0sBufi4xK4S.jpg" alt=" らぐほのえりか - モリサマー (id=31068919)"></p>
+<p><strong>森夏的ㄋㄟㄋㄟ讚！</strong><del>有沒有最近作者都用圖片來騙人的八卦</del></p>
+<p>Hexo 發佈大約兩週之後，你可能會懷疑 Hexo 怎麼都沒有任何新消息，說好要補完的文件也毫無動靜。</p>
+<p>其實是因為這兩週我都在製作 0.1 版的更新，主要是為了修改之前的 bug，並增加擴充性。</p>
+]]></summary>
+    
+      <category term="Node.js" scheme="http://zespia.tw/tags/Node.js/"/>
+    
+      <category term="JavaScript" scheme="http://zespia.tw/tags/JavaScript/"/>
+    
+      <category term="Hexo" scheme="http://zespia.tw/tags/Hexo/"/>
+    
   </entry>
+  
   <entry>
-    <title type="html"><![CDATA[Hexo 颯爽登場！]]></title>
+    <title><![CDATA[Hexo 颯爽登場！]]></title>
     <link href="http://zespia.tw/blog/2012/10/11/hexo-debut/"/>
     <id>http://zespia.tw/blog/2012/10/11/hexo-debut/</id>
     <published>2012-10-11T07:22:47.000Z</published>
@@ -467,38 +532,38 @@ git clone <span class="url">git://github.com/tommy351/hexo-theme-phase.git</span
 <p>或許是因為 Ruby 天生就比較慢，而這種問題未來似乎也不會改善，<a href="https://github.com/mojombo/jekyll" target="_blank">Jekyll</a> 和 <a href="http://octopress.org/" target="_blank">Octopress</a> 已經一段時間沒有更新，那麼唯一的解決方案只有另覓其他 Blog Framework 了。</p>
 <a id="more"></a>
 
-<h2>尋覓</h2>
+<h2 id=" 尋覓 ">尋覓</h2>
 <p>由於最近都在玩 Node.js，便決定從它開始下手，我試著在網路上找了一下，然而現有的 Blog Framework 看來都過於簡單；只有一個除外：<a href="https://github.com/bevry/docpad" target="_blank">DocPad</a>。</p>
 <p><a href="https://github.com/bevry/docpad" target="_blank">DocPad</a> 擴充性十足，而且一直有在更新，但是 <a href="https://github.com/bevry/docpad" target="_blank">DocPad</a> 又令人感覺過於複雜，難以上手。</p>
 <p><strong>參考資料</strong>：<a href="http://blog.bmannconsulting.com/node-static-site-generators/" target="_blank">Node based static site generators - Boris Mann</a></p>
-<h2>造輪子</h2>
+<h2 id=" 造輪子 ">造輪子</h2>
 <p><img src="http://i.minus.com/iUuOEU0Yw0JbB.png" alt=""></p>
 <p>那麼唯一的方式，大概只剩自造輪子了。</p>
 <p>Prototype 的速度相當不錯，在 2 秒內即可將全站的資料都建立完成。之後的一個月，便以此為基礎擴充、加強，最後的成品即是──Hexo！</p>
 <p>你或許會好奇這篇文章的開頭為何要放一張與內容毫不相關的圖片，雖然放不相關圖片是傳統，不過這次的開頭圖片可是有關聯性的！</p>
 <p>我想 <a href="http://octopress.org/" target="_blank">Octopress</a> 的名稱來源也許是 Octal<em>（八進制）</em> + Press，因此我便以十六進制<em>（hexadecimal，縮寫為 hex）</em>來取名。</p>
 <p>而為啥會扯上這張圖片呢？因為 Hexo 的發音很類似於へそ<em>（肚臍）</em>。</p>
-<h2>Hexo</h2>
+<h2 id="Hexo">Hexo</h2>
 <p>前面扯了那麼多廢話，該來談談 Hexo 的細節了。</p>
 <p>Hexo 和 <a href="https://github.com/mojombo/jekyll" target="_blank">Jekyll</a>、<a href="http://octopress.org/" target="_blank">Octopress</a> 有許多相似點，大部分的使用都和其無異。</p>
-<h3>安裝</h3>
+<h3 id=" 安裝 ">安裝</h3>
 <p>前提是必須先安裝 Node.js，至於怎麼安裝自己 Google 吧</p>
-<figure class="highlight lang-bash"><table><tr><td class="gutter"><pre>1
+<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>npm install hexo -g
 </pre></td></tr></table></figure>
 
 <p>僅需一步就把 Hexo 本體和所有相依套件安裝完畢，很簡單吧？</p>
-<h3>初始化</h3>
-<figure class="highlight lang-bash"><table><tr><td class="gutter"><pre>1
+<h3 id=" 初始化 ">初始化</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>hexo init &lt;folder&gt;
 </pre></td></tr></table></figure>
 
 <p>如果指定 <code>&lt;folder&gt;</code>，便會在目前的資料夾建立一個名為 <code>&lt;folder&gt;</code> 的新資料夾；否則會在目前資料夾初始化。</p>
 <p>設定請參閱 <a href="https://github.com/tommy351/hexo/wiki/Configure" target="_blank">Wiki</a>，我還不太會寫文件，如果看不懂的話請不要鞭太大力。</p>
-<h3>佈署</h3>
+<h3 id=" 佈署 ">佈署</h3>
 <p>0.1.0 版後，佈署方式有所調整，請參見 <a href="https://github.com/tommy351/hexo/wiki/Deploy" target="_blank">https://github.com/tommy351/hexo/wiki/Deploy</a>。</p>
-<h3>建立文章、分頁</h3>
-<figure class="highlight lang-bash"><table><tr><td class="gutter"><pre>1
+<h3 id=" 建立文章、分頁 ">建立文章、分頁</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
 2
 </pre></td><td class="code"><pre>hexo new_post &lt;title&gt;
 hexo new_page &lt;title&gt;
@@ -515,26 +580,26 @@ hexo new_page &lt;title&gt;
 <li>Youtube</li>
 </ul>
 <p>外掛的詳細使用方式之後會在 <a href="https://github.com/tommy351/hexo/wiki" target="_blank">Wiki</a> 補完。</p>
-<h3>生成檔案</h3>
-<figure class="highlight lang-bash"><table><tr><td class="gutter"><pre>1
+<h3 id=" 生成檔案 ">生成檔案</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>hexo generate
 </pre></td></tr></table></figure>
 
 <p>依照環境不同，速度可能會有差別，在我的電腦上需要大約 4 秒鐘。</p>
-<h3>伺服器</h3>
-<figure class="highlight lang-bash"><table><tr><td class="gutter"><pre>1
+<h3 id=" 伺服器 ">伺服器</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>hexo server
 </pre></td></tr></table></figure>
 
 <p>伺服器會跑在 <code>http://localhost:port</code> （<code>port</code> 預設為 <code>4000</code>，可在 <code>_config.yml</code> 設定），也可以搭配 <a href="http://pow.cx/" target="_blank">Pow</a> 使用：</p>
-<figure class="highlight lang-bash"><table><tr><td class="gutter"><pre>1
+<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
 2
-</pre></td><td class="code"><pre>cd ~/.pow
-ln -s /path/to/myapp
+</pre></td><td class="code"><pre><span class="built_in">cd</span> ~/.pow
+ln <span class="operator">-s</span> /path/to/myapp
 </pre></td></tr></table></figure>
 
 <p>基本使用差不多就是這樣子，非常簡單。至於外掛和主題的撰寫方法，我之後會在 <a href="https://github.com/tommy351/hexo/wiki" target="_blank">Wiki</a> 補完，你也可以嘗試看看<a href="https://github.com/tommy351/hexo" target="_blank">原始碼</a>。</p>
-<h2>結論</h2>
+<h2 id=" 結論 ">結論</h2>
 <p><a href="http://octopress.org/" target="_blank">Octopress</a> 還是很棒，只是速度不夠快，我未來將會轉換到 Hexo，以下是未來的開發目標：</p>
 <ul>
 <li>Windows 測試（我現在只有在 Mac 上使用過，其他平台壓根不知道能不能運作）</li>
@@ -550,12 +615,21 @@ ln -s /path/to/myapp
   allowtransparency="true" frameborder="0" scrolling="0" width="62px" height="20px"></iframe>
 
 ]]></content>
-    <category scheme="http://zespia.tw/tags/JavaScript/" term="JavaScript"/>
-    <category scheme="http://zespia.tw/tags/Node.js/" term="Node.js"/>
-    <category scheme="http://zespia.tw/tags/Hexo/" term="Hexo"/>
+    <summary type="html"><![CDATA[<p><img src="http://i.minus.com/ibpMKNkpRxVwsK.jpg" alt=" ちり - Super sonic Child (id=29663134)"></p>
+<p>我想每個 <a href="http://octopress.org/" target="_blank">Octopress</a> 的使用者一定都有這樣的煩惱──隨著文章數量愈來愈多，檔案建立的速度愈來愈慢。本站目前已累積至 54 篇文章，每次建立檔案時，至少都需要花費一分鐘以上的時間。</p>
+<p>或許是因為 Ruby 天生就比較慢，而這種問題未來似乎也不會改善，<a href="https://github.com/mojombo/jekyll" target="_blank">Jekyll</a> 和 <a href="http://octopress.org/" target="_blank">Octopress</a> 已經一段時間沒有更新，那麼唯一的解決方案只有另覓其他 Blog Framework 了。</p>
+]]></summary>
+    
+      <category term="JavaScript" scheme="http://zespia.tw/tags/JavaScript/"/>
+    
+      <category term="Node.js" scheme="http://zespia.tw/tags/Node.js/"/>
+    
+      <category term="Hexo" scheme="http://zespia.tw/tags/Hexo/"/>
+    
   </entry>
+  
   <entry>
-    <title type="html"><![CDATA[愛夏的煉金工房 ─ 黃昏大地之煉金術士]]></title>
+    <title><![CDATA[愛夏的煉金工房 ─ 黃昏大地之煉金術士]]></title>
     <link href="http://zespia.tw/blog/2012/09/05/atelier-ayesha/"/>
     <id>http://zespia.tw/blog/2012/09/05/atelier-ayesha/</id>
     <published>2012-09-05T10:39:00.000Z</published>
@@ -575,7 +649,7 @@ ln -s /path/to/myapp
 <p><img src="http://i.minus.com/ib29BrsOQgfTkJ.jpg" alt=""></p>
 <p>原本日文版隨附的 World Guide CD 是奇斯，中文版幸好不再是奇斯而是琳卡了，要不然我大概會愉悅到炸。</p>
 <p>目前只玩了一輪，已經破出三種結局，但還沒掌握出製造最佳裝備的秘訣。之前買的遊戲有一些都還沒玩，所以決定先把那些遊戲破完，目前正在很努力的玩戰鬥系統爛到爆的 TOV。</p>
-<h2>結局</h2>
+<h2 id=" 結局 ">結局</h2>
 <p>因為目前找不到 CG，所以先寫出結局列表吧。</p>
 <ul>
 <li>✓ 旅の終わり：第三年 3/30 時沒有滿足其他結局條件（BAD END）</li>
@@ -590,11 +664,18 @@ ln -s /path/to/myapp
 <li>賢者の庵：「真実の探求」「働くおねえさん」「秘宝ハンター」「女子会！」の条件を達成</li>
 </ul>
 ]]></content>
-    <category scheme="http://zespia.tw/tags/PS3/" term="PS3"/>
-    <category scheme="http://zespia.tw/tags/遊戲/" term="遊戲"/>
+    <summary type="html"><![CDATA[<p><img src="http://i.minus.com/ibobbTlfxZgITW.jpg" alt=" 阿霞的鍊金工房 ─ 黃昏市場之煉金術士 "></p>
+<p>當初看到煉金術士系列新作的名稱時，便不禁噗哧笑了出來，這名稱實在太具有台灣風味，<del>如果主角是一位提著菜籃的歐巴桑的話絕對會變神作</del>。</p>
+]]></summary>
+    
+      <category term="PS3" scheme="http://zespia.tw/tags/PS3/"/>
+    
+      <category term="遊戲" scheme="http://zespia.tw/tags/%E9%81%8A%E6%88%B2/"/>
+    
   </entry>
+  
   <entry>
-    <title type="html"><![CDATA[Node.js 初試 ─ Nyanko]]></title>
+    <title><![CDATA[Node.js 初試 ─ Nyanko]]></title>
     <link href="http://zespia.tw/blog/2012/07/14/nodejs-nyanko/"/>
     <id>http://zespia.tw/blog/2012/07/14/nodejs-nyanko/</id>
     <published>2012-07-13T16:14:00.000Z</published>
@@ -605,12 +686,12 @@ ln -s /path/to/myapp
 <p>直到畢業後，我突然想起這件事，便決定開始著手進行；然而因為去年提交 <a href="http://wordpress.org/" target="_blank">WordPress</a> 主題一直被退件令我一直懷恨在心，我毅然決定捨棄 <a href="http://wordpress.org/" target="_blank">WordPress</a>，自己從頭打造一個類似於 <a href="http://wordpress.org/" target="_blank">WordPress</a> 的 CMS 系統。</p>
 <a id="more"></a>
 
-<h2>序章</h2>
+<h2 id=" 序章 ">序章</h2>
 <p><img src="http://i.minus.com/iEfVZ8aIjqOKG.png" alt=""></p>
 <p>在進入本文之前，先說明一下何謂 <a href="http://nodejs.org/" target="_blank">Node.js</a> 吧：</p>
 <p><a href="http://nodejs.org/" target="_blank">Node.js</a> 是一個 JavaScript 函式庫，使用了 <a href="http://zh.wikipedia.org/wiki/V8_%28JavaScript%E5%BC%95%E6%93%8E%29" target="_blank">V8 引擎</a> 讓 JavaScript 能在伺服器上執行，其事件驅動、非阻塞式 I/O 的形式使 <a href="http://nodejs.org/" target="_blank">Node.js</a> 能夠高效運作，模組化的規格使其便於開發。（有錯請鞭）</p>
 <p>總而言之，<strong><a href="http://nodejs.org/" target="_blank">Node.js</a> 很好用</strong>。</p>
-<h2>安裝</h2>
+<h2 id=" 安裝 ">安裝</h2>
 <p><a href="http://nodejs.org/" target="_blank">Node.js</a> 的安裝非常簡單，只要安裝 <a href="https://github.com/creationix/nvm/" target="_blank">nvm</a> 及 <a href="http://npmjs.org/" target="_blank">npm</a> 即可。（以下以 Mac 為例）</p>
 <p><a href="https://github.com/creationix/nvm/" target="_blank">nvm</a> 就是類似於 <a href="https://rvm.io/" target="_blank">rvm</a> 的版本管理工具，可隨意安裝、替換不同的 <a href="http://nodejs.org/" target="_blank">Node.js</a> 版本。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
@@ -619,11 +700,11 @@ ln -s /path/to/myapp
 
 <p>安裝完後必須在 <code>.bash_profile</code> 加入以下內容才可直接使用。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>. ~/<span class="variable">.nvm</span>/nvm<span class="variable">.sh</span>
+</pre></td><td class="code"><pre>. ~/<span class="preprocessor">.nvm</span>/nvm<span class="preprocessor">.sh</span>
 </pre></td></tr></table></figure>
 
 <p>而 <a href="http://npmjs.org/" target="_blank">npm</a> 則是類似於 <a href="http://rubygems.org/" target="_blank">gem</a> 的模組管理工具，只要安裝 <a href="http://nodejs.org/" target="_blank">Node.js</a> 就會附贈，不需要另外安裝。</p>
-<h2>模組</h2>
+<h2 id=" 模組 ">模組</h2>
 <p><a href="http://nodejs.org/" target="_blank">Node.js</a> 雖然還是個剛起步的應用，不過已有很多的現成模組可供使用。以下是我用到的模組：</p>
 <ul>
 <li><a href="http://expressjs.com/" target="_blank">Express</a>：處理瀏覽器請求，用它做出 <a href="http://zh.wikipedia.org/wiki/REST" target="_blank">REST</a> 架構簡直小菜一碟。</li>
@@ -645,7 +726,7 @@ ln -s /path/to/myapp
 <ul>
 <li><a href="https://github.com/fgnass/node-dev" target="_blank">node-dev</a>：偵測檔案更改，自動重啟伺服器。</li>
 </ul>
-<h2>存放空間</h2>
+<h2 id=" 存放空間 ">存放空間</h2>
 <p>基本上寫程式還是和之前一樣，都是 SAN 值不斷乘著雲霄飛車高低起伏的過程，隨著 Bug 愈來愈多，愈來愈厭惡過去的自己怎麼笨到會犯這種智障級的錯誤。</p>
 <p><strong>不過這些都不是重點。</strong></p>
 <p>網站寫好了重點就是要有地方存放。</p>
@@ -669,7 +750,7 @@ ln -s /path/to/myapp
 <li><a href="https://mongolab.com/" target="_blank">MongoLab</a>：免費 240 MB</li>
 </ul>
 <p>明眼人都知道要選 <a href="https://mongolab.com/" target="_blank">MongoLab</a> 啊啊啊啊啊！！！！<del>就像胸部一樣，大一點的總是比較好啊啊啊啊啊！！！！</del></p>
-<h2>外觀</h2>
+<h2 id=" 外觀 ">外觀</h2>
 <p>因為代碼很髒而且 Bug 一堆，所以就不在這裡獻醜了。</p>
 <p><img src="http://i.minus.com/icykBz9L04Ydf.png" alt=""></p>
 <p>後台很普通，很明顯就是抄襲 <a href="http://wordpress.org/" target="_blank">WordPress</a> 的沒特色主題。</p>
@@ -679,19 +760,28 @@ ln -s /path/to/myapp
 <p>因此只能改成這個樣子了，可以很明顯的看出，就跟 <a href="https://plus.google.com/" target="_blank">Google+</a> 一樣，頁面主體很明顯的往左偏，右邊一大片空白什麼也沒有，<del>以後可以拿來放廣告</del>。</p>
 <p><img src="http://i.minus.com/illxd31CdxXIq.png" alt=""></p>
 <p>不過這也是有原因的，搜尋列和聊天室都會從左邊滑出。</p>
-<h2>未來</h2>
+<h2 id=" 未來 ">未來</h2>
 <p>目前 0.0.7 版已經完成，不過尚未 deploy 至 <a href="http://heroku.com/" target="_blank">Heroku</a>，主要是強化快取的部分，事先儲存已渲染過的網頁，就不用在每次瀏覽時都讀取資料庫。</p>
 <p>等到 Bug 都除完之後，大概就會發佈原始碼了，我能看到那一天的到來嗎……？</p>
-<h2>後記</h2>
+<h2 id=" 後記 ">後記</h2>
 <p><img src="http://i.minus.com/ibqU7BQBnIPo5u.png" alt=" 對不起，圖片下載不完全，想看紗羽ㄋㄟㄋㄟ的請自己找吧。(id=28562767)"></p>
 <p>因為最近一個月都在忙這東西，所以網誌都放到生菇了，之後還會在寫一篇愛夏的文章，敬請期待！</p>
 <p><a href="http://nyanko.herokuapp.com/" target="_blank">Nyanko</a> 目前正在封測中，也許會有很多 Bug，如果找到 Bug 的話麻煩透過左側工具列上的「意見反饋」向我回報。</p>
 ]]></content>
-    <category scheme="http://zespia.tw/tags/Node.js/" term="Node.js"/>
-    <category scheme="http://zespia.tw/tags/JavaScript/" term="JavaScript"/>
+    <summary type="html"><![CDATA[<p><img src="http://i.minus.com/iKst8nFEGcU8A.png" alt=""></p>
+<p>數個月前，接到了來自 <a href="http://caramel623.k2-ani.com/" target="_blank">卡梅爾 Anime</a> 的委託，請我重新設計一個 <a href="http://wordpress.org/" target="_blank">WordPress</a> 主題，因為我當時正忙著準備備審資料，因此而暫時擱置了一段時間。</p>
+<p>又過了一個月，我加入了畢籌會（畢業典禮籌劃會），忙著 <del>和妹子聊天</del> 製作畢業影片，而完全忽略了這回事。</p>
+<p>直到畢業後，我突然想起這件事，便決定開始著手進行；然而因為去年提交 <a href="http://wordpress.org/" target="_blank">WordPress</a> 主題一直被退件令我一直懷恨在心，我毅然決定捨棄 <a href="http://wordpress.org/" target="_blank">WordPress</a>，自己從頭打造一個類似於 <a href="http://wordpress.org/" target="_blank">WordPress</a> 的 CMS 系統。</p>
+]]></summary>
+    
+      <category term="Node.js" scheme="http://zespia.tw/tags/Node.js/"/>
+    
+      <category term="JavaScript" scheme="http://zespia.tw/tags/JavaScript/"/>
+    
   </entry>
+  
   <entry>
-    <title type="html"><![CDATA[私用主題 Phase]]></title>
+    <title><![CDATA[私用主題 Phase]]></title>
     <link href="http://zespia.tw/blog/2012/05/02/new-theme-phase/"/>
     <id>http://zespia.tw/blog/2012/05/02/new-theme-phase/</id>
     <published>2012-05-02T01:35:00.000Z</published>
@@ -705,30 +795,37 @@ ln -s /path/to/myapp
 <div class="video-container"><iframe width="420" height="315" src="http://www.youtube.com/embed/RiekCHOivVE" frameborder="0" allowfullscreen></iframe></div>
 
 <p>之後，偶然發現了一套 Android Live Wallpaper「Phase Beam」，這配色，這流暢滑順的動畫，就是我要的感覺，但是網路上只能找到 1440x1080 的圖片，作為背景圖片有點太迷你了，於是我便決定利用 HTML5 Canvas 來繪製類似 Phase Beam 的背景。</p>
-<h2>背景</h2>
+<h2 id=" 背景 ">背景</h2>
 <p>HTML5 Canvas 的運作方式不如想像中簡單，我花了好幾小時才勉強用得上來，特別是輻射漸層（Radial Gradient），我搞了好久才終於搞懂這鬼東西的運作方式，天殺的是哪個傢伙想出<code>createRadialGradient(x1,y1,r1,x2,y2,r2)</code>這種奇怪的鬼函數的。</p>
 <p><img src="http://i.minus.com/ibnLcNP2voPZTx.png" alt=""></p>
 <p>使用方法搞定之後，其他便簡單許多了，只要記得繪製下一格動畫前，必須先使用<code>clearRect(x,y,width,height)</code>清空 Canvas，否則便會出現如上圖的慘狀。</p>
-<h3>參考資料</h3>
+<h3 id=" 參考資料 ">參考資料</h3>
 <ul>
 <li><a href="https://developer.mozilla.org/en/Canvas_tutorial" target="_blank">Canvas tutorial - MDN</a></li>
 </ul>
-<h2>字體</h2>
+<h2 id=" 字體 ">字體</h2>
 <p><img src="http://i.minus.com/iizFaxHHCWTjT.png" alt="Pontano Sans v.s. Helvetica Neue v.s. Helvetica Neue Light"></p>
 <p>整個佈景主題全都是 <a href="http://en.wikipedia.org/wiki/Helvetica#Neue_Helvetica_.281983.29" target="_blank">Helvetica Neue Light</a> 似乎會讓人有些視覺疲勞，於是這次加入了 <a href="http://www.google.com/webfonts/specimen/Pontano+Sans" target="_blank">Pontano Sans</a> 作為標題字體，<a href="http://www.google.com/webfonts/specimen/Pontano+Sans" target="_blank">Pontano Sans</a> 的粗細與 <a href="http://en.wikipedia.org/wiki/Helvetica#Neue_Helvetica_.281983.29" target="_blank">Helvetica Neue Light</a> 大致相同，不過小寫字母更窄了些。</p>
 <p><img src="http://i.minus.com/ibf2JncEj5mdzJ.png" alt=""></p>
 <p>這次除了 Logo 以外，完全改用 <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">Font Awesome</a> 字體作為圖示，相容性什麼的我也沒在管了，反正能支援到 IE 8+ 就夠了。</p>
-<h2>後記</h2>
+<h2 id=" 後記 ">後記</h2>
 <div class="video-container"><iframe width="560" height="315" src="http://www.youtube.com/embed/ZMhwixvwMUs" frameborder="0" allowfullscreen></iframe></div>
 
 <p>Phase 還有一些部分尚未完成，不過我已經迫不及待想用了，餘下的部份就等之後慢慢補完吧。</p>
 <p>最近大學終於有了著落，空閒的時間變得更多了，也許該找份兼職來做，如果想找我設計佈景主題的話，可透過 Twitter 或 tommy351[at]gmail.com 與我洽談。最後就來一部氷菓 ED 吧，可見京阿尼砸了很多錢在賣肉上，明明只是兩位高中女生在滾床而已，卻能這麼嫵媚……。える好胸，摩耶花好腋啊。</p>
 ]]></content>
-    <category scheme="http://zespia.tw/tags/Octopress/" term="Octopress"/>
-    <category scheme="http://zespia.tw/tags/主題/" term="主題"/>
+    <summary type="html"><![CDATA[<p><img src="http://i.minus.com/iMujOkELjjcra.png" alt=""></p>
+<p>一段時間沒更新網誌了，最近大學有了著落之後，便決定抽空寫篇文章。自從 <a href="http://zespia.tw/Octopress-Theme-Slash/index_tw.html">Slash</a> 發佈之後，使用者日漸增多，不時會有 Pull Request，大概已經有數十個網誌都選用 <a href="http://zespia.tw/Octopress-Theme-Slash/index_tw.html">Slash</a> 作為佈景主題，雖然獲得了極大的成就感，不過林北不爽「撞主題」的感覺，所以決定再製作一個屬於自己的佈景主題。</p>
+]]></summary>
+    
+      <category term="Octopress" scheme="http://zespia.tw/tags/Octopress/"/>
+    
+      <category term="主題" scheme="http://zespia.tw/tags/%E4%B8%BB%E9%A1%8C/"/>
+    
   </entry>
+  
   <entry>
-    <title type="html"><![CDATA[First Order]]></title>
+    <title><![CDATA[First Order]]></title>
     <link href="http://zespia.tw/blog/2012/03/16/first-order/"/>
     <id>http://zespia.tw/blog/2012/03/16/first-order/</id>
     <published>2012-03-16T13:06:00.000Z</published>
@@ -738,7 +835,7 @@ ln -s /path/to/myapp
 <p><del>很久很久以前</del>，一位名為<strong>新堂楓</strong>的紳士向我提出了主題製作的<a href="http://zespia.tw/blog/2011/05/27/corner-theme/#comment-418034559">委託</a>，然而因學測前 <del>打混</del> 用功念書很忙所以暫時推辭掉了。事隔 2 個月後，當我正沈醉於學測後混到不行的頹廢生活時，一則私訊闖進了我的生活，使我再度啟動塵封已久的 <a href="http://wordpress.org/" target="_blank">WordPress</a>。</p>
 <a id="more"></a>
 
-<h2>設計</h2>
+<h2 id=" 設計 ">設計</h2>
 <p>這次的設計主題有三大要求：</p>
 <ul>
 <li><strong>加強相片呈現效果</strong>：這點在最近發佈的 <a href="http://octopress.org/" target="_blank">Octopress</a> 主題 <a href="http://zespia.tw/Octopress-Theme-Slash/index_tw.html">Slash</a> 已經提供了一個不錯的解決方法，<a href="http://fancyapps.com/fancybox/" target="_blank">Fancybox</a>，這個使用簡易、特效華麗的 <a href="http://jquery.com/" target="_blank">jQuery</a> 外掛大概會成為我日後製作佈景主題的必備工具。</li>
@@ -746,7 +843,7 @@ ln -s /path/to/myapp
 <li><strong>Key&amp;minori style</strong>：這點更加靠北了，無論是 key 社還是 minori 社的 galgame 我都沒玩過，更遑論這兩家公司的設計風格了。</li>
 </ul>
 <p>雖然委託人提出了上述的三大要求，不過看看就好，下文的設計風格與要求大相逕庭。</p>
-<h2>開始</h2>
+<h2 id=" 開始 ">開始</h2>
 <p>看完了這篇<a href="http://www.slideshare.net/EvenWu/middleman" target="_blank">投影片</a>後，便決定利用 <a href="http://middlemanapp.com/" target="_blank">Middleman</a> 這個超神速的 mockup 工具設計主題大綱，不消兩小時便做出了兩個 mockup，思索設計的過程說不定比製作 mockup 的時間還多。</p>
 <p><img src="http://i.minus.com/ibqWCsFFdSTBI.jpg" alt=""></p>
 <p>第一個主題以 <a href="https://github.com" target="_blank">GitHub</a> 為設計範本，從標題的銀邊應該能很明顯的看出來。</p>
@@ -754,7 +851,7 @@ ln -s /path/to/myapp
 <p>第二個主題以 <a href="http://dribbble.com/" target="_blank">Dribbble</a> 上的某個<a href="http://dribbble.com/shots/438559-Pointz-Map-based-service?list=tags&amp;tag=web" target="_blank">點子</a>為範本，搭配部分 <a href="http://www.production-ig.co.jp/" target="_blank">Production I.G</a> 官網的元素（雖然看不大出來）。</p>
 <p><img src="http://i.minus.com/ind9tU2HtpOTz.jpg" alt=""></p>
 <p>我曾經認真思索過如何符合「<strong>一眼就能看出是圈內人</strong>」的要求，因此參考了<a href="http://www.kyotoanimation.co.jp/" target="_blank">京都アニメーション</a>與 <a href="http://www.production-ig.co.jp/" target="_blank">Production I.G</a> 的網站，現今的動畫官網真是做得愈來愈棒了，特別是 <a href="http://www.guilty-crown.jp/" target="_blank">Guilty Crown</a> 的官網，華麗之餘還能包含許多 HTML5 要素。（不過那毫無章法的劇情是另一回事）</p>
-<h2>套版</h2>
+<h2 id=" 套版 ">套版</h2>
 <p>最後委託人底定第二個主題為設計大綱，套版相對於設計簡單多了，只要將過去私用的「Corner 2G」（之後或許會釋出）稍微修改即可使用。</p>
 <p><img src="http://i.minus.com/ibirM2wk04UGpk.jpg" alt=" 少數派鍵っ子系學園の新堂楓 - keyfans.net"></p>
 <p>「Linor」至此終於製作完成，除了支援所有 WordPress 3.0 的功能以外，還附帶以下功能：</p>
@@ -766,15 +863,23 @@ ln -s /path/to/myapp
 <li>Responsive Design</li>
 </ul>
 <p>經過委託人同意後，決定將本主題公開發佈：<a href="http://zespia.tw/themes/linor/linor-1.0.5.zip">Linor (1.0.5)</a></p>
-<h2>後記</h2>
+<h2 id=" 後記 ">後記</h2>
 <p>再度接觸 <a href="http://wordpress.org/" target="_blank">WordPress</a>，發現 <a href="http://wordpress.org/" target="_blank">WordPress</a> 比起 <a href="http://octopress.org/" target="_blank">Octopress</a>，實在臃腫許多，就算架在本機也讓人感覺速度很慢，不過內建了很多方便的函數，使得開發速度大幅提昇。</p>
 <p>製作他人委託的主題並不像自己創作一樣容易，必須考慮到委託人的要求、感受，我覺得這次的成品並不夠完美，希望未來的合作能夠更加完美！</p>
 ]]></content>
-    <category scheme="http://zespia.tw/tags/WordPress/" term="WordPress"/>
-    <category scheme="http://zespia.tw/tags/主題/" term="主題"/>
+    <summary type="html"><![CDATA[<p><img src="http://i.minus.com/iNmV7aO65tXdE.jpg" alt=" ユイザキ - ミサカとおしゃべりしよ (id=22543726)"></p>
+<p>雖然標題名為 First Order，但請不要誤會，內容與 Last Order 毫無關係，如果你還對下文抱持任何的期待的話，就 <del>當作被騙</del> 看完這篇文章吧！</p>
+<p><del>很久很久以前</del>，一位名為<strong>新堂楓</strong>的紳士向我提出了主題製作的<a href="http://zespia.tw/blog/2011/05/27/corner-theme/#comment-418034559">委託</a>，然而因學測前 <del>打混</del> 用功念書很忙所以暫時推辭掉了。事隔 2 個月後，當我正沈醉於學測後混到不行的頹廢生活時，一則私訊闖進了我的生活，使我再度啟動塵封已久的 <a href="http://wordpress.org/" target="_blank">WordPress</a>。</p>
+]]></summary>
+    
+      <category term="WordPress" scheme="http://zespia.tw/tags/WordPress/"/>
+    
+      <category term="主題" scheme="http://zespia.tw/tags/%E4%B8%BB%E9%A1%8C/"/>
+    
   </entry>
+  
   <entry>
-    <title type="html"><![CDATA[Windows 8 Consumer Preview 試玩]]></title>
+    <title><![CDATA[Windows 8 Consumer Preview 試玩]]></title>
     <link href="http://zespia.tw/blog/2012/03/03/windows-8-preview/"/>
     <id>http://zespia.tw/blog/2012/03/03/windows-8-preview/</id>
     <published>2012-03-03T11:54:00.000Z</published>
@@ -782,16 +887,16 @@ ln -s /path/to/myapp
     <content type="html"><![CDATA[<p><img src="http://i.minus.com/iQ6n16BPfbQc.jpg" alt=""></p>
 <p>前些日子，微軟發佈了 <a href="http://windows.microsoft.com/en-US/windows-8/iso" target="_blank">Windows 8 Consumer Preview</a>，雖然名稱有點冗長，不過內容和以往一樣，是給無聊人專用的測試版。</p>
 <ul>
-<li>下載：<a href="http://windows.microsoft.com/en-US/windows-8/iso" target="_blank"><a href="http://windows.microsoft.com/en-US/windows-8/iso">http://windows.microsoft.com/en-US/windows-8/iso</a></a></li>
+<li>下載：<a href="http://windows.microsoft.com/en-US/windows-8/iso" target="_blank">http://windows.microsoft.com/en-US/windows-8/iso</a></li>
 <li>序號：<code>DNJXJ-7XBW8-2378T-X22TX-BKG7J</code></li>
 </ul>
 <p>身為一名無聊高中生的我，ISO 檔一釋出便立刻下載，然而 Windows 8 並沒有符合我的期待。（軟粉不要打我）</p>
 <a id="more"></a>
 
-<h2>安裝</h2>
+<h2 id=" 安裝 ">安裝</h2>
 <p><img src="http://i.minus.com/iTEEu9lwJJUIR.png" alt=""></p>
 <p>因為懶得切硬碟，所以這次使用虛擬機安裝 Windows 8，安裝過程非常順利，從初始化、設定 Windows Live 帳號到進入桌面，總共僅需花費 20 分鐘，與過去安裝作業系統至少得花費一小時的經驗截然不同。</p>
-<h2>操作</h2>
+<h2 id=" 操作 ">操作</h2>
 <p>Windows 8 為了進軍平板，因此預設了許多手勢操作，不過我沒有平板電腦，所以下文僅說明滑鼠操作。</p>
 <p><img src="http://i.minus.com/igXOsyXp5ijuN.jpg" alt=" 滑鼠移入左上角向下滑（或左下角向上滑），可檢視最近開啟的應用程式，點擊右鍵可關閉程式 "></p>
 <p>滑鼠沒有手勢操作，取而代之的是四個角落的「熱點」（類似 Mac），滑鼠移到四個角落就可觸發動作：</p>
@@ -808,7 +913,7 @@ ln -s /path/to/myapp
 <li>拖曳至兩側：釘選應用程式，可同時使用其他應用程式</li>
 <li>拖曳至下方：關閉應用程式</li>
 </ul>
-<h2>使用體驗</h2>
+<h2 id=" 使用體驗 ">使用體驗</h2>
 <p>一進入桌面，映入眼簾的便是與 Developer Preview 大致相同的 Metro UI，以及幾個新的應用程式，大幅簡化的介面看起來相當不錯，然而以滑鼠操作實在不便。</p>
 <p><img src="http://i.minus.com/iQsxP5YdP3WKC.jpg" alt=" 熟悉的「開始」選單被右側的 Charms Bar 取而代之 "></p>
 <p>Windows Phone 7 上的 Metro UI 非常棒，簡潔、順暢、易操作；然而到了桌面系統就顯然不是如此了，Windows 8 上的 Metro UI 一開始讓人完全摸不著頭緒，我曾經不小心進入 Explorer，之後花了好一段時間才知道如何回到 Start 頁面，微軟應先在進入作業系統前教育使用者如何操作，或是想一個更直覺的點子。</p>
@@ -817,13 +922,24 @@ ln -s /path/to/myapp
 <p>Windows 8 改了許多東西，然而爛到爆的字體渲染仍原封不動的保留，我不了解微軟到底他奶奶的在想什麼，把預設字體改成微軟正黑體有這麼困難嗎？改進那個渣到爆的<a href="http://zh.wikipedia.org/wiki/ClearType" target="_blank">ClearType</a>有這麼困難嗎？</p>
 <p><img src="http://i.minus.com/iWdgrcTVUToVC.jpg" alt=""></p>
 <p>唯一令人欣慰的是，IE 10 的分數大幅增加，HTML5 Test 的分數高達 309 分，真是網頁設計者的一大福音！（還是得再罵一次，<strong>去你媽的 IE 6</strong>）</p>
-<h2>結論</h2>
+<h2 id=" 結論 ">結論</h2>
 <p>Windows 8 Consumer Preview 讓人感覺不太好用，就像是將 Metro UI 故意強加在 Windows 7 上，Metro UI 雖然美觀，卻失去了 Windows 7 的操作直覺性，希望微軟未來能改進傳統介面與 Metro UI 的整合性，<del>讓我們一起期待<a href="http://www.apple.com/macosx/mountain-lion/" target="_blank">Mountain Lion</a>吧</del>！</p>
 ]]></content>
-    <category scheme="http://zespia.tw/tags/Windows/" term="Windows"/>
+    <summary type="html"><![CDATA[<p><img src="http://i.minus.com/iQ6n16BPfbQc.jpg" alt=""></p>
+<p>前些日子，微軟發佈了 <a href="http://windows.microsoft.com/en-US/windows-8/iso" target="_blank">Windows 8 Consumer Preview</a>，雖然名稱有點冗長，不過內容和以往一樣，是給無聊人專用的測試版。</p>
+<ul>
+<li>下載：<a href="http://windows.microsoft.com/en-US/windows-8/iso" target="_blank">http://windows.microsoft.com/en-US/windows-8/iso</a></li>
+<li>序號：<code>DNJXJ-7XBW8-2378T-X22TX-BKG7J</code></li>
+</ul>
+<p>身為一名無聊高中生的我，ISO 檔一釋出便立刻下載，然而 Windows 8 並沒有符合我的期待。（軟粉不要打我）</p>
+]]></summary>
+    
+      <category term="Windows" scheme="http://zespia.tw/tags/Windows/"/>
+    
   </entry>
+  
   <entry>
-    <title type="html"><![CDATA[HTML5 audio 實驗]]></title>
+    <title><![CDATA[HTML5 audio 實驗]]></title>
     <link href="http://zespia.tw/blog/2012/02/04/lab-html5-audio/"/>
     <id>http://zespia.tw/blog/2012/02/04/lab-html5-audio/</id>
     <published>2012-02-04T05:29:00.000Z</published>
@@ -832,9 +948,9 @@ ln -s /path/to/myapp
 <p>寒假即將結束，不巧膝蓋突然中了一箭，便決定實驗 HTML5 <code>audio</code>標籤的效果，雖然已有 <a href="http://jplayer.org/" target="_blank">jPlayer</a> 這款輕便好用的播放器，但不折騰一下就沒辦法消磨時間了，所以本次的實驗品完全由我操刀。</p>
 <a id="more"></a>
 
-<h2>開始之前</h2>
+<h2 id=" 開始之前 ">開始之前</h2>
 <p>首先必須了解<code>audio</code>標籤的使用方式：</p>
-<figure class="highlight lang-html"><table><tr><td class="gutter"><pre>1
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -846,7 +962,7 @@ ln -s /path/to/myapp
 
 <p>輸入以上代碼後，便可在網頁中看到瀏覽器內建的播放器。每種瀏覽器支援的播放類型不一，最保險的方法是備妥<code>mp3</code>、<code>ogg</code>。</p>
 <p>為了浪費時間，當然不可能用瀏覽器的預設介面，所以刪除<code>controls</code>屬性，透過 JavaScript 操作：</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -859,58 +975,58 @@ audio.pause();
 </pre></td></tr></table></figure>
 
 <p>只需要懂這兩個函數，就可製作最基礎的播放器了，其他複雜的指令可參閱文末的參考出處。</p>
-<h2>介面</h2>
+<h2 id=" 介面 ">介面</h2>
 <p>寫網頁時，比起最重要的 JavaScript，我習慣先寫 CSS，最初的參考範本是 Mac 的 <a href="http://zh.wikipedia.org/wiki/Cover_Flow" target="_blank">CoverFlow</a>。</p>
 <p><img src="http://i.minus.com/ibtVhj6FYs9Hvw.png" alt=""></p>
 <p>經過一連串絞盡腦汁，寫了一堆亂七八糟的 CSS 之後，成品如下。</p>
 <p><img src="http://i.minus.com/iXoN5AU2JBOHU.png" alt=""></p>
 <p>無論是倒影、中間的圓圈進度表都與 <a href="http://zh.wikipedia.org/wiki/Cover_Flow" target="_blank">CoverFlow</a> 非常相像，但這種樣式實在 <del>太麻煩了</del> 不便使用者操作，所以從 <a href="http://www.premiumpixels.com/freebies/compact-music-player-psd/" target="_blank">Premium Pixels</a> 偷點子過來，稍微加油添醋一下，完成了播放器介面 Ver. 2。</p>
 <p><img src="http://i.minus.com/imrTH5W7km1vj.png" alt="Ver.2 與 Ver.1 完全不像？這種事情不重要啦！"></p>
-<h2>核心</h2>
+<h2 id=" 核心 ">核心</h2>
 <p>介面完成自爽一下之後，就得面對麻煩的 JavaScript 了，播放、暫停非常簡單，按鈕按下去執行鄉對應的動作即可，然而音量調整與進度條該如何處理呢？</p>
 <p>雖然本次的重點是<strong>消磨時間</strong>，但再去造一個輪子實在他媽的太累了，於是 <del>聰明如我</del> 請到了 <a href="http://jqueryui.com/" target="_blank">jQuery UI</a>，Slider 功能壓縮後需要約 20KB 的空間，有點龐大不過方便就好。</p>
 <p>時間的控制方式如下，單位為秒數，例如跳至第 100 秒的位置：</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>audio.currentTime = <span class="number">100</span>;
 </pre></td></tr></table></figure>
 
 <p>音量的控制方式如下，範圍為 0~1，例如將音量調整至一半大小：</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>audio.volume = <span class="number">0.5</span>;
 </pre></td></tr></table></figure>
 
 <p><code>audio</code>可綁定<code>play</code>, <code>pause</code>, <code>ended</code>, <code>progress</code>, <code>canplay</code>, <code>timeupdate</code>等事件。<code>play</code>與<code>pause</code>如字面上意思，分別為播放、暫停後生效。</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 4
 5
 6
 7
-</pre></td><td class="code"><pre>audio.addEventListener(<span class="string">'play'</span>, <span class="keyword">function</span>(){
+</pre></td><td class="code"><pre>audio.addEventListener(<span class="string">'play'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
   play.title = <span class="string">'pause'</span>;
 }, <span class="literal">false</span>);
 
-audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword">function</span>(){
+audio.addEventListener(<span class="string">'pause'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
   play.title = <span class="string">'play'</span>;
 }, <span class="literal">false</span>);
 </pre></td></tr></table></figure>
 
 <p><code>ended</code>為結束後生效，當音樂結束後，可透過此事件讓時間歸零。</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
-</pre></td><td class="code"><pre>audio.addEventListener(<span class="string">'ended'</span>, <span class="keyword">function</span>(){
+</pre></td><td class="code"><pre>audio.addEventListener(<span class="string">'ended'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
   <span class="keyword">this</span>.currentTime = <span class="number">0</span>;
 }, <span class="literal">false</span>);
 </pre></td></tr></table></figure>
 
 <p>當音樂檔案開始載入後，便會啟動<code>progress</code>事件，可透過此事件監測下載進度。Firefox 可能會發生問題，建議搭配<code>durationchange</code>事件使用。</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 4
-</pre></td><td class="code"><pre>audio.addEventListener(<span class="string">'progress'</span>, <span class="keyword">function</span>(){
+</pre></td><td class="code"><pre>audio.addEventListener(<span class="string">'progress'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
   <span class="keyword">var</span> endVal = <span class="keyword">this</span>.seekable && <span class="keyword">this</span>.seekable.length ? <span class="keyword">this</span>.seekable.end(<span class="number">0</span>) : <span class="number">0</span>;
   buffer.style.width = (<span class="number">100</span> / (<span class="keyword">this</span>.duration || <span class="number">1</span>) * endVal) + <span class="string">'%'</span>;
 }, <span class="literal">false</span>);
@@ -918,22 +1034,22 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword
 
 <p>當音樂下載到一定程度後，<code>canplay</code>事件便會生效，一般會透過此事件初始化播放器。相同類型的事件還有很多，依照啟動順序分別為：<code>loadstart</code>, <code>durationchange</code>, <code>loadeddata</code>, <code>progress</code>, <code>canplay</code>, <code>canplaythrough</code>。</p>
 <p><code>timeupdate</code>會在音樂播放時不斷生效，可透過此事件更新時間。</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
-</pre></td><td class="code"><pre>audio.addEventListener(<span class="string">'timeupdate'</span>, <span class="keyword">function</span>(){
+</pre></td><td class="code"><pre>audio.addEventListener(<span class="string">'timeupdate'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
   progress.style.width = (<span class="keyword">this</span>.currentTime / <span class="keyword">this</span>.duration) * <span class="number">100</span> + <span class="string">'%'</span>;
 }, <span class="literal">false</span>);
 </pre></td></tr></table></figure>
 
-<h2>播放列表</h2>
+<h2 id=" 播放列表 ">播放列表</h2>
 <p>一個播放器的基礎功能就此完成，能夠播放、暫停、調整音量、調整時間。但這顯然還不夠，播放列表對於播放器而言相當重要。<em>（大概啦）</em></p>
 <p><img src="http://i.minus.com/inE9d4C1xPbYD.png" alt=" 不要吐槽為啥播放列表裡全是動漫歌，林北就是宅啦..."></p>
 <p>與自己的邏輯奮戰大約一晚後，有播放列表、隨機播放、重複播放（單首、全部）功能的播放器於焉完成。只需要 214 行、約 6KB 的代碼<em>（未壓縮）</em>即可完成，應該能算是輕便簡易了。</p>
-<h2>後記</h2>
+<h2 id=" 後記 ">後記</h2>
 <p>播放列表的製作過程有點髒，中途還重構了幾次，所以直接看範例應該會比較快，若對於範例內的程式碼感到疑惑，可在下方留言。</p>
 <p>範例內已設定了一些參數，可在<code>js/script.js</code>內更改。第 5 行的<code>continous</code>參數為連續播放，第 6 行的<code>autoplay</code>參數為自動播放，第 7 行的<code>playlist</code>陣列請自行設定，壓縮檔內<strong>不會</strong>附帶範例內的音樂檔案。<code>playlist</code>陣列的格式如下：</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -958,7 +1074,7 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword
 <p><code>title</code>為標題，<code>artist</code>為演出者，<code>album</code>為專輯名稱，<code>cover</code>為專輯封面的路徑，<code>mp3</code>、<code>ogg</code>分別為音樂檔案的路徑，建議備妥兩種格式的檔案，<del>要不然 Firefox 和 Opera 不就只能去死了嗎？</del></p>
 <p>因為做到最後頭腦快爆炸了，懶得做 Flash fallback，<del>IE 請去死一死吧。</del></p>
 <p><a href="http://zespia.tw/lab/coverart">範例</a>｜<a href="http://zespia.tw/lab/coverart/example.zip">下載</a></p>
-<h2>參考出處</h2>
+<h2 id=" 參考出處 ">參考出處</h2>
 <ul>
 <li><a href="http://jplayer.org/" target="_blank">jPlayer</a></li>
 <li><a href="http://blog.darkthread.net/post-2011-05-15-html5-audio.aspx" target="_blank">小試 HTML 5 audio - 黑暗執行緒</a></li>
@@ -967,11 +1083,18 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword
 <li><a href="http://www.premiumpixels.com/freebies/compact-music-player-psd/" target="_blank">Free PSD: Compact Music Player | Premium Pixels</a></li>
 </ul>
 ]]></content>
-    <category scheme="http://zespia.tw/tags/JavaScript/" term="JavaScript"/>
-    <category scheme="http://zespia.tw/tags/HTML5/" term="HTML5"/>
+    <summary type="html"><![CDATA[<p><img src="http://i.minus.com/inE9d4C1xPbYD.png" alt=""></p>
+<p>寒假即將結束，不巧膝蓋突然中了一箭，便決定實驗 HTML5 <code>audio</code>標籤的效果，雖然已有 <a href="http://jplayer.org/" target="_blank">jPlayer</a> 這款輕便好用的播放器，但不折騰一下就沒辦法消磨時間了，所以本次的實驗品完全由我操刀。</p>
+]]></summary>
+    
+      <category term="JavaScript" scheme="http://zespia.tw/tags/JavaScript/"/>
+    
+      <category term="HTML5" scheme="http://zespia.tw/tags/HTML5/"/>
+    
   </entry>
+  
   <entry>
-    <title type="html"><![CDATA[Slash — 專為 Octopress 設計的極簡主題]]></title>
+    <title><![CDATA[Slash — 專為 Octopress 設計的極簡主題]]></title>
     <link href="http://zespia.tw/blog/2012/01/25/slash-theme/"/>
     <id>http://zespia.tw/blog/2012/01/25/slash-theme/</id>
     <published>2012-01-25T08:27:00.000Z</published>
@@ -988,32 +1111,39 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword
 <li>支援 responsive layouts，無論電腦、手機、平板都能獲得極佳的使用體驗。</li>
 <li><a href="http://zespia.tw/Octopress-Theme-Slash/index_tw.html">更多介紹…</a></li>
 </ul>
-<h2>安裝</h2>
+<h2 id=" 安裝 ">安裝</h2>
 <p>只需在終端機輸入以下指令，即可完成安裝：</p>
 <pre><code><span class="variable">$ </span>cd octopress
 <span class="variable">$ </span>git clone <span class="symbol">git:</span>/<span class="regexp">/github.com/tommy</span>351/<span class="constant">Octopress</span>-<span class="constant">Theme</span>-<span class="constant">Slash</span>.git .themes/slash
 <span class="variable">$ </span>rake install[<span class="string">'slash'</span>]
-<span class="variable">$ </span>rake generate</code></pre>
-<p>使用 zsh 時發生問題嗎？試試看<code>rake install\[&#39;slash&#39;\]</code>。</p>
-<h2>Q&amp;A</h2>
-<h3>如何顯示右上角的 Facebook 連結？</h3>
+<span class="variable">$ </span>rake generate
+</code></pre><p>使用 zsh 時發生問題嗎？試試看<code>rake install\[&#39;slash&#39;\]</code>。</p>
+<h2 id="Q&amp;A">Q&amp;A</h2>
+<h3 id=" 如何顯示右上角的 Facebook 連結？">如何顯示右上角的 Facebook 連結？</h3>
 <p>在<code>_config.yml</code>新增<code>facebook_user</code>參數，並填入您的 Facebook ID。</p>
-<h3>如何編輯選單？</h3>
+<h3 id=" 如何編輯選單？">如何編輯選單？</h3>
 <p>編輯<code>slash</code>→<code>source</code>→<code>_includes</code>→<code>custom</code>→<code>navigation.html</code>。</p>
-<h3>如何隱藏頁首的 Twitter 訊息串？</h3>
+<h3 id=" 如何隱藏頁首的 Twitter 訊息串？">如何隱藏頁首的 Twitter 訊息串？</h3>
 <p>刪除<code>slash</code>→<code>source</code>→<code>_layouts</code>→<code>default.html</code>的第 6 行。</p>
-<h3>如何關閉 Fancybox？</h3>
+<h3 id=" 如何關閉 Fancybox？">如何關閉 Fancybox？</h3>
 <ol>
 <li>刪除<code>slash</code>→<code>source</code>→<code>_includes</code>→<code>after_footer.html</code>的第 4 行。</li>
 <li>刪除<code>slash</code>→<code>source</code>→<code>javascripts</code>→<code>caption.js</code>第 14 行。</li>
 </ol>
 <p>如果還有其他問題或建議，歡迎在以下留言。</p>
 ]]></content>
-    <category scheme="http://zespia.tw/tags/主題/" term="主題"/>
-    <category scheme="http://zespia.tw/tags/Octopress/" term="Octopress"/>
+    <summary type="html"><![CDATA[<p><img src="http://i.minus.com/i8oyJmY5lRJEJ.png" alt=""></p>
+<p><a href="http://octopress.org/" target="_blank">Octopress</a> 雖然預設主題相當漂亮，支援眾多 HTML5 的新特性，但每個網誌都是同一個主題，令人有些厭煩。在決定轉移到 <a href="http://octopress.org/" target="_blank">Octopress</a> 的第一刻起，我就開始著手設計適用於 <a href="http://octopress.org/" target="_blank">Octopress</a> 的主題，在今天終於把檔案整理完畢，集合成一個獨立的 repo。</p>
+]]></summary>
+    
+      <category term="主題" scheme="http://zespia.tw/tags/%E4%B8%BB%E9%A1%8C/"/>
+    
+      <category term="Octopress" scheme="http://zespia.tw/tags/Octopress/"/>
+    
   </entry>
+  
   <entry>
-    <title type="html"><![CDATA[如何利用 CSS 製作多級選單？]]></title>
+    <title><![CDATA[如何利用 CSS 製作多級選單？]]></title>
     <link href="http://zespia.tw/blog/2012/01/24/css-multi-level-menu/"/>
     <id>http://zespia.tw/blog/2012/01/24/css-multi-level-menu/</id>
     <published>2012-01-24T00:00:00.000Z</published>
@@ -1023,8 +1153,8 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword
 <p>一般網頁常見到二級選單，利用 CSS 即可達成，有些會透過 JavaScript 增加更多效果，例如動畫、延遲等。多級選單一般常使用 JavaScript 達成，不過透過 CSS 也能做出簡單的多級選單。</p>
 <a id="more"></a>
 
-<h3>HTML</h3>
-<figure class="highlight lang-html"><table><tr><td class="gutter"><pre>1
+<h3 id="HTML">HTML</h3>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1069,8 +1199,8 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword
 </pre></td></tr></table></figure>
 
 <p>選單的 HTML 如上，所有的選單物件都是可點選的連結，理論上無限層級。</p>
-<h3>CSS</h3>
-<figure class="highlight lang-css"><table><tr><td class="gutter"><pre>1
+<h3 id="CSS">CSS</h3>
+<figure class="highlight css"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1098,44 +1228,51 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword
 26
 27
 </pre></td><td class="code"><pre><span class="tag">ul</span> <span class="tag">li</span> <span class="rules">{
-  <span class="rule"><span class="attribute">position</span>:<span class="value"> relative;</span></span> <span class="comment">/* 使子選單依照母選單的座標顯示 */</span>
+  <span class="rule"><span class="attribute">position</span>:<span class="value"> relative</span></span>; <span class="comment">/* 使子選單依照母選單的座標顯示 */</span>
 <span class="rule">}</span></span>
 <span class="comment">/* 設定母選單的連結樣式 */</span>
 <span class="tag">ul</span> <span class="tag">li</span> <span class="tag">a</span><span class="rules">{
-  <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">url(detail.png)</span>;</span></span>
+  <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">url(detail.png)</span></span></span>;
 <span class="rule">}</span></span>
 <span class="comment">/* 當母選單下沒有子選單時，也就是說只有一個連結時，隱藏 detail.png */</span>
 <span class="tag">ul</span> <span class="tag">li</span> <span class="tag">a</span><span class="pseudo">:only-child</span><span class="rules">{
-  <span class="rule"><span class="attribute">background</span>:<span class="value"> none;</span></span>
+  <span class="rule"><span class="attribute">background</span>:<span class="value"> none</span></span>;
 <span class="rule">}</span></span>
 <span class="tag">ul</span> <span class="tag">li</span><span class="pseudo">:hover</span> &gt; <span class="tag">ul</span> <span class="rules">{
-  <span class="rule"><span class="attribute">display</span>:<span class="value"> block;</span></span> <span class="comment">/* 滑鼠滑入母選單後，顯示子選單 */</span>
+  <span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>; <span class="comment">/* 滑鼠滑入母選單後，顯示子選單 */</span>
 <span class="rule">}</span></span>
 <span class="comment">/* 二級選單顯示於一級選單的正下方 */</span>
 <span class="tag">ul</span> <span class="tag">ul</span> <span class="rules">{
-  <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute;</span></span>
-  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">100</span>%;</span></span>
-  <span class="rule"><span class="attribute">list-style</span>:<span class="value"> none;</span></span>
-  <span class="rule"><span class="attribute">display</span>:<span class="value"> none;</span></span>
+  <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;
+  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">100</span>%</span></span>;
+  <span class="rule"><span class="attribute">list-style</span>:<span class="value"> none</span></span>;
+  <span class="rule"><span class="attribute">display</span>:<span class="value"> none</span></span>;
 <span class="rule">}</span></span>
 <span class="comment">/* 三級選單則顯示於二級選單的右方 */</span>
 <span class="tag">ul</span> <span class="tag">ul</span> <span class="tag">ul</span> <span class="rules">{
-  <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute;</span></span>
-  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">100</span>%;</span></span>
-  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">0</span>;</span></span>
+  <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;
+  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">100</span>%</span></span>;
+  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">0</span></span></span>;
 <span class="rule">}</span></span>
 </pre></td></tr></table></figure>
 
 <p>這樣就完成了所有步驟，不需要繁複的 JavaScript，是不是很簡單呢？</p>
 <p><a href="http://zespia.tw/demo/css-multi-level-menu/">範例</a>｜<a href="http://zespia.tw/demo/css-multi-level-menu/example.zip">下載</a></p>
-<h2>後記</h2>
+<h2 id=" 後記 ">後記</h2>
 <p><img src="http://i.minus.com/ibbaIEKvPdl6Pc.jpg" alt=""></p>
 <p>寫到最後反而發現詞窮，看來我真不是寫文章的料。總而言之，這是「大概很簡單」教學系列的第二彈，感謝你的收看！</p>
 ]]></content>
-    <category scheme="http://zespia.tw/tags/CSS/" term="CSS"/>
+    <summary type="html"><![CDATA[<p><img src="http://i.minus.com/ibx37Gknqf5wtK.PNG" alt=" 一般常見的選單 "></p>
+<p>選單常見於我們的生活當中，通常用於整理一系列的指令，簡化複雜的程序，使介面看起來更加友善。當應用程式愈複雜，功能愈多時，通常會利用多級選單將類似的指令組織成一個子選單。</p>
+<p>一般網頁常見到二級選單，利用 CSS 即可達成，有些會透過 JavaScript 增加更多效果，例如動畫、延遲等。多級選單一般常使用 JavaScript 達成，不過透過 CSS 也能做出簡單的多級選單。</p>
+]]></summary>
+    
+      <category term="CSS" scheme="http://zespia.tw/tags/CSS/"/>
+    
   </entry>
+  
   <entry>
-    <title type="html"><![CDATA[如何利用 jQuery 製作頁籤？]]></title>
+    <title><![CDATA[如何利用 jQuery 製作頁籤？]]></title>
     <link href="http://zespia.tw/blog/2012/01/21/jquery-tabs/"/>
     <id>http://zespia.tw/blog/2012/01/21/jquery-tabs/</id>
     <published>2012-01-21T10:10:00.000Z</published>
@@ -1146,9 +1283,9 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword
 <a id="more"></a>
 
 <p><strong>本文以 jQuery 1.7.1 為例。</strong></p>
-<h2>基礎</h2>
-<h3>HTML</h3>
-<figure class="highlight lang-html"><table><tr><td class="gutter"><pre>1
+<h2 id=" 基礎 ">基礎</h2>
+<h3 id="HTML">HTML</h3>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1175,8 +1312,8 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword
 </pre></td></tr></table></figure>
 
 <p>以<code>ul#tabs</code>當作標籤，而<code>#contents</code>內則是頁籤內容。我盡可能簡化 HTML 中不必要的欄位，其他功能都將在 JS 中實現。</p>
-<h3>CSS</h3>
-<figure class="highlight lang-css"><table><tr><td class="gutter"><pre>1
+<h3 id="CSS">CSS</h3>
+<figure class="highlight css"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1208,40 +1345,40 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword
 30
 31
 </pre></td><td class="code"><pre><span class="id">#tabs</span> <span class="tag">li</span><span class="rules">{
-  <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#ddd</span>;</span></span>
-  <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">1</span>px solid <span class="hexcolor">#ccc</span>;</span></span>
-  <span class="rule"><span class="attribute">border-bottom</span>:<span class="value"> none;</span></span>
-  <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block;</span></span>
-  <span class="rule"><span class="attribute">margin-right</span>:<span class="value"> <span class="number">5</span>px;</span></span>
-  <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">5</span>px <span class="number">10</span>px;</span></span>
-  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#999</span>;</span></span>
-  <span class="rule"><span class="attribute">cursor</span>:<span class="value"> pointer;</span></span>
+  <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#ddd</span></span></span>;
+  <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">1</span>px solid <span class="hexcolor">#ccc</span></span></span>;
+  <span class="rule"><span class="attribute">border-bottom</span>:<span class="value"> none</span></span>;
+  <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
+  <span class="rule"><span class="attribute">margin-right</span>:<span class="value"> <span class="number">5</span>px</span></span>;
+  <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">5</span>px <span class="number">10</span>px</span></span>;
+  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#999</span></span></span>;
+  <span class="rule"><span class="attribute">cursor</span>:<span class="value"> pointer</span></span>;
 <span class="rule">}</span></span>
 <span class="id">#tabs</span> <span class="tag">li</span><span class="pseudo">:hover</span><span class="rules">{
-  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#666</span>;</span></span>
+  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#666</span></span></span>;
 <span class="rule">}</span></span>
 <span class="id">#tabs</span> <span class="tag">li</span><span class="class">.enable</span><span class="rules">{
-  <span class="rule"><span class="attribute">border-bottom</span>:<span class="value"> <span class="number">1</span>px solid <span class="hexcolor">#ddd</span>;</span></span>
-  <span class="rule"><span class="attribute">margin-bottom</span>:<span class="value"> -<span class="number">1</span>px;</span></span>
-  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#333</span>;</span></span>
+  <span class="rule"><span class="attribute">border-bottom</span>:<span class="value"> <span class="number">1</span>px solid <span class="hexcolor">#ddd</span></span></span>;
+  <span class="rule"><span class="attribute">margin-bottom</span>:<span class="value"> -<span class="number">1</span>px</span></span>;
+  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#333</span></span></span>;
 <span class="rule">}</span></span>
 <span class="id">#contents</span><span class="rules">{
-  <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#ddd</span>;</span></span>
-  <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">1</span>px solid <span class="hexcolor">#ccc</span>;</span></span>
-  <span class="rule"><span class="attribute">box-shadow</span>:<span class="value"> <span class="number">0</span> <span class="number">0</span> <span class="number">16</span>px <span class="hexcolor">#ccc</span>;</span></span>
+  <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#ddd</span></span></span>;
+  <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">1</span>px solid <span class="hexcolor">#ccc</span></span></span>;
+  <span class="rule"><span class="attribute">box-shadow</span>:<span class="value"> <span class="number">0</span> <span class="number">0</span> <span class="number">16</span>px <span class="hexcolor">#ccc</span></span></span>;
 <span class="rule">}</span></span>
 <span class="id">#contents</span> &gt; <span class="tag">div</span><span class="rules">{
-  <span class="rule"><span class="attribute">display</span>:<span class="value"> none;</span></span>
-  <span class="rule"><span class="attribute">text-align</span>:<span class="value"> justify;</span></span>
-  <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">10</span>px <span class="number">15</span>px;</span></span>
+  <span class="rule"><span class="attribute">display</span>:<span class="value"> none</span></span>;
+  <span class="rule"><span class="attribute">text-align</span>:<span class="value"> justify</span></span>;
+  <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">10</span>px <span class="number">15</span>px</span></span>;
 <span class="rule">}</span></span>
 <span class="id">#contents</span> &gt; <span class="tag">div</span><span class="pseudo">:first-of-type</span><span class="rules">{
-  <span class="rule"><span class="attribute">display</span>:<span class="value"> block;</span></span>
+  <span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;
 <span class="rule">}</span></span>
 </pre></td></tr></table></figure>
 
-<h3>JS</h3>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<h3 id="JS">JS</h3>
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1255,13 +1392,13 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword
 12
 13
 14
-</pre></td><td class="code"><pre>(<span class="keyword">function</span>($){
+</pre></td><td class="code"><pre>(<span class="function"><span class="keyword">function</span><span class="params">($)</span>{</span>
   <span class="comment">// 用 each 遍歷頁籤</span>
-  $(<span class="string">'#tabs li'</span>).each(<span class="keyword">function</span>(i){
+  $(<span class="string">'#tabs li'</span>).each(<span class="function"><span class="keyword">function</span><span class="params">(i)</span>{</span>
     <span class="keyword">var</span> _i = i;
 
     <span class="comment">// 綁定 click 事件到頁籤上，若要改為滑鼠移入切換頁籤的話，將 click 改為 mouseenter</span>
-    $(<span class="keyword">this</span>).click(<span class="keyword">function</span>(){
+    $(<span class="keyword">this</span>).click(<span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
       <span class="comment">// 移除其他頁籤的 class，並將 class 新增至所選頁籤</span>
       $(<span class="keyword">this</span>).parent().children().removeClass(<span class="string">'enable'</span>).eq(_i).addClass(<span class="string">'enable'</span>);
       <span class="comment">// 隱藏其他頁籤的內容，並顯示所選頁籤的內容</span>
@@ -1275,10 +1412,10 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword
 <p>當事件觸發時，移除其它頁籤的<code>class</code>，隱藏其他頁籤的內容，並將<code>class</code>新增至所選頁籤，顯示所選頁籤的內容。</p>
 <p>建議把 JS 放在頁尾（footer），可使頁面載入完成後才載入 JS，避免出現錯誤。</p>
 <p><a href="http://zespia.tw/demo/jquery-tabs/basic/">範例</a>｜<br><a href="http://zespia.tw/demo/jquery-tabs/basic/example.zip">下載</a></p>
-<h2>進階</h2>
+<h2 id=" 進階 ">進階</h2>
 <p>只有單純的顯示隱藏似乎太無趣了？那就加點動畫吧！只要稍微變更基礎結構，就能讓頁籤看起來更加華麗！</p>
-<h3>HTML</h3>
-<figure class="highlight lang-html"><table><tr><td class="gutter"><pre>1
+<h3 id="HTML-1">HTML</h3>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1309,8 +1446,8 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword
 </pre></td></tr></table></figure>
 
 <p>進階篇的 HTML 結構與基礎篇只有一點小差別，僅在原本的<code>#contents</code>的區塊外又包了一層<code>#container</code>。</p>
-<h3>CSS</h3>
-<figure class="highlight lang-css"><table><tr><td class="gutter"><pre>1
+<h3 id="CSS-1">CSS</h3>
+<figure class="highlight css"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1352,52 +1489,52 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword
 40
 41
 </pre></td><td class="code"><pre><span class="id">#tabs</span><span class="rules">{
-  <span class="rule"><span class="attribute">position</span>:<span class="value"> relative;</span></span>
-  <span class="rule"><span class="attribute">z-index</span>:<span class="value"> <span class="number">1</span>;</span></span>
+  <span class="rule"><span class="attribute">position</span>:<span class="value"> relative</span></span>;
+  <span class="rule"><span class="attribute">z-index</span>:<span class="value"> <span class="number">1</span></span></span>;
 <span class="rule">}</span></span>
 <span class="id">#tabs</span> <span class="tag">li</span><span class="rules">{
-  <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#ddd</span>;</span></span>
-  <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">1</span>px solid <span class="hexcolor">#ccc</span>;</span></span>
-  <span class="rule"><span class="attribute">border-bottom</span>:<span class="value"> none;</span></span>
-  <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block;</span></span>
-  <span class="rule"><span class="attribute">margin-right</span>:<span class="value"> <span class="number">5</span>px;</span></span>
-  <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">5</span>px <span class="number">10</span>px;</span></span>
-  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#999</span>;</span></span>
-  <span class="rule"><span class="attribute">cursor</span>:<span class="value"> pointer;</span></span>
+  <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#ddd</span></span></span>;
+  <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">1</span>px solid <span class="hexcolor">#ccc</span></span></span>;
+  <span class="rule"><span class="attribute">border-bottom</span>:<span class="value"> none</span></span>;
+  <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;
+  <span class="rule"><span class="attribute">margin-right</span>:<span class="value"> <span class="number">5</span>px</span></span>;
+  <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">5</span>px <span class="number">10</span>px</span></span>;
+  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#999</span></span></span>;
+  <span class="rule"><span class="attribute">cursor</span>:<span class="value"> pointer</span></span>;
 <span class="rule">}</span></span>
 <span class="id">#tabs</span> <span class="tag">li</span><span class="pseudo">:hover</span><span class="rules">{
-  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#666</span>;</span></span>
+  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#666</span></span></span>;
 <span class="rule">}</span></span>
 <span class="id">#tabs</span> <span class="tag">li</span><span class="class">.enable</span><span class="rules">{
-  <span class="rule"><span class="attribute">border-bottom</span>:<span class="value"> <span class="number">1</span>px solid <span class="hexcolor">#ddd</span>;</span></span>
-  <span class="rule"><span class="attribute">margin-bottom</span>:<span class="value"> -<span class="number">1</span>px;</span></span>
-  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#333</span>;</span></span>
+  <span class="rule"><span class="attribute">border-bottom</span>:<span class="value"> <span class="number">1</span>px solid <span class="hexcolor">#ddd</span></span></span>;
+  <span class="rule"><span class="attribute">margin-bottom</span>:<span class="value"> -<span class="number">1</span>px</span></span>;
+  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#333</span></span></span>;
 <span class="rule">}</span></span>
 <span class="id">#container</span><span class="rules">{
-  <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#ddd</span>;</span></span>
-  <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">1</span>px solid <span class="hexcolor">#ccc</span>;</span></span>
-  <span class="rule"><span class="attribute">box-shadow</span>:<span class="value"> <span class="number">0</span> <span class="number">0</span> <span class="number">16</span>px <span class="hexcolor">#ccc</span>;</span></span>
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">500</span>px;</span></span>
-  <span class="rule"><span class="attribute">position</span>:<span class="value"> relative;</span></span>
-  <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden;</span></span>
+  <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#ddd</span></span></span>;
+  <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">1</span>px solid <span class="hexcolor">#ccc</span></span></span>;
+  <span class="rule"><span class="attribute">box-shadow</span>:<span class="value"> <span class="number">0</span> <span class="number">0</span> <span class="number">16</span>px <span class="hexcolor">#ccc</span></span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">500</span>px</span></span>;
+  <span class="rule"><span class="attribute">position</span>:<span class="value"> relative</span></span>;
+  <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;
 <span class="rule">}</span></span>
 <span class="id">#contents</span><span class="rules">{
-  <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute;</span></span>
-  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">0</span>;</span></span>
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">2000</span>px;</span></span> <span class="comment">/* 內容寬度 * 頁籤數 */</span>
+  <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;
+  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">0</span></span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">2000</span>px</span></span>; <span class="comment">/* 內容寬度 * 頁籤數 */</span>
 <span class="rule">}</span></span>
 <span class="id">#contents</span> &gt; <span class="tag">div</span><span class="rules">{
-  <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">10</span>px <span class="number">15</span>px;</span></span>
-  <span class="rule"><span class="attribute">text-align</span>:<span class="value"> justify;</span></span>
-  <span class="rule"><span class="attribute">float</span>:<span class="value"> left;</span></span>
-  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">470</span>px;</span></span> <span class="comment">/* 內容寬度 - 左右 padding */</span>
+  <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">10</span>px <span class="number">15</span>px</span></span>;
+  <span class="rule"><span class="attribute">text-align</span>:<span class="value"> justify</span></span>;
+  <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;
+  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">470</span>px</span></span>; <span class="comment">/* 內容寬度 - 左右 padding */</span>
 <span class="rule">}</span></span>
 </pre></td></tr></table></figure>
 
 <p><code>#contents</code>改為<code>absolute</code>（絕對定位），並設定寬度為「內容寬度 × 頁籤數量」。<code>#contents</code>內的<code>div</code>別忘了加上<code>float: left;</code>，如此一來頁籤內容才會排成一橫列，將寬度設為「內容寬度 － 左右 padding」。</p>
 <p>進階篇若少了 JS 的輔助，則無法正常顯示，除非事先設定<code>#container</code>的高度。</p>
-<h3>JS</h3>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<h3 id="JS-1">JS</h3>
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1429,23 +1566,23 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword
 30
 31
 32
-</pre></td><td class="code"><pre>(<span class="keyword">function</span>($){
+</pre></td><td class="code"><pre>(<span class="function"><span class="keyword">function</span><span class="params">($)</span>{</span>
   <span class="keyword">var</span> trigger = <span class="literal">false</span>;
 
   <span class="comment">// 使內容高度等於第一頁籤內容高度 + 上下 padding</span>
   $(<span class="string">'#container'</span>).css(<span class="string">'height'</span>, $(<span class="string">'#contents div'</span>).eq(<span class="number">0</span>).height() + <span class="number">20</span>);
 
   <span class="comment">// 用 each 遍歷頁籤</span>
-  <span class="keyword">var</span> tabs = $(<span class="string">'#tabs li'</span>).each(<span class="keyword">function</span>(i){
+  <span class="keyword">var</span> tabs = $(<span class="string">'#tabs li'</span>).each(<span class="function"><span class="keyword">function</span><span class="params">(i)</span>{</span>
     <span class="keyword">var</span> _i = i;
 
     <span class="comment">// 為每個頁籤新增 tabid 屬性</span>
     <span class="comment">// 綁定 click 事件到頁籤上，若要改為滑鼠移入切換頁籤的話，將 click 改為 mouseenter</span>
-    $(<span class="keyword">this</span>).attr(<span class="string">'tabid'</span>, i).click(<span class="keyword">function</span>(){
+    $(<span class="keyword">this</span>).attr(<span class="string">'tabid'</span>, i).click(<span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
       <span class="comment">// 當 trigger 為 false 時才作用，避免重複點按造成瀏覽器 crash</span>
       <span class="keyword">if</span> (trigger == <span class="literal">false</span>){
         <span class="comment">// 取得目前的 tabid，以計算動畫的間距值（內容寬度 * 頁籤間距）</span>
-        <span class="keyword">var</span> now = parseInt($(<span class="keyword">this</span>).parent().children(<span class="string">'.enable'</span>).attr(<span class="string">'tabid'</span>)),
+        <span class="keyword">var</span> now = <span class="built_in">parseInt</span>($(<span class="keyword">this</span>).parent().children(<span class="string">'.enable'</span>).attr(<span class="string">'tabid'</span>)),
           gap = <span class="number">500</span> * (_i - now);
           trigger = <span class="literal">true</span>;
 
@@ -1454,7 +1591,7 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword
         <span class="comment">// 使內容移動一定間距</span>
         $(<span class="string">'#contents'</span>).animate({left: <span class="string">'-='</span>+gap}, <span class="number">500</span>);
         <span class="comment">// 使內容高度符合所選頁籤內容的高度（所選頁籤內容高度 + 上下 padding），動畫全部結束後，使 trigger 值返回 false</span>
-        $(<span class="string">'#container'</span>).animate({height: $(<span class="string">'#contents'</span>).children().eq(_i).height() + <span class="number">20</span>}, <span class="number">500</span>, <span class="keyword">function</span>(){
+        $(<span class="string">'#container'</span>).animate({height: $(<span class="string">'#contents'</span>).children().eq(_i).height() + <span class="number">20</span>}, <span class="number">500</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
           trigger = <span class="literal">false</span>;
         });
       }
@@ -1469,14 +1606,21 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword
 <p>當動畫全部結束後，返回<code>trigger = false</code>，讓使用者能夠再度操作頁籤。</p>
 <p>如此一來，平凡樸素的頁籤便多了左右滑動的動畫，如果想要更加華麗的話，可以使用<a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank">jQuery Easing Plugin</a>。</p>
 <p><a href="http://zespia.tw/demo/jquery-tabs/advanced/">範例</a>｜<br><a href="http://zespia.tw/demo/jquery-tabs/advanced/example.zip">下載</a></p>
-<h2>後記</h2>
+<h2 id=" 後記 ">後記</h2>
 <p><img src="http://i.minus.com/ibiEDX70iCDveF.PNG" alt=""></p>
 <p>最後的成果如上圖，當然細部的樣式、動畫請自行設定。希望這篇文章簡單易懂（？）的文章能夠幫助到你。最近預計再寫一篇 CSS Only 的多級選單教學，請拭目以待吧！</p>
 ]]></content>
-    <category scheme="http://zespia.tw/tags/JavaScript/" term="JavaScript"/>
+    <summary type="html"><![CDATA[<p><img src="http://i.minus.com/i3hFGFugcShjF.jpg" alt=" 在文章中放入不相干的圖片好像已經成為定番？隨便啦 "></p>
+<p>最近花了一週的時間，終於完成 Octopress 的佈景主題，並搬移舊站（zespia.twbbs.org）的文章及留言，發現自已以前的文章實在有夠中二，看得連自己都想揍螢幕，於是偷偷撤下了部分文章。</p>
+<p>為了慶祝新站落成，便決定寫一篇超級簡易（大概啦）的 jQuery 頁籤製作教學，<del>懷著感恩的心看吧！</del></p>
+]]></summary>
+    
+      <category term="JavaScript" scheme="http://zespia.tw/tags/JavaScript/"/>
+    
   </entry>
+  
   <entry>
-    <title type="html"><![CDATA[Hello Octopress!]]></title>
+    <title><![CDATA[Hello Octopress!]]></title>
     <link href="http://zespia.tw/blog/2012/01/14/hello-octopress/"/>
     <id>http://zespia.tw/blog/2012/01/14/hello-octopress/</id>
     <published>2012-01-14T07:52:00.000Z</published>
@@ -1505,81 +1649,81 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword
 <p>以下將簡單介紹 <a href="http://octopress.org/" target="_blank">Octopress</a> 的安裝與使用。</p>
 <a id="more"></a>
 
-<h2>安裝</h2>
-<h3>Ruby</h3>
+<h2 id=" 安裝 ">安裝</h2>
+<h3 id="Ruby">Ruby</h3>
 <p><a href="http://octopress.org/" target="_blank">Octopress</a> 的安裝非常簡單，首先你需要準備 <a href="http://www.ruby-lang.org/zh_TW/" target="_blank">Ruby</a> 的環境，以下以 Mac 為示範：</p>
 <p><strong>請務必照著步驟做。</strong></p>
 <p>1. 安裝 <a href="http://itunes.apple.com/us/app/xcode/id448457090?mt=12" target="_blank">Xcode</a>（建議使用<strong>4.1</strong>版），或直接安裝 <a href="https://github.com/kennethreitz/osx-gcc-installer" target="_blank">OSX GCC Installer</a>。</p>
 <p>2. 安裝 <a href="http://mxcl.github.com/homebrew/" target="_blank">Homebrew</a></p>
-<pre><code><span class="comment">$</span> <span class="comment">ruby</span> <span class="literal">-</span><span class="comment">e</span> <span class="comment">"$(curl</span> <span class="literal">-</span><span class="comment">fsSL</span> <span class="comment">https://raw</span>.<span class="comment">github</span>.<span class="comment">com/gist/323731)"</span>
-<span class="comment">$</span> <span class="comment">brew</span> <span class="comment">update</code></pre>
-<p>3. 安裝 <a href="http://git-scm.com/" target="_blank">Git</a></p>
-<pre><code><span class="variable">$ </span>brew install git</code></pre>
-<p>別忘了 Mac 上有 <a href="http://www.sourcetreeapp.com/" target="_blank">SourceTree</a> 和 <a href="http://gitx.laullon.com/" target="_blank">GitX</a> 這兩套不錯的 Git GUI 可以使用！</p>
+<pre><code>$ ruby <span class="operator">-e</span> <span class="string">"<span class="variable">$(curl -fsSL https://raw.github.com/gist/323731)</span>"</span>
+$ brew update
+</code></pre><p>3. 安裝 <a href="http://git-scm.com/" target="_blank">Git</a></p>
+<pre><code><span class="variable">$ </span>brew install git
+</code></pre><p>別忘了 Mac 上有 <a href="http://www.sourcetreeapp.com/" target="_blank">SourceTree</a> 和 <a href="http://gitx.laullon.com/" target="_blank">GitX</a> 這兩套不錯的 Git GUI 可以使用！</p>
 <p>4. 安裝 <a href="http://beginrescueend.com/" target="_blank">RVM</a></p>
-<pre><code><span class="char">$ </span>bash &lt; &lt;(curl -s <span class="method">https:</span>//rvm.beginrescueend.com/install/rvm)
-<span class="char">$ </span>echo <span class="comment">"[[ -s $HOME/.rvm/scripts/rvm ]] &amp;&amp; source $HOME/.rvm/scripts/rvm"</span> &gt;&gt; ~/.profile <span class="char">$ </span>. ~/.profile
-<span class="char">$ </span>source ~/.profile</code></pre>
-<p>5. 安裝 <a href="http://www.ruby-lang.org/zh_TW/" target="_blank">Ruby</a>（<a href="http://octopress.org/" target="_blank">Octopress</a> 要求使用<strong>1.9.2</strong>版）</p>
-<pre><code><span class="comment">$</span> <span class="comment">rvm</span> <span class="comment">install</span> <span class="comment">1</span>.<span class="comment">9</span>.<span class="comment">2</span>
-<span class="comment">$</span> <span class="comment">rvm</span> <span class="comment">1</span>.<span class="comment">9</span>.<span class="comment">2</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">default</code></pre>
-<p>若是安裝失敗的話，請試著使用以下方式安裝：</p>
+<pre><code>$ bash &lt; &lt;(curl <span class="operator">-s</span> https://rvm.beginrescueend.com/install/rvm)
+$ <span class="built_in">echo</span> <span class="string">"[[ -s <span class="variable">$HOME</span>/.rvm/scripts/rvm ]] &amp;&amp; source <span class="variable">$HOME</span>/.rvm/scripts/rvm"</span> &gt;&gt; ~/.profile $ . ~/.profile
+$ <span class="built_in">source</span> ~/.profile
+</code></pre><p>5. 安裝 <a href="http://www.ruby-lang.org/zh_TW/" target="_blank">Ruby</a>（<a href="http://octopress.org/" target="_blank">Octopress</a> 要求使用<strong>1.9.2</strong>版）</p>
+<pre><code><span class="variable">$ </span>rvm install <span class="number">1.9</span>.<span class="number">2</span>
+<span class="variable">$ </span>rvm <span class="number">1.9</span>.<span class="number">2</span> --default
+</code></pre><p>若是安裝失敗的話，請試著使用以下方式安裝：</p>
 <pre><code><span class="char">$ </span>rvm remove <span class="number">1.9</span><span class="number">.2</span>
 <span class="char">$ </span>export <span class="class">CC</span>=/usr/bin/gcc-<span class="number">4.2</span>
 <span class="char">$ </span>brew install readline
 <span class="char">$ </span>brew link readline
-<span class="char">$ </span>rvm install <span class="number">1.9</span><span class="number">.2</span> --with-readline-dir=<span class="char">$r</span>vm_path/usr</code></pre>
-<p>6. 安裝 <a href="http://pow.cx/" target="_blank">Pow</a></p>
-<pre><code>$ curl get<span class="variable">.pow</span><span class="variable">.cx</span> | sh</code></pre>
-<p><em>（以上安裝步驟參考自<a href="http://killtw.k2ds.net/blog/2011/10/29/how-to-install-rails/" target="_blank">我這樣安裝 Rails - 佑樣の技術筆記</a>）</em></p>
-<h3>Octopress</h3>
+<span class="char">$ </span>rvm install <span class="number">1.9</span><span class="number">.2</span> --with-readline-dir=<span class="char">$r</span>vm_path/usr
+</code></pre><p>6. 安裝 <a href="http://pow.cx/" target="_blank">Pow</a></p>
+<pre><code>$ curl get<span class="preprocessor">.pow</span><span class="preprocessor">.cx</span> | sh
+</code></pre><p><em>（以上安裝步驟參考自<a href="http://killtw.k2ds.net/blog/2011/10/29/how-to-install-rails/" target="_blank">我這樣安裝 Rails - 佑樣の技術筆記</a>）</em></p>
+<h3 id="Octopress">Octopress</h3>
 <p>到目前為止，只不過安裝好 <a href="http://www.ruby-lang.org/zh_TW/" target="_blank">Ruby</a> 罷了，接著才是重頭戲──<a href="http://octopress.org/" target="_blank">Octopress</a> 登場！</p>
 <p>1. 安裝 <a href="https://github.com/sstephenson/rbenv" target="_blank">rbenv</a></p>
 <pre><code><span class="variable">$ </span>brew install rbenv
-<span class="variable">$ </span>brew install ruby-build</code></pre>
-<p>2. 下載 <a href="http://octopress.org/" target="_blank">Octopress</a></p>
-<pre><code><span class="char">$ </span>git clone <span class="method">git:</span>//github.com/imathis/octopress.git octopress
-<span class="char">$ </span>cd octopress</code></pre>
-<p>3. 安裝相關套件</p>
+<span class="variable">$ </span>brew install ruby-build
+</code></pre><p>2. 下載 <a href="http://octopress.org/" target="_blank">Octopress</a></p>
+<pre><code>$ git <span class="keyword">clone</span> git:<span class="comment">//github.com/imathis/octopress.git octopress</span>
+$ cd octopress
+</code></pre><p>3. 安裝相關套件</p>
 <pre><code><span class="variable">$ </span>gem install bundler
-<span class="variable">$ </span>bundle install</code></pre>
-<p>4. 安裝預設佈景主題</p>
-<pre><code><span class="variable">$ </span>rake install</code></pre>
-<p>如此一來就安裝好 <a href="http://octopress.org/" target="_blank">Octopress</a> 了，你可以輸入<code>rake preview</code>從<code>localhost:4000</code>預覽，或是透過 <a href="http://pow.cx/" target="_blank">Pow</a> 預覽：</p>
-<pre><code><span class="char">$ </span>cd ~/.pow
-<span class="char">$ </span>ln -s /path-to-octopress</code></pre>
-<h2>發佈</h2>
+<span class="variable">$ </span>bundle install
+</code></pre><p>4. 安裝預設佈景主題</p>
+<pre><code><span class="variable">$ </span>rake install
+</code></pre><p>如此一來就安裝好 <a href="http://octopress.org/" target="_blank">Octopress</a> 了，你可以輸入<code>rake preview</code>從<code>localhost:4000</code>預覽，或是透過 <a href="http://pow.cx/" target="_blank">Pow</a> 預覽：</p>
+<pre><code>$ cd ~<span class="subst">/</span><span class="built_in">.</span>pow
+$ ln <span class="attribute">-s</span> /path<span class="attribute">-to</span><span class="attribute">-octopress</span>
+</code></pre><h2 id=" 發佈 ">發佈</h2>
 <p>1. 在 <a href="https://github.com/" target="_blank">GitHub</a> 建立名為<code>http://yourname.github.com</code>的 repository，<code>yourname</code>必須與你的使用者名稱相同，否則會建立專案頁面。</p>
 <p>2. 設定 <a href="https://github.com/" target="_blank">GitHub</a> 資料，並依照指示輸入 GitHub 頁面的 repository 網址。</p>
-<pre><code><span class="variable">$ </span>rake setup_github_pages</code></pre>
-<p>3. 建立網誌資料</p>
-<pre><code><span class="variable">$ </span>rake generate</code></pre>
-<p>4. 發佈至 <a href="https://github.com/" target="_blank">GitHub</a></p>
-<pre><code><span class="variable">$ </span>rake deploy</code></pre>
-<p>5. 建立 commit</p>
+<pre><code><span class="variable">$ </span>rake setup_github_pages
+</code></pre><p>3. 建立網誌資料</p>
+<pre><code><span class="variable">$ </span>rake generate
+</code></pre><p>4. 發佈至 <a href="https://github.com/" target="_blank">GitHub</a></p>
+<pre><code><span class="variable">$ </span>rake deploy
+</code></pre><p>5. 建立 commit</p>
 <pre><code><span class="variable">$ </span>git add .
 <span class="variable">$ </span>git commit -m <span class="string">'your message'</span>
-<span class="variable">$ </span>git push origin source</code></pre>
-<p>過幾分鐘後 <a href="https://github.com/" target="_blank">GitHub</a> 就會寄信通知你專業建立完成，連上<code>yourname.github.com</code>就能見到你的 <a href="http://octopress.org/" target="_blank">Octopress</a> 囉！</p>
+<span class="variable">$ </span>git push origin source
+</code></pre><p>過幾分鐘後 <a href="https://github.com/" target="_blank">GitHub</a> 就會寄信通知你專業建立完成，連上<code>yourname.github.com</code>就能見到你的 <a href="http://octopress.org/" target="_blank">Octopress</a> 囉！</p>
 <p>若要進一步設定，請編輯 <a href="http://octopress.org/" target="_blank">Octopress</a> 根目錄中的<code>_config.yml</code>。</p>
-<h3>自定網域</h3>
+<h3 id=" 自定網域 ">自定網域</h3>
 <p>在<code>source/CNAME</code>輸入網域名稱</p>
-<pre><code>$ <span class="keyword">echo</span> <span class="string">'your-domain.com'</span> &gt;&gt; source/CNAME</code></pre>
-<p>若網域名稱如<code>www.example.com</code>，只需要新增 CNAME 記錄<code>yourname.github.com</code>即可；若如<code>example.com</code>，則必須加入 A 記錄<code>207.97.227.245</code>，請勿使用 CNAME 記錄。</p>
+<pre><code>$ <span class="built_in">echo</span> <span class="string">'your-domain.com'</span> &gt;&gt; <span class="built_in">source</span>/CNAME
+</code></pre><p>若網域名稱如<code>www.example.com</code>，只需要新增 CNAME 記錄<code>yourname.github.com</code>即可；若如<code>example.com</code>，則必須加入 A 記錄<code>207.97.227.245</code>，請勿使用 CNAME 記錄。</p>
 <p><em>（以上安裝步驟參考自 <a href="http://octopress.org/docs/" target="_blank">Octopress Documentation</a>）</em></p>
-<h2>寫作</h2>
+<h2 id=" 寫作 ">寫作</h2>
 <p>雖然安裝看起來很麻煩，不過寫作文章相當簡單！</p>
-<h3>文章</h3>
-<pre><code><span class="variable">$ </span>rake new_post[<span class="string">'title'</span>]</code></pre>
-<p>輸入以上代碼後，就可在<code>source/_posts</code>見到<code>yyyy-mm-dd-title.markdown</code>格式的文件，以及以下內容：</p>
-<pre><code><span class="comment">---</span>
-<span class="title">layout</span>: post
-<span class="title">title</span>: <span class="string">"Post Title"</span>
-<span class="title">date</span>: <span class="number">2012</span>-<span class="number">01</span>-<span class="number">14</span> <span class="number">15</span>:<span class="number">52</span>
-<span class="title">comments</span>: true
-<span class="title">categories</span>:
-<span class="comment">---</span></code></pre>
-<p>你可透過以下幾種方式來編輯分類：</p>
+<h3 id=" 文章 ">文章</h3>
+<pre><code><span class="variable">$ </span>rake new_post[<span class="string">'title'</span>]
+</code></pre><p>輸入以上代碼後，就可在<code>source/_posts</code>見到<code>yyyy-mm-dd-title.markdown</code>格式的文件，以及以下內容：</p>
+<pre><code><span class="bullet">---
+</span>layout: post
+title: "Post Title"
+date: 2012-01-14 15:52
+comments: true
+<span class="header">categories:
+---</span>
+</code></pre><p>你可透過以下幾種方式來編輯分類：</p>
 <pre><code><span class="header"># 單一分類</span>
 categories: Sass
 <span class="header"># 多重分類 (1)</span>
@@ -1588,51 +1732,82 @@ categories: [CSS3, Sass, Media Queries]
 categories:
 <span class="bullet">- </span>CSS3
 <span class="bullet">- </span>Sass
-<span class="bullet">- </span>Media Queries</code></pre>
-<p><a href="http://octopress.org/" target="_blank">Octopress</a> 完整支援 <a href="http://markdown.tw/" target="_blank">Markdown</a> 語法，另外可利用<code>&lt;!-- more --&gt;</code>達成「詳閱全文」的效果。</p>
-<h3>分頁</h3>
+<span class="bullet">- </span>Media Queries
+</code></pre><p><a href="http://octopress.org/" target="_blank">Octopress</a> 完整支援 <a href="http://markdown.tw/" target="_blank">Markdown</a> 語法，另外可利用<code>&lt;!-- more --&gt;</code>達成「詳閱全文」的效果。</p>
+<h3 id=" 分頁 ">分頁</h3>
 <pre><code><span class="comment"># 一般分頁    </span>
 <span class="variable">$ </span>rake new_page[your-page]
 <span class="comment"># 子分頁</span>
-<span class="variable">$ </span>rake new_page[your-page/sub-page.html]</code></pre>
-<p>輸入以上代碼後，就可在<code>source/your-page</code>中見到<code>index.markdown</code>，以及以下內容：</p>
-<pre><code>---
-<span class="method">layout:</span> page
-<span class="method">title:</span> <span class="comment">"Page Title"</span>
-<span class="method">date:</span> <span class="number">2012</span>-<span class="number">01</span>-<span class="number">14</span> <span class="number">15</span>:<span class="number">52</span>
-<span class="method">comments:</span> <span class="keyword">true</span>
-<span class="method">sharing:</span> <span class="keyword">true</span>
-<span class="method">footer:</span> <span class="keyword">true</span>    
----</code></pre>
-<p>操作方法與文章大同小異，同樣完整支援 <a href="http://markdown.tw/" target="_blank">Markdown</a> 語法。</p>
-<h3>建立</h3>
+<span class="variable">$ </span>rake new_page[your-page/sub-page.html]
+</code></pre><p>輸入以上代碼後，就可在<code>source/your-page</code>中見到<code>index.markdown</code>，以及以下內容：</p>
+<pre><code><span class="bullet">---
+</span>layout: page
+title: "Page Title"
+date: 2012-01-14 15:52
+comments: true
+sharing: true
+<span class="header">footer: true    
+---</span>
+</code></pre><p>操作方法與文章大同小異，同樣完整支援 <a href="http://markdown.tw/" target="_blank">Markdown</a> 語法。</p>
+<h3 id=" 建立 ">建立</h3>
 <p>輸入<code>rake generate</code>即可建立文章或分頁，輸入<code>rake deploy</code>就會將文章 pull 到<a href="https://github.com/" target="_blank">GitHub</a>上。</p>
-<h2>結論</h2>
+<h2 id=" 結論 ">結論</h2>
 <p>經過這幾天的試用結果，老實說 <a href="http://octopress.org/" target="_blank">Octopress</a> 實在有夠難用，沒有如 <a href="http://wordpress.org/" target="_blank">WordPress</a> 的強大管理介面，所有操作<em>（包括新增文章、分頁）</em>都必須透過終端；然而撰寫文章比 <a href="http://wordpress.org/" target="_blank">WordPress</a> 快多了，不需忍耐 <a href="http://wordpress.org/" target="_blank">WordPress</a> 慢吞吞的編輯器，在 local 用 <a href="http://markdown.tw/" target="_blank">Markdown</a> 寫完就能直接 deploy 到 <a href="https://github.com/" target="_blank">GitHub</a> 上。</p>
 <p>如果你是個 geek，<a href="http://octopress.org/" target="_blank">Octopress</a> 或許是不錯的選擇；如果不是的話，請繼續使用 <a href="http://wordpress.org/" target="_blank">WordPress</a> 吧！</p>
 ]]></content>
-    <category scheme="http://zespia.tw/tags/Octopress/" term="Octopress"/>
-    <category scheme="http://zespia.tw/tags/Ruby/" term="Ruby"/>
+    <summary type="html"><![CDATA[<p><img src="http://i.minus.com/i4CFI4qZAFEct.png" alt=""></p>
+<p><a href="http://www.acsite.net/tw/" target="_blank">ACSite</a> 的空間即將在 2012/1/31 到期，而我又懶得續約，這時看到愈來愈多部落客都從 <a href="http://wordpress.org/" target="_blank">WordPress</a> 轉移到 <a href="http://octopress.org/" target="_blank">Octopress</a>，便開始試用 <a href="http://octopress.org/" target="_blank">Octopress</a>。</p>
+<p><a href="http://octopress.org/" target="_blank">Octopress</a> 與 <a href="http://wordpress.org/" target="_blank">WordPress</a> 同樣身為部落格系統，卻有相當大的不同：</p>
+<ul>
+<li><strong><a href="http://wordpress.org/" target="_blank">WordPress</a>：</strong><ul>
+<li>PHP</li>
+<li>動態網頁</li>
+<li>外掛多樣</li>
+<li>速度慢</li>
+<li>使用簡單</li>
+</ul>
+</li>
+<li><strong><a href="http://octopress.org/" target="_blank">Octopress</a>：</strong><ul>
+<li>Ruby</li>
+<li>靜態網頁</li>
+<li>剛起步，外掛還很少</li>
+<li>速度快</li>
+<li>geek 才會用</li>
+</ul>
+</li>
+</ul>
+<p>以下將簡單介紹 <a href="http://octopress.org/" target="_blank">Octopress</a> 的安裝與使用。</p>
+]]></summary>
+    
+      <category term="Octopress" scheme="http://zespia.tw/tags/Octopress/"/>
+    
+      <category term="Ruby" scheme="http://zespia.tw/tags/Ruby/"/>
+    
   </entry>
+  
   <entry>
-    <title type="html"><![CDATA[Google+ Motionless & Filter]]></title>
+    <title><![CDATA[Google+ Motionless & Filter]]></title>
     <link href="http://zespia.tw/blog/2011/09/17/google-scripts-2/"/>
     <id>http://zespia.tw/blog/2011/09/17/google-scripts-2/</id>
     <published>2011-09-17T00:00:00.000Z</published>
     <updated>2012-10-10T16:39:03.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://i.minus.com/ieJceSDuuo3RS.png" alt=" サイノウサンプラー | ryosios（id=21795820）"></p>
 <p>最近課業繁重，無法抽出時間撰寫網誌，於是 <del>寫這篇文章來騙人氣</del> 再介紹一次之前寫的 2 個 Google+ 腳本。上圖與本文毫無關係，純粹是在 Pixiv 上隨便抓一張圖片而已。</p>
-<h2>Google+ Motionless</h2>
+<h2 id="Google+_Motionless">Google+ Motionless</h2>
 <p>看圖、影片或閱讀文章時，因為訊息串的快速更新，常會使畫面不斷上下抽動，不只妨礙視覺，有時還會誤按連結，因此當做練功寫了這個腳本，並於 1.0.4 版新增「自動載入下頁」功能。</p>
 <p><a href="http://userscripts.org/scripts/show/111484" target="_blank">下載（Ver. 1.0.4）</a></p>
-<h2>Google+ Fxxking Filter</h2>
+<h2 id="Google+_Fxxking_Filter">Google+ Fxxking Filter</h2>
 <p>「樹大必有枯枝，人多必有白痴」，有時在訊息串上會看到令人很不爽的發言，透過這腳本可以將不想看到的訊息過濾，還給使用者一片乾淨的訊息串。</p>
 <p><a href="http://userscripts.org/scripts/show/111206" target="_blank">下載（Ver. 1.0.1）</a></p>
 ]]></content>
-    <category scheme="http://zespia.tw/tags/JavaScript/" term="JavaScript"/>
+    
+    
+      <category term="JavaScript" scheme="http://zespia.tw/tags/JavaScript/"/>
+    
   </entry>
+  
   <entry>
-    <title type="html"><![CDATA[HTML5 Storage 的使用彙整]]></title>
+    <title><![CDATA[HTML5 Storage 的使用彙整]]></title>
     <link href="http://zespia.tw/blog/2011/08/04/html5-storage/"/>
     <id>http://zespia.tw/blog/2011/08/04/html5-storage/</id>
     <published>2011-08-04T10:01:00.000Z</published>
@@ -1643,10 +1818,10 @@ categories:
 
 <p>Storage 的功能基本上與 cookie 大致相同，然而儲存空間比 cookie 大多了，cookie 僅有 4KB 的空間，Storage 卻有 5MB 的空間，讓開發者能夠好好善用。此功能的使用方式非常簡單，分為：Local Storage 與 Session Storage，顧名思義，兩者都是將資料儲存於用戶端的功能，然而前者能儲存的時間較長，直到使用者清除快取前都不會被刪除，而後者在使用者關閉分頁後資料就會被刪除；兩者的使用方式完全相同，以下皆以 Local Storage 作為示範。</p>
 <p>下文皆使用 jQuery 1.7.1。<del>（因為我只會 jQuery）</del></p>
-<h2>基礎</h2>
-<h3>設定資料</h3>
+<h2 id=" 基礎 ">基礎</h2>
+<h3 id=" 設定資料 ">設定資料</h3>
 <p>以下三種方式擇一即可，下文亦同。</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 </pre></td><td class="code"><pre>localStorage[<span class="string">'test'</span>] = testValue;
@@ -1654,8 +1829,8 @@ localStorage.setItem(<span class="string">'test'</span>, testValue);
 localStorage.test = testValue;
 </pre></td></tr></table></figure>
 
-<h3>取得資料</h3>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<h3 id=" 取得資料 ">取得資料</h3>
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 </pre></td><td class="code"><pre>localStorage[<span class="string">'test'</span>];
@@ -1663,20 +1838,20 @@ localStorage.getItem(<span class="string">'test'</span>);
 localStorage.test;
 </pre></td></tr></table></figure>
 
-<h3>刪除資料</h3>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<h3 id=" 刪除資料 ">刪除資料</h3>
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>localStorage.removeItem(<span class="string">'test'</span>);
 </pre></td></tr></table></figure>
 
-<h3>資料全部清除</h3>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<h3 id=" 資料全部清除 ">資料全部清除</h3>
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>localStorage.clear();
 </pre></td></tr></table></figure>
 
-<h2>勾選框（checkbox）</h2>
-<h3>設定資料</h3>
+<h2 id=" 勾選框（checkbox）">勾選框（checkbox）</h2>
+<h3 id=" 設定資料 -1">設定資料</h3>
 <p>由於 Storage 僅支援字串，必須使用<code>toString()</code>函數，將 Boolean 值轉為字串才可儲存。</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1686,9 +1861,9 @@ localStorage.test;
 localStorage[<span class="string">'test'</span>] = $(<span class="string">'#test'</span>).attr(<span class="string">'checked'</span>).toString();
 </pre></td></tr></table></figure>
 
-<h3>取得資料</h3>
+<h3 id=" 取得資料 -1">取得資料</h3>
 <p>使用<code>===</code>判斷資料。</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 </pre></td><td class="code"><pre><span class="keyword">if</span> ( localStorage[<span class="string">'test'</span>] === <span class="string">'true'</span> ) {
@@ -1696,18 +1871,18 @@ localStorage[<span class="string">'test'</span>] = $(<span class="string">'#test
 }
 </pre></td></tr></table></figure>
 
-<h2>下拉式選單（select）</h2>
-<h3>設定資料</h3>
+<h2 id=" 下拉式選單（select）">下拉式選單（select）</h2>
+<h3 id=" 設定資料 -2">設定資料</h3>
 <p>取得選單中<code>:selected</code>的值，並儲存即可。</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>localStorage[<span class="string">'test'</span>] = $(<span class="string">'#test'</span>).find(<span class="string">':selected'</span>).val();
 </pre></td></tr></table></figure>
 
-<h2>陣列（array）</h2>
-<h3>設定資料</h3>
+<h2 id=" 陣列（array）">陣列（array）</h2>
+<h3 id=" 設定資料 -3">設定資料</h3>
 <p>陣列大概是讓我最頭痛的部份，同前文所述，Storage 僅支援字串，所以必須先以特殊的分隔符號來隔開每個元素。<em>（如|, $, ; 等符號，隨你喜歡）</em></p>
 <p>如果你在下面的陣列中看到德文，那只是我突然中二病發作而已，<del>如果你看得懂的話代表你也是個廚二</del>。</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1729,9 +1904,9 @@ localStorage[<span class="string">'test'</span>] = storage.join(<span class="str
 localStorage[<span class="string">'test'</span>] = storage.join(<span class="string">'|||'</span>);
 </pre></td></tr></table></figure>
 
-<h3>取得資料</h3>
+<h3 id=" 取得資料 -2">取得資料</h3>
 <p>利用<code>split</code>函數分割字串。</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1761,13 +1936,19 @@ localStorage[<span class="string">'test'</span>] = storage.join(<span class="str
 }
 </pre></td></tr></table></figure>
 
-<h2>後記</h2>
+<h2 id=" 後記 ">後記</h2>
 <p>最近因為課業繁忙，網誌都放著生灰超過一個月了，於是心血來潮將最近寫腳本的心得寫成文章，可能會有錯誤，請多見諒。</p>
 ]]></content>
-    <category scheme="http://zespia.tw/tags/HTML5/" term="HTML5"/>
+    <summary type="html"><![CDATA[<p><img src="http://i.minus.com/ich1TucSOe08P.jpg" alt=" 找不到相關的圖，各位就把小惡魔胸前的脂肪塊當做 Storage 吧！（id=21000433）"></p>
+<p>當初寫 Google+ Hover Zoom 這腳本時，壓根沒想過可以用 Greasemonkey 內建的參數來儲存資料，於是就選用 HTML5 的 Storage 功能來儲存資料，然而此功能僅能儲存字串（String），讓我花了好些時間上網找資料才能掌握此功能的使用方式。</p>
+]]></summary>
+    
+      <category term="HTML5" scheme="http://zespia.tw/tags/HTML5/"/>
+    
   </entry>
+  
   <entry>
-    <title type="html"><![CDATA[Google+ Hide Comments & Hover Zoom]]></title>
+    <title><![CDATA[Google+ Hide Comments & Hover Zoom]]></title>
     <link href="http://zespia.tw/blog/2011/07/13/firefox-google-plus-plugins/"/>
     <id>http://zespia.tw/blog/2011/07/13/firefox-google-plus-plugins/</id>
     <published>2011-07-13T00:00:00.000Z</published>
@@ -1777,19 +1958,26 @@ localStorage[<span class="string">'test'</span>] = storage.join(<span class="str
 <p>雖然 Google+ 已經發表了一段時間，針對 Firefox 所做的擴充元件還是很少，幾乎沒有，反倒是 Chrome 的擴充套件數量不斷提昇，因此上週六（7/9）我吃飽太閒試著用 jQuery 寫了生平第一個瀏覽器腳本「Google+ Hide Comments」，一個行數不到 40 行的簡單腳本，本來想試著研究 Firefox 擴充套件，但最後太複雜還要先裝一堆擴充套件於是作罷。</p>
 <a id="more"></a>
 
-<h2>Google+ Hide Comments</h2>
+<h2 id="Google+_Hide_Comments">Google+ Hide Comments</h2>
 <p><img src="http://i.minus.com/ibezLR2xu8BKlc.jpg" alt=""></p>
-<p>此腳本的功能如上圖，啟用後會在每篇文章的留言後加入“Toggle comments”的連結，點擊“Toggle comments”連結可以展開、摺疊留言。</p>
+<p>此腳本的功能如上圖，啟用後會在每篇文章的留言後加入”Toggle comments”的連結，點擊”Toggle comments”連結可以展開、摺疊留言。</p>
 <blockquote><p>已停止更新</p>
 </blockquote>
 
 
-<h2>Google+ Hover Zoom</h2>
+<h2 id="Google+_Hover_Zoom">Google+ Hover Zoom</h2>
 <p><img src="http://i.minus.com/i4Xjzr8VGpgHM.jpg" alt=""></p>
 <p>滑鼠移入即可顯示原圖，並能從側邊的下載按鈕直接下載原圖。很簡單的功能，不過他媽的正規表達式有夠難寫，根本天書。目前正規表達式與判斷式的問題應該都修正完畢，未來預計擴充設定頁面的功能並改善效能。</p>
 <p><a href="http://userscripts.org/scripts/show/106681" target="_blank">下載</a></p>
 <p>我的網誌有種變成雙週刊的趨勢，每兩週才一篇新文章，明後天再發一篇 Steins;Gate 的文章吧。<a href="http://gplus.to/SkyArrow" target="_blank">我的 Google+</a></p>
 ]]></content>
-    <category scheme="http://zespia.tw/tags/JavaScript/" term="JavaScript"/>
+    <summary type="html"><![CDATA[<p><img src="http://i.minus.com/ihQ0s0iWJDgNU.jpeg" alt=""></p>
+<p>大約在兩週前，Google 發表了新的社群服務「Google+」，雖然很多人都說 Facebook 和 Google+ 有很大的不同，不過對我而言 Google+ 就是個宅宅版的 Facebook 罷了，我懶得去分析什麼社群網站的情勢了，今天的重點也不在這裡。</p>
+<p>雖然 Google+ 已經發表了一段時間，針對 Firefox 所做的擴充元件還是很少，幾乎沒有，反倒是 Chrome 的擴充套件數量不斷提昇，因此上週六（7/9）我吃飽太閒試著用 jQuery 寫了生平第一個瀏覽器腳本「Google+ Hide Comments」，一個行數不到 40 行的簡單腳本，本來想試著研究 Firefox 擴充套件，但最後太複雜還要先裝一堆擴充套件於是作罷。</p>
+]]></summary>
+    
+      <category term="JavaScript" scheme="http://zespia.tw/tags/JavaScript/"/>
+    
   </entry>
+  
 </feed>

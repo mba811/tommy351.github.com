@@ -5,52 +5,94 @@
   
   <title>Node.js 初試 ─ Nyanko | Zespia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="og:type" content="blog">
+<meta name="og:title" content="Node.js 初試 ─ Nyanko">
+<meta name="og:url" content="http://zespia.tw/blog/2012/07/14/nodejs-nyanko/">
+<meta name="og:image" content="http://i.minus.com/iKst8nFEGcU8A.png">
+<meta name="og:site_name" content="Zespia">
+<meta name="og:description" content="數個月前，接到了來自 卡梅爾 Anime 的委託，請我重新設計一個 WordPress 主題，因為我當時正忙著準備備審資料，因此而暫時擱置了一段時間。
+又過了一個月，我加入了畢籌會（畢業典禮籌劃會），忙著 和妹子聊天 製作畢業影片，而完全忽略了這回事。
+直到畢業後，我突然想起這件事，便決定開始著手進行；然而因為去年提交 WordPress 主題一直被退件令我一直懷恨在心，我毅然決定捨棄 Word">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="tommy351">
+  
+    <link rel="alternative" href="/atom.xml" title="Zespia" type="application/atom+xml">
+  
+  
   <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4910098-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
 </head>
 <body>
-  <header id="header">
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
   <div id="banner"></div>
-  <h1 id="logo-wrap">
-    <a href="/" id="logo">Zespia</a>
-  </h1>
-  <div id="header-shadow"></div>
-  <div class="outer">
-    <nav id="main-nav" class="inner">
-      <ul class="main-nav-list">
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Zespia</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
         
-          <li class="main-nav-item">
-            <a class="main-nav-link" href="/">Home</a>
-          </li>
+          <a class="main-nav-link" href="/">Home</a>
         
-          <li class="main-nav-item">
-            <a class="main-nav-link" href="/archives">Archives</a>
-          </li>
+          <a class="main-nav-link" href="/archives">Archives</a>
         
-          <li class="main-nav-item">
-            <a class="main-nav-link" href="https://github.com/tommy351">GitHub</a>
-          </li>
+          <a class="main-nav-link" href="https://github.com/tommy351">GitHub</a>
         
-      </ul>
-    </nav>
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://zespia.tw"></form>
+      </div>
+    </div>
   </div>
 </header>
-  <div class="outer">
-    <div class="inner"><article class="article article-type-post">
-  <a href="/blog/2012/07/14/nodejs-nyanko/" class="article-date">
-  <time datetime="2012-07-13T16:14:00.000Z">2012/7/14</time>
+      <div class="outer">
+        <section id="main"><article id="post-nodejs-nyanko" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2012/07/14/nodejs-nyanko/" class="article-date">
+  <time datetime="2012-07-13T16:14:00.000Z" itemprop="datePublished">2012/7/14</time>
 </a>
+    
+  </div>
   <div class="article-inner">
-    <header class="article-header">
-      
+    
+    
+      <header class="article-header">
+        
   
-    <h1 class="article-title">Node.js 初試 ─ Nyanko</h1>
+    <h1 class="article-title" itemprop="name">
+      Node.js 初試 ─ Nyanko
+    </h1>
   
 
-    </header>
-    <div class="article-entry">
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
       
         <p><img src="http://i.minus.com/iKst8nFEGcU8A.png" alt=""></p>
 <p>數個月前，接到了來自 <a href="http://caramel623.k2-ani.com/" target="_blank">卡梅爾 Anime</a> 的委託，請我重新設計一個 <a href="http://wordpress.org/" target="_blank">WordPress</a> 主題，因為我當時正忙著準備備審資料，因此而暫時擱置了一段時間。</p>
@@ -58,12 +100,12 @@
 <p>直到畢業後，我突然想起這件事，便決定開始著手進行；然而因為去年提交 <a href="http://wordpress.org/" target="_blank">WordPress</a> 主題一直被退件令我一直懷恨在心，我毅然決定捨棄 <a href="http://wordpress.org/" target="_blank">WordPress</a>，自己從頭打造一個類似於 <a href="http://wordpress.org/" target="_blank">WordPress</a> 的 CMS 系統。</p>
 <a id="more"></a>
 
-<h2>序章</h2>
+<h2 id=" 序章 ">序章</h2>
 <p><img src="http://i.minus.com/iEfVZ8aIjqOKG.png" alt=""></p>
 <p>在進入本文之前，先說明一下何謂 <a href="http://nodejs.org/" target="_blank">Node.js</a> 吧：</p>
 <p><a href="http://nodejs.org/" target="_blank">Node.js</a> 是一個 JavaScript 函式庫，使用了 <a href="http://zh.wikipedia.org/wiki/V8_%28JavaScript%E5%BC%95%E6%93%8E%29" target="_blank">V8 引擎</a> 讓 JavaScript 能在伺服器上執行，其事件驅動、非阻塞式 I/O 的形式使 <a href="http://nodejs.org/" target="_blank">Node.js</a> 能夠高效運作，模組化的規格使其便於開發。（有錯請鞭）</p>
 <p>總而言之，<strong><a href="http://nodejs.org/" target="_blank">Node.js</a> 很好用</strong>。</p>
-<h2>安裝</h2>
+<h2 id=" 安裝 ">安裝</h2>
 <p><a href="http://nodejs.org/" target="_blank">Node.js</a> 的安裝非常簡單，只要安裝 <a href="https://github.com/creationix/nvm/" target="_blank">nvm</a> 及 <a href="http://npmjs.org/" target="_blank">npm</a> 即可。（以下以 Mac 為例）</p>
 <p><a href="https://github.com/creationix/nvm/" target="_blank">nvm</a> 就是類似於 <a href="https://rvm.io/" target="_blank">rvm</a> 的版本管理工具，可隨意安裝、替換不同的 <a href="http://nodejs.org/" target="_blank">Node.js</a> 版本。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
@@ -72,11 +114,11 @@
 
 <p>安裝完後必須在 <code>.bash_profile</code> 加入以下內容才可直接使用。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>. ~/<span class="variable">.nvm</span>/nvm<span class="variable">.sh</span>
+</pre></td><td class="code"><pre>. ~/<span class="preprocessor">.nvm</span>/nvm<span class="preprocessor">.sh</span>
 </pre></td></tr></table></figure>
 
 <p>而 <a href="http://npmjs.org/" target="_blank">npm</a> 則是類似於 <a href="http://rubygems.org/" target="_blank">gem</a> 的模組管理工具，只要安裝 <a href="http://nodejs.org/" target="_blank">Node.js</a> 就會附贈，不需要另外安裝。</p>
-<h2>模組</h2>
+<h2 id=" 模組 ">模組</h2>
 <p><a href="http://nodejs.org/" target="_blank">Node.js</a> 雖然還是個剛起步的應用，不過已有很多的現成模組可供使用。以下是我用到的模組：</p>
 <ul>
 <li><a href="http://expressjs.com/" target="_blank">Express</a>：處理瀏覽器請求，用它做出 <a href="http://zh.wikipedia.org/wiki/REST" target="_blank">REST</a> 架構簡直小菜一碟。</li>
@@ -98,7 +140,7 @@
 <ul>
 <li><a href="https://github.com/fgnass/node-dev" target="_blank">node-dev</a>：偵測檔案更改，自動重啟伺服器。</li>
 </ul>
-<h2>存放空間</h2>
+<h2 id=" 存放空間 ">存放空間</h2>
 <p>基本上寫程式還是和之前一樣，都是 SAN 值不斷乘著雲霄飛車高低起伏的過程，隨著 Bug 愈來愈多，愈來愈厭惡過去的自己怎麼笨到會犯這種智障級的錯誤。</p>
 <p><strong>不過這些都不是重點。</strong></p>
 <p>網站寫好了重點就是要有地方存放。</p>
@@ -122,7 +164,7 @@
 <li><a href="https://mongolab.com/" target="_blank">MongoLab</a>：免費 240 MB</li>
 </ul>
 <p>明眼人都知道要選 <a href="https://mongolab.com/" target="_blank">MongoLab</a> 啊啊啊啊啊！！！！<del>就像胸部一樣，大一點的總是比較好啊啊啊啊啊！！！！</del></p>
-<h2>外觀</h2>
+<h2 id=" 外觀 ">外觀</h2>
 <p>因為代碼很髒而且 Bug 一堆，所以就不在這裡獻醜了。</p>
 <p><img src="http://i.minus.com/icykBz9L04Ydf.png" alt=""></p>
 <p>後台很普通，很明顯就是抄襲 <a href="http://wordpress.org/" target="_blank">WordPress</a> 的沒特色主題。</p>
@@ -132,10 +174,10 @@
 <p>因此只能改成這個樣子了，可以很明顯的看出，就跟 <a href="https://plus.google.com/" target="_blank">Google+</a> 一樣，頁面主體很明顯的往左偏，右邊一大片空白什麼也沒有，<del>以後可以拿來放廣告</del>。</p>
 <p><img src="http://i.minus.com/illxd31CdxXIq.png" alt=""></p>
 <p>不過這也是有原因的，搜尋列和聊天室都會從左邊滑出。</p>
-<h2>未來</h2>
+<h2 id=" 未來 ">未來</h2>
 <p>目前 0.0.7 版已經完成，不過尚未 deploy 至 <a href="http://heroku.com/" target="_blank">Heroku</a>，主要是強化快取的部分，事先儲存已渲染過的網頁，就不用在每次瀏覽時都讀取資料庫。</p>
 <p>等到 Bug 都除完之後，大概就會發佈原始碼了，我能看到那一天的到來嗎……？</p>
-<h2>後記</h2>
+<h2 id=" 後記 ">後記</h2>
 <p><img src="http://i.minus.com/ibqU7BQBnIPo5u.png" alt=" 對不起，圖片下載不完全，想看紗羽ㄋㄟㄋㄟ的請自己找吧。(id=28562767)"></p>
 <p>因為最近一個月都在忙這東西，所以網誌都放到生菇了，之後還會在寫一篇愛夏的文章，敬請期待！</p>
 <p><a href="http://nyanko.herokuapp.com/" target="_blank">Nyanko</a> 目前正在封測中，也許會有很多 Bug，如果找到 Bug 的話麻煩透過左側工具列上的「意見反饋」向我回報。</p>
@@ -143,7 +185,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zespia.tw/blog/2012/07/14/nodejs-nyanko/" data-id="hmb9r0lay9y3h1iw" class="article-share-link">Share</a>
+      <a data-url="http://zespia.tw/blog/2012/07/14/nodejs-nyanko/" data-id="akaq4spbjh6it34i" class="article-share-link">Share</a>
       
         <a href="http://zespia.tw/blog/2012/07/14/nodejs-nyanko/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -153,11 +195,16 @@
     </footer>
   </div>
   
-    <nav id="article-nav">
+    
+<nav id="article-nav">
   
     <a href="/blog/2012/09/05/atelier-ayesha/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">愛夏的煉金工房 ─ 黃昏大地之煉金術士</div>
+      <div class="article-nav-title">
+        
+          愛夏的煉金工房 ─ 黃昏大地之煉金術士
+        
+      </div>
     </a>
   
   
@@ -167,6 +214,7 @@
     </a>
   
 </nav>
+
   
 </article>
 
@@ -176,17 +224,29 @@
     <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
 </section>
-</div>
-  </div>
-  <footer id="footer">
+</section>
+        
+      </div>
+      <footer id="footer">
+  
   <div class="outer">
-    <div class="inner">
-      <div id="footer-copyright">&copy; 2013 SkyArrow</div>
+    <div id="footer-info" class="inner">
+      &copy; 2014 SkyArrow<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
-
-
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="https://github.com/tommy351" class="mobile-nav-link">GitHub</a>
+  
+</nav>
+    
 <script>
   var disqus_shortname = 'zespiatw';
   
@@ -210,5 +270,6 @@
 
 
 <script type="text/javascript" src="/js/script.js"></script>
+  </div>
 </body>
 </html>

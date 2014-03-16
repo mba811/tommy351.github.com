@@ -5,60 +5,111 @@
   
   <title>HTML5 audio 實驗 | Zespia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="og:type" content="blog">
+<meta name="og:title" content="HTML5 audio 實驗">
+<meta name="og:url" content="http://zespia.tw/blog/2012/02/04/lab-html5-audio/">
+<meta name="og:image" content="http://i.minus.com/inE9d4C1xPbYD.png">
+<meta name="og:site_name" content="Zespia">
+<meta name="og:description" content="寒假即將結束，不巧膝蓋突然中了一箭，便決定實驗 HTML5 audio標籤的效果，雖然已有 jPlayer 這款輕便好用的播放器，但不折騰一下就沒辦法消磨時間了，所以本次的實驗品完全由我操刀。
+
+
+開始之前
+首先必須了解audio標籤的使用方式：
+1
+2
+3
+4
+&lt;audio controls&gt;
+  &lt;source src="music.mp3"&gt;
+  &lt;sourc">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="tommy351">
+  
+    <link rel="alternative" href="/atom.xml" title="Zespia" type="application/atom+xml">
+  
+  
   <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4910098-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
 </head>
 <body>
-  <header id="header">
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
   <div id="banner"></div>
-  <h1 id="logo-wrap">
-    <a href="/" id="logo">Zespia</a>
-  </h1>
-  <div id="header-shadow"></div>
-  <div class="outer">
-    <nav id="main-nav" class="inner">
-      <ul class="main-nav-list">
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Zespia</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
         
-          <li class="main-nav-item">
-            <a class="main-nav-link" href="/">Home</a>
-          </li>
+          <a class="main-nav-link" href="/">Home</a>
         
-          <li class="main-nav-item">
-            <a class="main-nav-link" href="/archives">Archives</a>
-          </li>
+          <a class="main-nav-link" href="/archives">Archives</a>
         
-          <li class="main-nav-item">
-            <a class="main-nav-link" href="https://github.com/tommy351">GitHub</a>
-          </li>
+          <a class="main-nav-link" href="https://github.com/tommy351">GitHub</a>
         
-      </ul>
-    </nav>
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://zespia.tw"></form>
+      </div>
+    </div>
   </div>
 </header>
-  <div class="outer">
-    <div class="inner"><article class="article article-type-post">
-  <a href="/blog/2012/02/04/lab-html5-audio/" class="article-date">
-  <time datetime="2012-02-04T05:29:00.000Z">2012/2/4</time>
+      <div class="outer">
+        <section id="main"><article id="post-lab-html5-audio" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2012/02/04/lab-html5-audio/" class="article-date">
+  <time datetime="2012-02-04T05:29:00.000Z" itemprop="datePublished">2012/2/4</time>
 </a>
+    
+  </div>
   <div class="article-inner">
-    <header class="article-header">
-      
+    
+    
+      <header class="article-header">
+        
   
-    <h1 class="article-title">HTML5 audio 實驗</h1>
+    <h1 class="article-title" itemprop="name">
+      HTML5 audio 實驗
+    </h1>
   
 
-    </header>
-    <div class="article-entry">
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
       
         <p><img src="http://i.minus.com/inE9d4C1xPbYD.png" alt=""></p>
 <p>寒假即將結束，不巧膝蓋突然中了一箭，便決定實驗 HTML5 <code>audio</code>標籤的效果，雖然已有 <a href="http://jplayer.org/" target="_blank">jPlayer</a> 這款輕便好用的播放器，但不折騰一下就沒辦法消磨時間了，所以本次的實驗品完全由我操刀。</p>
 <a id="more"></a>
 
-<h2>開始之前</h2>
+<h2 id=" 開始之前 ">開始之前</h2>
 <p>首先必須了解<code>audio</code>標籤的使用方式：</p>
-<figure class="highlight lang-html"><table><tr><td class="gutter"><pre>1
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -70,7 +121,7 @@
 
 <p>輸入以上代碼後，便可在網頁中看到瀏覽器內建的播放器。每種瀏覽器支援的播放類型不一，最保險的方法是備妥<code>mp3</code>、<code>ogg</code>。</p>
 <p>為了浪費時間，當然不可能用瀏覽器的預設介面，所以刪除<code>controls</code>屬性，透過 JavaScript 操作：</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -83,58 +134,58 @@ audio.pause();
 </pre></td></tr></table></figure>
 
 <p>只需要懂這兩個函數，就可製作最基礎的播放器了，其他複雜的指令可參閱文末的參考出處。</p>
-<h2>介面</h2>
+<h2 id=" 介面 ">介面</h2>
 <p>寫網頁時，比起最重要的 JavaScript，我習慣先寫 CSS，最初的參考範本是 Mac 的 <a href="http://zh.wikipedia.org/wiki/Cover_Flow" target="_blank">CoverFlow</a>。</p>
 <p><img src="http://i.minus.com/ibtVhj6FYs9Hvw.png" alt=""></p>
 <p>經過一連串絞盡腦汁，寫了一堆亂七八糟的 CSS 之後，成品如下。</p>
 <p><img src="http://i.minus.com/iXoN5AU2JBOHU.png" alt=""></p>
 <p>無論是倒影、中間的圓圈進度表都與 <a href="http://zh.wikipedia.org/wiki/Cover_Flow" target="_blank">CoverFlow</a> 非常相像，但這種樣式實在 <del>太麻煩了</del> 不便使用者操作，所以從 <a href="http://www.premiumpixels.com/freebies/compact-music-player-psd/" target="_blank">Premium Pixels</a> 偷點子過來，稍微加油添醋一下，完成了播放器介面 Ver. 2。</p>
 <p><img src="http://i.minus.com/imrTH5W7km1vj.png" alt="Ver.2 與 Ver.1 完全不像？這種事情不重要啦！"></p>
-<h2>核心</h2>
+<h2 id=" 核心 ">核心</h2>
 <p>介面完成自爽一下之後，就得面對麻煩的 JavaScript 了，播放、暫停非常簡單，按鈕按下去執行鄉對應的動作即可，然而音量調整與進度條該如何處理呢？</p>
 <p>雖然本次的重點是<strong>消磨時間</strong>，但再去造一個輪子實在他媽的太累了，於是 <del>聰明如我</del> 請到了 <a href="http://jqueryui.com/" target="_blank">jQuery UI</a>，Slider 功能壓縮後需要約 20KB 的空間，有點龐大不過方便就好。</p>
 <p>時間的控制方式如下，單位為秒數，例如跳至第 100 秒的位置：</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>audio.currentTime = <span class="number">100</span>;
 </pre></td></tr></table></figure>
 
 <p>音量的控制方式如下，範圍為 0~1，例如將音量調整至一半大小：</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>audio.volume = <span class="number">0.5</span>;
 </pre></td></tr></table></figure>
 
 <p><code>audio</code>可綁定<code>play</code>, <code>pause</code>, <code>ended</code>, <code>progress</code>, <code>canplay</code>, <code>timeupdate</code>等事件。<code>play</code>與<code>pause</code>如字面上意思，分別為播放、暫停後生效。</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 4
 5
 6
 7
-</pre></td><td class="code"><pre>audio.addEventListener(<span class="string">'play'</span>, <span class="keyword">function</span>(){
+</pre></td><td class="code"><pre>audio.addEventListener(<span class="string">'play'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
   play.title = <span class="string">'pause'</span>;
 }, <span class="literal">false</span>);
 
-audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword">function</span>(){
+audio.addEventListener(<span class="string">'pause'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
   play.title = <span class="string">'play'</span>;
 }, <span class="literal">false</span>);
 </pre></td></tr></table></figure>
 
 <p><code>ended</code>為結束後生效，當音樂結束後，可透過此事件讓時間歸零。</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
-</pre></td><td class="code"><pre>audio.addEventListener(<span class="string">'ended'</span>, <span class="keyword">function</span>(){
+</pre></td><td class="code"><pre>audio.addEventListener(<span class="string">'ended'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
   <span class="keyword">this</span>.currentTime = <span class="number">0</span>;
 }, <span class="literal">false</span>);
 </pre></td></tr></table></figure>
 
 <p>當音樂檔案開始載入後，便會啟動<code>progress</code>事件，可透過此事件監測下載進度。Firefox 可能會發生問題，建議搭配<code>durationchange</code>事件使用。</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 4
-</pre></td><td class="code"><pre>audio.addEventListener(<span class="string">'progress'</span>, <span class="keyword">function</span>(){
+</pre></td><td class="code"><pre>audio.addEventListener(<span class="string">'progress'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
   <span class="keyword">var</span> endVal = <span class="keyword">this</span>.seekable && <span class="keyword">this</span>.seekable.length ? <span class="keyword">this</span>.seekable.end(<span class="number">0</span>) : <span class="number">0</span>;
   buffer.style.width = (<span class="number">100</span> / (<span class="keyword">this</span>.duration || <span class="number">1</span>) * endVal) + <span class="string">'%'</span>;
 }, <span class="literal">false</span>);
@@ -142,22 +193,22 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword
 
 <p>當音樂下載到一定程度後，<code>canplay</code>事件便會生效，一般會透過此事件初始化播放器。相同類型的事件還有很多，依照啟動順序分別為：<code>loadstart</code>, <code>durationchange</code>, <code>loadeddata</code>, <code>progress</code>, <code>canplay</code>, <code>canplaythrough</code>。</p>
 <p><code>timeupdate</code>會在音樂播放時不斷生效，可透過此事件更新時間。</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
-</pre></td><td class="code"><pre>audio.addEventListener(<span class="string">'timeupdate'</span>, <span class="keyword">function</span>(){
+</pre></td><td class="code"><pre>audio.addEventListener(<span class="string">'timeupdate'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
   progress.style.width = (<span class="keyword">this</span>.currentTime / <span class="keyword">this</span>.duration) * <span class="number">100</span> + <span class="string">'%'</span>;
 }, <span class="literal">false</span>);
 </pre></td></tr></table></figure>
 
-<h2>播放列表</h2>
+<h2 id=" 播放列表 ">播放列表</h2>
 <p>一個播放器的基礎功能就此完成，能夠播放、暫停、調整音量、調整時間。但這顯然還不夠，播放列表對於播放器而言相當重要。<em>（大概啦）</em></p>
 <p><img src="http://i.minus.com/inE9d4C1xPbYD.png" alt=" 不要吐槽為啥播放列表裡全是動漫歌，林北就是宅啦..."></p>
 <p>與自己的邏輯奮戰大約一晚後，有播放列表、隨機播放、重複播放（單首、全部）功能的播放器於焉完成。只需要 214 行、約 6KB 的代碼<em>（未壓縮）</em>即可完成，應該能算是輕便簡易了。</p>
-<h2>後記</h2>
+<h2 id=" 後記 ">後記</h2>
 <p>播放列表的製作過程有點髒，中途還重構了幾次，所以直接看範例應該會比較快，若對於範例內的程式碼感到疑惑，可在下方留言。</p>
 <p>範例內已設定了一些參數，可在<code>js/script.js</code>內更改。第 5 行的<code>continous</code>參數為連續播放，第 6 行的<code>autoplay</code>參數為自動播放，第 7 行的<code>playlist</code>陣列請自行設定，壓縮檔內<strong>不會</strong>附帶範例內的音樂檔案。<code>playlist</code>陣列的格式如下：</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -182,7 +233,7 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword
 <p><code>title</code>為標題，<code>artist</code>為演出者，<code>album</code>為專輯名稱，<code>cover</code>為專輯封面的路徑，<code>mp3</code>、<code>ogg</code>分別為音樂檔案的路徑，建議備妥兩種格式的檔案，<del>要不然 Firefox 和 Opera 不就只能去死了嗎？</del></p>
 <p>因為做到最後頭腦快爆炸了，懶得做 Flash fallback，<del>IE 請去死一死吧。</del></p>
 <p><a href="http://zespia.tw/lab/coverart">範例</a>｜<a href="http://zespia.tw/lab/coverart/example.zip">下載</a></p>
-<h2>參考出處</h2>
+<h2 id=" 參考出處 ">參考出處</h2>
 <ul>
 <li><a href="http://jplayer.org/" target="_blank">jPlayer</a></li>
 <li><a href="http://blog.darkthread.net/post-2011-05-15-html5-audio.aspx" target="_blank">小試 HTML 5 audio - 黑暗執行緒</a></li>
@@ -194,7 +245,7 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zespia.tw/blog/2012/02/04/lab-html5-audio/" data-id="w8hrv8yixu47309w" class="article-share-link">Share</a>
+      <a data-url="http://zespia.tw/blog/2012/02/04/lab-html5-audio/" data-id="9zymk7ls8w7242mk" class="article-share-link">Share</a>
       
         <a href="http://zespia.tw/blog/2012/02/04/lab-html5-audio/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -204,11 +255,16 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword
     </footer>
   </div>
   
-    <nav id="article-nav">
+    
+<nav id="article-nav">
   
     <a href="/blog/2012/03/03/windows-8-preview/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">Windows 8 Consumer Preview 試玩</div>
+      <div class="article-nav-title">
+        
+          Windows 8 Consumer Preview 試玩
+        
+      </div>
     </a>
   
   
@@ -218,6 +274,7 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword
     </a>
   
 </nav>
+
   
 </article>
 
@@ -227,17 +284,29 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword
     <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
 </section>
-</div>
-  </div>
-  <footer id="footer">
+</section>
+        
+      </div>
+      <footer id="footer">
+  
   <div class="outer">
-    <div class="inner">
-      <div id="footer-copyright">&copy; 2013 SkyArrow</div>
+    <div id="footer-info" class="inner">
+      &copy; 2014 SkyArrow<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
-
-
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="https://github.com/tommy351" class="mobile-nav-link">GitHub</a>
+  
+</nav>
+    
 <script>
   var disqus_shortname = 'zespiatw';
   
@@ -261,5 +330,6 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="keyword
 
 
 <script type="text/javascript" src="/js/script.js"></script>
+  </div>
 </body>
 </html>

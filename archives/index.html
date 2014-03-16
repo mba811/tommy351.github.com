@@ -5,40 +5,72 @@
   
   <title>Archives | Zespia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="og:type" content="blog">
+<meta name="og:title">
+<meta name="og:url" content="http://zespia.tw/archives/">
+<meta name="og:image">
+<meta name="og:site_name" content="Zespia">
+<meta name="og:description">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="tommy351">
+  
+    <link rel="alternative" href="/atom.xml" title="Zespia" type="application/atom+xml">
+  
+  
   <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4910098-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
 </head>
 <body>
-  <header id="header">
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
   <div id="banner"></div>
-  <h1 id="logo-wrap">
-    <a href="/" id="logo">Zespia</a>
-  </h1>
-  <div id="header-shadow"></div>
-  <div class="outer">
-    <nav id="main-nav" class="inner">
-      <ul class="main-nav-list">
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Zespia</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
         
-          <li class="main-nav-item">
-            <a class="main-nav-link" href="/">Home</a>
-          </li>
+          <a class="main-nav-link" href="/">Home</a>
         
-          <li class="main-nav-item">
-            <a class="main-nav-link" href="/archives">Archives</a>
-          </li>
+          <a class="main-nav-link" href="/archives">Archives</a>
         
-          <li class="main-nav-item">
-            <a class="main-nav-link" href="https://github.com/tommy351">GitHub</a>
-          </li>
+          <a class="main-nav-link" href="https://github.com/tommy351">GitHub</a>
         
-      </ul>
-    </nav>
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://zespia.tw"></form>
+      </div>
+    </div>
   </div>
 </header>
-  <div class="outer">
-    <div class="inner">
+      <div class="outer">
+        <section id="main">
   
   
     
@@ -46,18 +78,22 @@
       
       
       <section class="archives-wrap">
-        <a href="/archives/2013" class="archive-year">2013</a>
+        <div class="archive-year-wrap">
+          <a href="/archives/2013" class="archive-year">2013</a>
+        </div>
         <div class="archives">
     
     <article class="archive-article archive-type-post">
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2013/11/10/dragons-crown/" class="archive-article-date">
-  <time datetime="2013-11-10T09:32:36.000Z">Nov 10</time>
+  <time datetime="2013-11-10T09:32:36.000Z" itemprop="datePublished">Nov 10</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2013/11/10/dragons-crown/">魔龍寶冠</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2013/11/10/dragons-crown/">魔龍寶冠</a>
+    </h1>
   
 
     </header>
@@ -71,18 +107,22 @@
       
       
       <section class="archives-wrap">
-        <a href="/archives/2012" class="archive-year">2012</a>
+        <div class="archive-year-wrap">
+          <a href="/archives/2012" class="archive-year">2012</a>
+        </div>
         <div class="archives">
     
     <article class="archive-article archive-type-post">
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2012/12/07/hexo-theme-phase/" class="archive-article-date">
-  <time datetime="2012-12-07T10:36:03.000Z">Dec 7</time>
+  <time datetime="2012-12-07T10:36:03.000Z" itemprop="datePublished">Dec 7</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2012/12/07/hexo-theme-phase/">Phase — 史上最漂亮也最吃資源的主題</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2012/12/07/hexo-theme-phase/">Phase — 史上最漂亮也最吃資源的主題</a>
+    </h1>
   
 
     </header>
@@ -95,11 +135,13 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2012/12/06/nodejs-stream-copy-files/" class="archive-article-date">
-  <time datetime="2012-12-05T16:14:46.000Z">Dec 6</time>
+  <time datetime="2012-12-05T16:14:46.000Z" itemprop="datePublished">Dec 6</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2012/12/06/nodejs-stream-copy-files/">使用 Stream 來拷貝檔案</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2012/12/06/nodejs-stream-copy-files/">使用 Stream 來拷貝檔案</a>
+    </h1>
   
 
     </header>
@@ -112,11 +154,13 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2012/11/19/steins-gate/" class="archive-article-date">
-  <time datetime="2012-11-18T16:36:38.000Z">Nov 19</time>
+  <time datetime="2012-11-18T16:36:38.000Z" itemprop="datePublished">Nov 19</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2012/11/19/steins-gate/">命運石之門（Steins;Gate）中文版</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2012/11/19/steins-gate/">命運石之門（Steins;Gate）中文版</a>
+    </h1>
   
 
     </header>
@@ -129,11 +173,13 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2012/11/12/xperia-s/" class="archive-article-date">
-  <time datetime="2012-11-12T05:48:14.000Z">Nov 12</time>
+  <time datetime="2012-11-12T05:48:14.000Z" itemprop="datePublished">Nov 12</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2012/11/12/xperia-s/">新手機 Xperia S</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2012/11/12/xperia-s/">新手機 Xperia S</a>
+    </h1>
   
 
     </header>
@@ -146,11 +192,13 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2012/10/29/hexo-update-0.1/" class="archive-article-date">
-  <time datetime="2012-10-28T16:25:37.000Z">Oct 29</time>
+  <time datetime="2012-10-28T16:25:37.000Z" itemprop="datePublished">Oct 29</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2012/10/29/hexo-update-0.1/">Hexo 更新至 0.1</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2012/10/29/hexo-update-0.1/">Hexo 更新至 0.1</a>
+    </h1>
   
 
     </header>
@@ -163,11 +211,13 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2012/10/11/hexo-debut/" class="archive-article-date">
-  <time datetime="2012-10-11T07:22:47.000Z">Oct 11</time>
+  <time datetime="2012-10-11T07:22:47.000Z" itemprop="datePublished">Oct 11</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2012/10/11/hexo-debut/">Hexo 颯爽登場！</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2012/10/11/hexo-debut/">Hexo 颯爽登場！</a>
+    </h1>
   
 
     </header>
@@ -180,11 +230,13 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2012/09/05/atelier-ayesha/" class="archive-article-date">
-  <time datetime="2012-09-05T10:39:00.000Z">Sep 5</time>
+  <time datetime="2012-09-05T10:39:00.000Z" itemprop="datePublished">Sep 5</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2012/09/05/atelier-ayesha/">愛夏的煉金工房 ─ 黃昏大地之煉金術士</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2012/09/05/atelier-ayesha/">愛夏的煉金工房 ─ 黃昏大地之煉金術士</a>
+    </h1>
   
 
     </header>
@@ -197,11 +249,13 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2012/07/14/nodejs-nyanko/" class="archive-article-date">
-  <time datetime="2012-07-13T16:14:00.000Z">Jul 14</time>
+  <time datetime="2012-07-13T16:14:00.000Z" itemprop="datePublished">Jul 14</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2012/07/14/nodejs-nyanko/">Node.js 初試 ─ Nyanko</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2012/07/14/nodejs-nyanko/">Node.js 初試 ─ Nyanko</a>
+    </h1>
   
 
     </header>
@@ -214,11 +268,13 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2012/05/02/new-theme-phase/" class="archive-article-date">
-  <time datetime="2012-05-02T01:35:00.000Z">May 2</time>
+  <time datetime="2012-05-02T01:35:00.000Z" itemprop="datePublished">May 2</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2012/05/02/new-theme-phase/">私用主題 Phase</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2012/05/02/new-theme-phase/">私用主題 Phase</a>
+    </h1>
   
 
     </header>
@@ -231,11 +287,13 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2012/03/16/first-order/" class="archive-article-date">
-  <time datetime="2012-03-16T13:06:00.000Z">Mar 16</time>
+  <time datetime="2012-03-16T13:06:00.000Z" itemprop="datePublished">Mar 16</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2012/03/16/first-order/">First Order</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2012/03/16/first-order/">First Order</a>
+    </h1>
   
 
     </header>
@@ -248,11 +306,13 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2012/03/03/windows-8-preview/" class="archive-article-date">
-  <time datetime="2012-03-03T11:54:00.000Z">Mar 3</time>
+  <time datetime="2012-03-03T11:54:00.000Z" itemprop="datePublished">Mar 3</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2012/03/03/windows-8-preview/">Windows 8 Consumer Preview 試玩</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2012/03/03/windows-8-preview/">Windows 8 Consumer Preview 試玩</a>
+    </h1>
   
 
     </header>
@@ -265,11 +325,13 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2012/02/04/lab-html5-audio/" class="archive-article-date">
-  <time datetime="2012-02-04T05:29:00.000Z">Feb 4</time>
+  <time datetime="2012-02-04T05:29:00.000Z" itemprop="datePublished">Feb 4</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2012/02/04/lab-html5-audio/">HTML5 audio 實驗</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2012/02/04/lab-html5-audio/">HTML5 audio 實驗</a>
+    </h1>
   
 
     </header>
@@ -282,11 +344,13 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2012/01/25/slash-theme/" class="archive-article-date">
-  <time datetime="2012-01-25T08:27:00.000Z">Jan 25</time>
+  <time datetime="2012-01-25T08:27:00.000Z" itemprop="datePublished">Jan 25</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2012/01/25/slash-theme/">Slash — 專為 Octopress 設計的極簡主題</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2012/01/25/slash-theme/">Slash — 專為 Octopress 設計的極簡主題</a>
+    </h1>
   
 
     </header>
@@ -299,11 +363,13 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2012/01/24/css-multi-level-menu/" class="archive-article-date">
-  <time datetime="2012-01-24T00:00:00.000Z">Jan 24</time>
+  <time datetime="2012-01-24T00:00:00.000Z" itemprop="datePublished">Jan 24</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2012/01/24/css-multi-level-menu/">如何利用 CSS 製作多級選單？</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2012/01/24/css-multi-level-menu/">如何利用 CSS 製作多級選單？</a>
+    </h1>
   
 
     </header>
@@ -316,11 +382,13 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2012/01/21/jquery-tabs/" class="archive-article-date">
-  <time datetime="2012-01-21T10:10:00.000Z">Jan 21</time>
+  <time datetime="2012-01-21T10:10:00.000Z" itemprop="datePublished">Jan 21</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2012/01/21/jquery-tabs/">如何利用 jQuery 製作頁籤？</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2012/01/21/jquery-tabs/">如何利用 jQuery 製作頁籤？</a>
+    </h1>
   
 
     </header>
@@ -333,11 +401,13 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2012/01/14/hello-octopress/" class="archive-article-date">
-  <time datetime="2012-01-14T07:52:00.000Z">Jan 14</time>
+  <time datetime="2012-01-14T07:52:00.000Z" itemprop="datePublished">Jan 14</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2012/01/14/hello-octopress/">Hello Octopress!</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2012/01/14/hello-octopress/">Hello Octopress!</a>
+    </h1>
   
 
     </header>
@@ -351,18 +421,22 @@
       
       
       <section class="archives-wrap">
-        <a href="/archives/2011" class="archive-year">2011</a>
+        <div class="archive-year-wrap">
+          <a href="/archives/2011" class="archive-year">2011</a>
+        </div>
         <div class="archives">
     
     <article class="archive-article archive-type-post">
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2011/09/17/google-scripts-2/" class="archive-article-date">
-  <time datetime="2011-09-17T00:00:00.000Z">Sep 17</time>
+  <time datetime="2011-09-17T00:00:00.000Z" itemprop="datePublished">Sep 17</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2011/09/17/google-scripts-2/">Google+ Motionless &amp; Filter</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2011/09/17/google-scripts-2/">Google+ Motionless &amp; Filter</a>
+    </h1>
   
 
     </header>
@@ -375,11 +449,13 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2011/08/04/html5-storage/" class="archive-article-date">
-  <time datetime="2011-08-04T10:01:00.000Z">Aug 4</time>
+  <time datetime="2011-08-04T10:01:00.000Z" itemprop="datePublished">Aug 4</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2011/08/04/html5-storage/">HTML5 Storage 的使用彙整</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2011/08/04/html5-storage/">HTML5 Storage 的使用彙整</a>
+    </h1>
   
 
     </header>
@@ -392,11 +468,13 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2011/07/13/firefox-google-plus-plugins/" class="archive-article-date">
-  <time datetime="2011-07-13T00:00:00.000Z">Jul 13</time>
+  <time datetime="2011-07-13T00:00:00.000Z" itemprop="datePublished">Jul 13</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2011/07/13/firefox-google-plus-plugins/">Google+ Hide Comments &amp; Hover Zoom</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2011/07/13/firefox-google-plus-plugins/">Google+ Hide Comments &amp; Hover Zoom</a>
+    </h1>
   
 
     </header>
@@ -409,11 +487,13 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2011/07/01/ps3-meruru/" class="archive-article-date">
-  <time datetime="2011-07-01T07:44:00.000Z">Jul 1</time>
+  <time datetime="2011-07-01T07:44:00.000Z" itemprop="datePublished">Jul 1</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2011/07/01/ps3-meruru/">鍊金術士梅露露 ～亞蘭德的鍊金術士 3～</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2011/07/01/ps3-meruru/">鍊金術士梅露露 ～亞蘭德的鍊金術士 3～</a>
+    </h1>
   
 
     </header>
@@ -426,11 +506,13 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2011/05/27/corner-theme/" class="archive-article-date">
-  <time datetime="2011-05-27T00:00:00.000Z">May 27</time>
+  <time datetime="2011-05-27T00:00:00.000Z" itemprop="datePublished">May 27</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2011/05/27/corner-theme/">Corner 1.0 正式版推出！</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2011/05/27/corner-theme/">Corner 1.0 正式版推出！</a>
+    </h1>
   
 
     </header>
@@ -443,11 +525,13 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2011/05/22/how-to-use-settings-api/" class="archive-article-date">
-  <time datetime="2011-05-22T08:02:00.000Z">May 22</time>
+  <time datetime="2011-05-22T08:02:00.000Z" itemprop="datePublished">May 22</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2011/05/22/how-to-use-settings-api/">如何使用 Settings API 製作佈景後台選項？</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2011/05/22/how-to-use-settings-api/">如何使用 Settings API 製作佈景後台選項？</a>
+    </h1>
   
 
     </header>
@@ -460,11 +544,13 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2011/04/12/pixiv-custom-2-0-update/" class="archive-article-date">
-  <time datetime="2011-04-12T00:00:00.000Z">Apr 12</time>
+  <time datetime="2011-04-12T00:00:00.000Z" itemprop="datePublished">Apr 12</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2011/04/12/pixiv-custom-2-0-update/">Pixiv Custom 2.0 更新！代碼更精簡，功能更豐富！</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2011/04/12/pixiv-custom-2-0-update/">Pixiv Custom 2.0 更新！代碼更精簡，功能更豐富！</a>
+    </h1>
   
 
     </header>
@@ -477,11 +563,13 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2011/04/10/ps3-catherine/" class="archive-article-date">
-  <time datetime="2011-04-10T00:00:00.000Z">Apr 10</time>
+  <time datetime="2011-04-10T00:00:00.000Z" itemprop="datePublished">Apr 10</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2011/04/10/ps3-catherine/">凱薩琳（キャサリン）</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2011/04/10/ps3-catherine/">凱薩琳（キャサリン）</a>
+    </h1>
   
 
     </header>
@@ -494,11 +582,13 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2011/03/08/ps3-dead-space-2/" class="archive-article-date">
-  <time datetime="2011-03-08T05:37:00.000Z">Mar 8</time>
+  <time datetime="2011-03-08T05:37:00.000Z" itemprop="datePublished">Mar 8</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2011/03/08/ps3-dead-space-2/">絕命異次元 2</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2011/03/08/ps3-dead-space-2/">絕命異次元 2</a>
+    </h1>
   
 
     </header>
@@ -511,11 +601,13 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2011/02/10/ps3-togf/" class="archive-article-date">
-  <time datetime="2011-02-10T00:00:00.000Z">Feb 10</time>
+  <time datetime="2011-02-10T00:00:00.000Z" itemprop="datePublished">Feb 10</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2011/02/10/ps3-togf/">時空幻境：美德傳奇 f</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2011/02/10/ps3-togf/">時空幻境：美德傳奇 f</a>
+    </h1>
   
 
     </header>
@@ -529,18 +621,41 @@
       
       
       <section class="archives-wrap">
-        <a href="/archives/2010" class="archive-year">2010</a>
+        <div class="archive-year-wrap">
+          <a href="/archives/2010" class="archive-year">2010</a>
+        </div>
         <div class="archives">
     
     <article class="archive-article archive-type-post">
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2010/12/30/pixiv-custom/" class="archive-article-date">
-  <time datetime="2010-12-30T00:00:00.000Z">Dec 30</time>
+  <time datetime="2010-12-30T00:00:00.000Z" itemprop="datePublished">Dec 30</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2010/12/30/pixiv-custom/">Pixiv Custom</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2010/12/30/pixiv-custom/">Pixiv Custom</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/blog/2010/11/08/novel-oreimo-06/" class="archive-article-date">
+  <time datetime="2010-11-08T00:00:00.000Z" itemprop="datePublished">Nov 8</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2010/11/08/novel-oreimo-06/">我的妹妹哪有這麼可愛 6</a>
+    </h1>
   
 
     </header>
@@ -553,11 +668,32 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2010/10/09/k-on-psp/" class="archive-article-date">
-  <time datetime="2010-10-09T00:00:00.000Z">Oct 9</time>
+  <time datetime="2010-10-09T00:00:00.000Z" itemprop="datePublished">Oct 9</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2010/10/09/k-on-psp/">K-ON! 放學後演奏會！！</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2010/10/09/k-on-psp/">K-ON! 放學後演奏會！！</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/blog/2010/08/09/bake-novel-01/" class="archive-article-date">
+  <time datetime="2010-08-09T00:00:00.000Z" itemprop="datePublished">Aug 9</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2010/08/09/bake-novel-01/">化物語（上）</a>
+    </h1>
   
 
     </header>
@@ -570,11 +706,270 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <a href="/blog/2010/08/09/novel-is-01/" class="archive-article-date">
-  <time datetime="2010-08-09T00:00:00.000Z">Aug 9</time>
+  <time datetime="2010-08-09T00:00:00.000Z" itemprop="datePublished">Aug 9</time>
 </a>
       
   
-    <h1><a class="archive-article-title" href="/blog/2010/08/09/novel-is-01/">IS〈Infinite Stratos〉01</a></h1>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2010/08/09/novel-is-01/">IS〈Infinite Stratos〉01</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/blog/2010/08/04/8-1-books/" class="archive-article-date">
+  <time datetime="2010-08-04T00:00:00.000Z" itemprop="datePublished">Aug 4</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2010/08/04/8-1-books/">8月1日購書記</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/blog/2010/07/25/ff-event-16/" class="archive-article-date">
+  <time datetime="2010-07-25T00:00:00.000Z" itemprop="datePublished">Jul 25</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2010/07/25/ff-event-16/">FF 開拓動漫祭 16</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/blog/2010/06/13/k-on-comic-3/" class="archive-article-date">
+  <time datetime="2010-06-13T00:00:00.000Z" itemprop="datePublished">Jun 13</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2010/06/13/k-on-comic-3/">K-ON! 輕音部 3</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/blog/2010/05/09/psp-mgspw/" class="archive-article-date">
+  <time datetime="2010-05-09T00:00:00.000Z" itemprop="datePublished">May 9</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2010/05/09/psp-mgspw/">潛龍諜影：和平先驅</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/blog/2010/04/05/durarara-novel-4/" class="archive-article-date">
+  <time datetime="2010-04-05T00:00:00.000Z" itemprop="datePublished">Apr 5</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2010/04/05/durarara-novel-4/">無頭騎士異聞錄 4</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/blog/2010/03/24/imoto-4/" class="archive-article-date">
+  <time datetime="2010-03-24T00:00:00.000Z" itemprop="datePublished">Mar 24</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2010/03/24/imoto-4/">我的妹妹哪有這麼可愛 4</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/blog/2010/02/20/ff-15/" class="archive-article-date">
+  <time datetime="2010-02-20T00:00:00.000Z" itemprop="datePublished">Feb 20</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2010/02/20/ff-15/">FF 15</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/blog/2010/02/19/durarara-novel-3/" class="archive-article-date">
+  <time datetime="2010-02-19T00:00:00.000Z" itemprop="datePublished">Feb 19</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2010/02/19/durarara-novel-3/">無頭騎士異聞錄 3</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/blog/2010/02/19/soraoto-comic-5/" class="archive-article-date">
+  <time datetime="2010-02-19T00:00:00.000Z" itemprop="datePublished">Feb 19</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2010/02/19/soraoto-comic-5/">天降之物 5</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/blog/2010/02/12/maria-holic/" class="archive-article-date">
+  <time datetime="2010-02-12T00:00:00.000Z" itemprop="datePublished">Feb 12</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2010/02/12/maria-holic/">瑪莉亞狂熱 1～4</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/blog/2010/01/29/soraoto-comic/" class="archive-article-date">
+  <time datetime="2010-01-29T00:00:00.000Z" itemprop="datePublished">Jan 29</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2010/01/29/soraoto-comic/">漫畫｜天降之物 1～4</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/blog/2010/01/28/imoto-3/" class="archive-article-date">
+  <time datetime="2010-01-28T00:00:00.000Z" itemprop="datePublished">Jan 28</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2010/01/28/imoto-3/">我的妹妹哪有這麼可愛 3</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+  
+    
+    
+      
+        </div></section>
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2009" class="archive-year">2009</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/blog/2009/11/11/polyphonica-3/" class="archive-article-date">
+  <time datetime="2009-11-11T00:00:00.000Z" itemprop="datePublished">Nov 11</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/2009/11/11/polyphonica-3/">神曲奏界 Polyphonica ～緋紅～ 3</a>
+    </h1>
   
 
     </header>
@@ -584,17 +979,29 @@
   
     </div></section>
   
-</div>
-  </div>
-  <footer id="footer">
+</section>
+        
+      </div>
+      <footer id="footer">
+  
   <div class="outer">
-    <div class="inner">
-      <div id="footer-copyright">&copy; 2013 SkyArrow</div>
+    <div id="footer-info" class="inner">
+      &copy; 2014 SkyArrow<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
-
-
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="https://github.com/tommy351" class="mobile-nav-link">GitHub</a>
+  
+</nav>
+    
 <script>
   var disqus_shortname = 'zespiatw';
   
@@ -616,5 +1023,6 @@
 
 
 <script type="text/javascript" src="/js/script.js"></script>
+  </div>
 </body>
 </html>
