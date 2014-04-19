@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://zespia.tw/"/>
-  <updated>2014-04-13T09:54:26.578Z</updated>
+  <updated>2014-04-19T10:15:38.742Z</updated>
   <id>http://zespia.tw/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://zespia.tw/blog/2014/04/13/atelier-escha-logy/"/>
     <id>http://zespia.tw/blog/2014/04/13/atelier-escha-logy/</id>
     <published>2014-04-13T01:29:57.000Z</published>
-    <updated>2014-04-13T09:49:23.000Z</updated>
+    <updated>2014-04-19T10:13:23.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://i3.minus.com/jbxXf34379Jbtl.jpg" alt=""></p>
 <p>《愛絲卡＆羅吉的鍊金工房》（エスカ＆ロジーのアトリエ）是黃昏系列的第二作，<del>簡稱為「スカトロのアトリエ」</del>，繼承了前作的世界觀，時間經過了四年，這次的舞台在偏僻的「柯爾賽特」。</p>
 <a id="more"></a>
@@ -28,7 +28,7 @@
 <div class="video-container"><iframe src="//www.youtube.com/embed/m0Cj5l7W6lo" frameborder="0" allowfullscreen></iframe></div>
 
 
-<p>這次再度採用了雙主角制，女主角「<strong>愛絲卡</strong>」是當地的鍊金術士，而男主角「<strong>羅吉</strong>」則是因為某些特殊原因，自願從中央來到偏鄉的鍊金術士，愛絲卡使用的是傳統的鍊金釜，專門負責生產除了武器、防具以外的物品，根本黑科技；而羅吉則是因為鍊金釜這種古早器具在中央早就沒人使用了，因此完全不會使用鍊金釜，第一次看到愛絲卡從鏈金釜生產出蘋果塔時還嚇了一跳 www。</p>
+<p>這次再度採用了雙主角制，女主角「<strong>愛絲卡</strong>」是當地的鍊金術士，而男主角「<strong>羅吉</strong>」則是因為某些特殊原因，自願從中央來到偏鄉的鍊金術士，愛絲卡使用的是傳統的鍊金釜，專門負責生產除了武器、防具以外的物品，根本黑科技；而羅吉則是因為鍊金釜這種古早器具在中央早就沒人使用了，因此完全不會使用鍊金釜，第一次看到愛絲卡從鍊金釜生產出蘋果塔時還嚇了一跳 www。</p>
 <p><img src="http://i.minus.com/ibhaoYDNXitLgP.jpg" alt=""></p>
 <p>戰鬥系統進步許多，原本僅限 3 人的戰鬥模式變成了前後排共 6 人，當 Support 點數大於 0 時，無論前後排都能進行支援，到了後期，雙主角更能使出連攜技能，讓攻擊力極大化，使得這代鍊金術士變得非常威能，凡人根本就是來湊傷害倍率的。</p>
 <p><img src="http://i.minus.com/ibwPsVOdCjfN48.jpg" alt=""></p>
@@ -366,7 +366,7 @@ git <span class="keyword">clone</span> git:<span class="comment">//github.com/to
 <p>1200 萬畫素應該足以應付一般的照片拍攝了，而且這支手機附有快門鍵，可以像一般的數位相機一樣半按對焦、全按拍攝，不過缺點就是對焦的速度有點慢，而且有些過度修飾。</p>
 <h3 id=" 螢幕超讚 ">螢幕超讚</h3>
 <p>不得不說，這螢幕真他媽的讚，342 dpi 根本看不到半點鋸齒或顆粒，真希望我的電腦螢幕也有這麼高的 dpi。（窮學生可買不起 Macbook Pro with Retina Display 啊！）</p>
-<h3 id=" 喇叭很大聲 _<del>你在大聲什麼啦</del>">喇叭很大聲 <del>你在大聲什麼啦</del></h3>
+<h3 id=" 喇叭很大聲 _ 你在大聲什麼啦 ">喇叭很大聲 <del>你在大聲什麼啦</del></h3>
 <p><img src="http://i.minus.com/i76S8YXKlmHM1.jpg" alt=""></p>
 <p>上一支手機的喇叭很小聲，震動也很小，<del>根本不能拿來當按摩器用</del>，害我常常漏接電話。</p>
 <p>Xperia S 的鈴聲就非常大聲了，大概是因為有 xLOUD 技術加持的地步。</p>
@@ -1772,8 +1772,10 @@ comments: true
 </code></pre><p>你可透過以下幾種方式來編輯分類：</p>
 <pre><code><span class="header"># 單一分類</span>
 categories: Sass
+
 <span class="header"># 多重分類 (1)</span>
 categories: [CSS3, Sass, Media Queries]
+
 <span class="header"># 多重分類 (2)</span>
 categories:
 <span class="bullet">- </span>CSS3
@@ -1783,6 +1785,7 @@ categories:
 <h3 id=" 分頁 ">分頁</h3>
 <pre><code><span class="comment"># 一般分頁    </span>
 <span class="variable">$ </span>rake new_page[your-page]
+
 <span class="comment"># 子分頁</span>
 <span class="variable">$ </span>rake new_page[your-page/sub-page.html]
 </code></pre><p>輸入以上代碼後，就可在<code>source/your-page</code>中見到<code>index.markdown</code>，以及以下內容：</p>
