@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://zespia.tw/"/>
-  <updated>2014-04-22T05:39:19.648Z</updated>
+  <updated>2014-05-01T10:52:56.339Z</updated>
   <id>http://zespia.tw/</id>
   
   <author>
@@ -46,6 +46,7 @@
 <span class="tag">&lt;/<span class="title">dependencies</span>&gt;</span>
 </pre></td></tr></table></figure>
 
+
 <p>倒也不是討厭 XML 本身，我認為 XML 是一個規範良好的標記語言，但在上面的程式碼中，僅僅要引入一個套件就得寫這麼長的代碼也未免太囉嗦了，而 <a href="http://www.gradle.org/" target="_blank">Gradle</a> 採用 <a href="http://groovy.codehaus.org/" target="_blank">Groovy</a>，讓一切變得更簡單：</p>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre>1
 2
@@ -55,6 +56,7 @@
 }</span>
 </pre></td></tr></table></figure>
 
+
 <p>如上，只要寫一行代碼就能引入一個套件，再也不用寫一長串的 XML，而且 Gradle 也能支援 <a href="http://search.maven.org/" target="_blank">Maven Central</a>，因此不用擔心沒有 Library 能用。</p>
 <h2 id="E-Hentai_API">E-Hentai API</h2>
 <p>一開始我根本不知道有 API 的存在，所以使用 <a href="http://jsoup.org/" target="_blank">jsoup</a> 來爬網站，<a href="http://jsoup.org/" target="_blank">jsoup</a> 能在 Java 上用類似 <a href="http://jquery.com/" target="_blank">jQuery</a> 的語法來遍歷資料，但是效能實在不佳。我曾有想過用 Node.js 做為後端伺服器，但為了避免流量過大被 E-Hentai 封鎖，放棄了這個想法。</p>
@@ -63,11 +65,13 @@
 </pre></td><td class="code"><pre>http://g.e-hentai.org/g/{gallery_id}/{gallery_token}/
 </pre></td></tr></table></figure>
 
+
 <p><code>gallery_id</code> 代表 Gallery ID，是一個唯一的有序整數，而 <code>gallery_token</code> 是一個隨機的字串。若要取得相簿資料，這兩個欄位是必須的。但是在一開始，根本無從得知 <code>gallery_token</code>，只能從首頁中把網址抓出來。</p>
 <p>接下來是圖片資料，E-Hentai API 並沒有提供「相片列表」的 API，因此，我們又必須利用從相簿頁面中把圖片網址抓出來，而圖片的網址結構如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>http://g.e-hentai.org/s/{page_token}/{gallery_id}-{pagenumber}
 </pre></td></tr></table></figure>
+
 
 <p><code>page_token</code> 代表相片的 token，推測是原始檔案 SHA1 checksum 的前 10 碼，<code>gallery_id</code> 是相簿 ID，<code>pagenumber</code> 則是頁數。<strong>注意</strong>，<code>page_token</code> <strong>不等於</strong> <code>gallery_token</code>，使得取得相片資料變得更加困難。</p>
 <p>在 <a href="http://ehwiki.org/wiki/API" target="_blank">wiki</a> 中，並沒有提到如何透過 API 取得圖片網址，我們無法單從 <code>page_token</code> 推測出圖片網址，只能從圖片頁面中找到蛛絲馬跡，後來我發現到圖片頁面中會使用如下指令取得資料：</p>
@@ -86,6 +90,7 @@
   "<span class="attribute">showkey</span>": <span class="value"><span class="string">"387132-43f9269494"</span>
 </span>}
 </pre></td></tr></table></figure>
+
 
 <p><code>gid</code> 等於 <code>gallery_id</code>，<code>page</code> 等於 <code>pagenumber</code>，<code>imgkey</code> 等於 <code>page_token</code>，但是 <code>showkey</code> 呢？<code>showkey</code> 是每 24 小時就會隨機變換的 token，同樣藏在圖片頁面中，只能自己爬資料。</p>
 <p>綜上所述，這個 API 真的么壽難用，有很多資料是無法從 API 取得的，只能自己爬資料，令我覺得 Android 開發與之相比簡單多了，各位如果想知道更多關於 <a href="http://ehwiki.org/wiki/API" target="_blank">E-Hentai API</a> 的資料的話，可參考我做的 <a href="https://github.com/tommy351/ehreader-android/wiki/E-Hentai-JSON-API" target="_blank">整理</a>。</p>
@@ -125,6 +130,7 @@
 <div class="video-container"><iframe src="//www.youtube.com/embed/m0Cj5l7W6lo" frameborder="0" allowfullscreen></iframe></div>
 
 
+
 <p>這次再度採用了雙主角制，女主角「<strong>愛絲卡</strong>」是當地的鍊金術士，而男主角「<strong>羅吉</strong>」則是因為某些特殊原因，自願從中央來到偏鄉的鍊金術士，愛絲卡使用的是傳統的鍊金釜，專門負責生產除了武器、防具以外的物品，根本黑科技；而羅吉則是因為鍊金釜這種古早器具在中央早就沒人使用了，因此完全不會使用鍊金釜，第一次看到愛絲卡從鍊金釜生產出蘋果塔時還嚇了一跳 www。</p>
 <p><img src="http://i.minus.com/ibhaoYDNXitLgP.jpg" alt=""></p>
 <p>戰鬥系統進步許多，原本僅限 3 人的戰鬥模式變成了前後排共 6 人，當 Support 點數大於 0 時，無論前後排都能進行支援，到了後期，雙主角更能使出連攜技能，讓攻擊力極大化，使得這代鍊金術士變得非常威能，凡人根本就是來湊傷害倍率的。</p>
@@ -139,6 +145,7 @@
 <p>雖然本作是雙主角制，不過兩位主角的劇情大部分都是重複的，只有部分劇情不同，愛絲卡比較正面，而羅吉則比較負面。本作的終極目標，就是前往遠在天邊的未探索遺跡 <del>救蘿莉</del>，中途的劇情大部分都不重要。</p>
 <h2 id=" 動畫 ">動畫</h2>
 <div class="video-container"><iframe src="//www.youtube.com/embed/DubvKF2OOrk" frameborder="0" allowfullscreen></iframe></div>
+
 
 
 <p>為了紀念 Gust 成立 20 週年，Gust 在去年發佈了動畫化的消息，在前幾天已經開播，除了遠景作畫崩壞這種正常現象以外，由製作過「<a href="http://kinmosa.com/" target="_blank">黃金拼圖</a>」和「<a href="http://saki-anime.com/" target="_blank">天才麻將少女</a>」的 <a href="http://www.gokumi.co.jp/" target="_blank">Studio 五組</a> 來製作應該沒什麼問題，只是不知為何愛絲卡和羅吉表現得比遊戲還要親密 www。</p>
@@ -251,12 +258,14 @@ rake install[<span class="string">'phase'</span>]
 rake generate
 </pre></td></tr></table></figure>
 
+
 <p>為了推廣 Hexo，順便把主題移植過去了，往後的主題開發都會以 Hexo 為主，但仍會以 MIT License 開放原始碼，想要在 Octopress 使用的人可以自行開發移植版本。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 </pre></td><td class="code"><pre>cd hexo
 git <span class="keyword">clone</span> git:<span class="comment">//github.com/tommy351/hexo-theme-phase.git themes/phase</span>
 </pre></td></tr></table></figure>
+
 
 <p>Hexo 版本安裝後別忘了將<code>_config.yml</code>內的<code>theme</code>參數調整為<code>phase</code>。</p>
 <h2 id="FAQ">FAQ</h2>
@@ -335,6 +344,7 @@ git <span class="keyword">clone</span> git:<span class="comment">//github.com/to
 }
 </pre></td></tr></table></figure>
 
+
 <p>非常簡單，就是檔案讀取完後再將檔案寫入到目的地。這種方法必須將所有檔案讀取完成後才能寫入，將對地沒有效率多了，使用 <a href="http://nodejs.org/api/stream.html" target="_blank">Stream</a> 則是邊讀取邊寫入，當讀取完成後，寫入也差不多完成了，在處理大檔案時，差別更加明顯。</p>
 <p>除了檔案讀寫以外，<a href="http://nodejs.org/api/stream.html" target="_blank">Stream</a> 也常用於靜態檔案伺服器，例如 <a href="http://www.senchalabs.org/connect/" target="_blank">Connect</a> 就是用這種方式來處理靜態檔案的。</p>
 <p>用 <a href="http://nodejs.org/api/stream.html" target="_blank">Stream</a> 的方式來複製檔案，相較於原本的方式，也只不過是多了幾行程式碼而已，如下：</p>
@@ -363,6 +373,7 @@ git <span class="keyword">clone</span> git:<span class="comment">//github.com/to
   });
 }
 </pre></td></tr></table></figure>
+
 
 <p>首先建立讀取 Stream <code>rs</code> 和寫入 Stream <code>ws</code>，使用 <code>rs.pipe</code> 讀取資料同時將資料寫入至 <code>ws</code>。</p>
 <p>Stream 使用 <a href="http://nodejs.org/api/events.html" target="_blank">EventEmitter</a>，當結束或發生錯誤時會觸發事件，必須利用 <code>rs.on</code> 和 <code>ws.on</code> 來監聽事件。</p>
@@ -413,6 +424,7 @@ git <span class="keyword">clone</span> git:<span class="comment">//github.com/to
 <p>除了些許錯字以外，大部分的中文化都沒什麼問題，然而最讓人感到不習慣的大概就是人物名字的翻譯了，「桶子（ダル）」被翻成了「達魯」，「菲莉絲（フェイリス）」則是被翻成了「菲伊麗絲」，大概是為了配合麻由里常常把菲伊麗絲的名字唸成「非麗絲（フェリス）」而這樣翻譯。</p>
 <p>雖然這兩個名字都沒有翻譯錯誤，但剛遊玩時讓我感到非常不習慣。</p>
 <div class="video-container"><iframe src="//www.youtube.com/embed/OFHt2SJpiF4" frameborder="0" allowfullscreen></iframe></div>
+
 
 
 <p>至於中文版獨家的中文 OP，在遊戲標題畫面中，會先播放日文 OP 再播放中文 OP；遊戲內則是播放日文 OP，比我想的好多了。</p>
@@ -634,6 +646,7 @@ git <span class="keyword">clone</span> git:<span class="comment">//github.com/to
 <span class="attribute">logger_format:</span>
 </pre></td></tr></table></figure>
 
+
 <p>記錄的格式 <code>logger_format</code> 可參考 Connect 的 <a href="http://www.senchalabs.org/connect/logger.html" target="_blank">文件</a> 自行修改。</p>
 <h3 id="i18n">i18n</h3>
 <p>雖然相關的程式碼已經寫好了，不過還沒有寫出「載入語言檔」的功能，目前僅能套用於 <a href="http://momentjs.com/" target="_blank">Moment.js</a>，也就是 Hexo 用來解析、顯示時間的模組上。修改 <code>_config.yml</code> 中的 <code>language</code> 即可使用此功能（請使用 <a href="http://www.w3.org/International/articles/language-tags/" target="_blank">IETF 格式</a>，例如正體中文即為 <code>zh-TW</code>）。</p>
@@ -695,11 +708,13 @@ git <span class="keyword">clone</span> git:<span class="comment">//github.com/to
 </pre></td><td class="code"><pre>npm install hexo -g
 </pre></td></tr></table></figure>
 
+
 <p>僅需一步就把 Hexo 本體和所有相依套件安裝完畢，很簡單吧？</p>
 <h3 id=" 初始化 ">初始化</h3>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>hexo init &lt;folder&gt;
 </pre></td></tr></table></figure>
+
 
 <p>如果指定 <code>&lt;folder&gt;</code>，便會在目前的資料夾建立一個名為 <code>&lt;folder&gt;</code> 的新資料夾；否則會在目前資料夾初始化。</p>
 <p>設定請參閱 <a href="https://github.com/tommy351/hexo/wiki/Configure" target="_blank">Wiki</a>，我還不太會寫文件，如果看不懂的話請不要鞭太大力。</p>
@@ -711,6 +726,7 @@ git <span class="keyword">clone</span> git:<span class="comment">//github.com/to
 </pre></td><td class="code"><pre>hexo new_post &lt;title&gt;
 hexo new_page &lt;title&gt;
 </pre></td></tr></table></figure>
+
 
 <p>Hexo 已經內建一些外掛了，你可以用這些外掛快速插入元素：</p>
 <ul>
@@ -728,11 +744,13 @@ hexo new_page &lt;title&gt;
 </pre></td><td class="code"><pre>hexo generate
 </pre></td></tr></table></figure>
 
+
 <p>依照環境不同，速度可能會有差別，在我的電腦上需要大約 4 秒鐘。</p>
 <h3 id=" 伺服器 ">伺服器</h3>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>hexo server
 </pre></td></tr></table></figure>
+
 
 <p>伺服器會跑在 <code>http://localhost:port</code> （<code>port</code> 預設為 <code>4000</code>，可在 <code>_config.yml</code> 設定），也可以搭配 <a href="http://pow.cx/" target="_blank">Pow</a> 使用：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre>1
@@ -740,6 +758,7 @@ hexo new_page &lt;title&gt;
 </pre></td><td class="code"><pre><span class="built_in">cd</span> ~/.pow
 ln <span class="operator">-s</span> /path/to/myapp
 </pre></td></tr></table></figure>
+
 
 <p>基本使用差不多就是這樣子，非常簡單。至於外掛和主題的撰寫方法，我之後會在 <a href="https://github.com/tommy351/hexo/wiki" target="_blank">Wiki</a> 補完，你也可以嘗試看看<a href="https://github.com/tommy351/hexo" target="_blank">原始碼</a>。</p>
 <h2 id=" 結論 ">結論</h2>
@@ -841,10 +860,12 @@ ln <span class="operator">-s</span> /path/to/myapp
 </pre></td><td class="code"><pre><span class="variable">$ </span>git clone <span class="symbol">git:</span>/<span class="regexp">/github.com/creationix</span><span class="regexp">/nvm.git ~/nvm</span>
 </pre></td></tr></table></figure>
 
+
 <p>安裝完後必須在 <code>.bash_profile</code> 加入以下內容才可直接使用。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>. ~/<span class="preprocessor">.nvm</span>/nvm<span class="preprocessor">.sh</span>
 </pre></td></tr></table></figure>
+
 
 <p>而 <a href="http://npmjs.org/" target="_blank">npm</a> 則是類似於 <a href="http://rubygems.org/" target="_blank">gem</a> 的模組管理工具，只要安裝 <a href="http://nodejs.org/" target="_blank">Node.js</a> 就會附贈，不需要另外安裝。</p>
 <h2 id=" 模組 ">模組</h2>
@@ -1103,6 +1124,7 @@ ln <span class="operator">-s</span> /path/to/myapp
 <span class="tag">&lt;/<span class="title">audio</span>&gt;</span>
 </pre></td></tr></table></figure>
 
+
 <p>輸入以上代碼後，便可在網頁中看到瀏覽器內建的播放器。每種瀏覽器支援的播放類型不一，最保險的方法是備妥<code>mp3</code>、<code>ogg</code>。</p>
 <p>為了浪費時間，當然不可能用瀏覽器的預設介面，所以刪除<code>controls</code>屬性，透過 JavaScript 操作：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre>1
@@ -1116,6 +1138,7 @@ audio.play();
 <span class="comment">// 暫停</span>
 audio.pause();
 </pre></td></tr></table></figure>
+
 
 <p>只需要懂這兩個函數，就可製作最基礎的播放器了，其他複雜的指令可參閱文末的參考出處。</p>
 <h2 id=" 介面 ">介面</h2>
@@ -1133,10 +1156,12 @@ audio.pause();
 </pre></td><td class="code"><pre>audio.currentTime = <span class="number">100</span>;
 </pre></td></tr></table></figure>
 
+
 <p>音量的控制方式如下，範圍為 0~1，例如將音量調整至一半大小：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>audio.volume = <span class="number">0.5</span>;
 </pre></td></tr></table></figure>
+
 
 <p><code>audio</code>可綁定<code>play</code>, <code>pause</code>, <code>ended</code>, <code>progress</code>, <code>canplay</code>, <code>timeupdate</code>等事件。<code>play</code>與<code>pause</code>如字面上意思，分別為播放、暫停後生效。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre>1
@@ -1155,6 +1180,7 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="functio
 }, <span class="literal">false</span>);
 </pre></td></tr></table></figure>
 
+
 <p><code>ended</code>為結束後生效，當音樂結束後，可透過此事件讓時間歸零。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
@@ -1163,6 +1189,7 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="functio
   <span class="keyword">this</span>.currentTime = <span class="number">0</span>;
 }, <span class="literal">false</span>);
 </pre></td></tr></table></figure>
+
 
 <p>當音樂檔案開始載入後，便會啟動<code>progress</code>事件，可透過此事件監測下載進度。Firefox 可能會發生問題，建議搭配<code>durationchange</code>事件使用。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre>1
@@ -1175,6 +1202,7 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="functio
 }, <span class="literal">false</span>);
 </pre></td></tr></table></figure>
 
+
 <p>當音樂下載到一定程度後，<code>canplay</code>事件便會生效，一般會透過此事件初始化播放器。相同類型的事件還有很多，依照啟動順序分別為：<code>loadstart</code>, <code>durationchange</code>, <code>loadeddata</code>, <code>progress</code>, <code>canplay</code>, <code>canplaythrough</code>。</p>
 <p><code>timeupdate</code>會在音樂播放時不斷生效，可透過此事件更新時間。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre>1
@@ -1184,6 +1212,7 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="functio
   progress.style.width = (<span class="keyword">this</span>.currentTime / <span class="keyword">this</span>.duration) * <span class="number">100</span> + <span class="string">'%'</span>;
 }, <span class="literal">false</span>);
 </pre></td></tr></table></figure>
+
 
 <h2 id=" 播放列表 ">播放列表</h2>
 <p>一個播放器的基礎功能就此完成，能夠播放、暫停、調整音量、調整時間。但這顯然還不夠，播放列表對於播放器而言相當重要。<em>（大概啦）</em></p>
@@ -1213,6 +1242,7 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="functio
   }
 ];
 </pre></td></tr></table></figure>
+
 
 <p><code>title</code>為標題，<code>artist</code>為演出者，<code>album</code>為專輯名稱，<code>cover</code>為專輯封面的路徑，<code>mp3</code>、<code>ogg</code>分別為音樂檔案的路徑，建議備妥兩種格式的檔案，<del>要不然 Firefox 和 Opera 不就只能去死了嗎？</del></p>
 <p>因為做到最後頭腦快爆炸了，懶得做 Flash fallback，<del>IE 請去死一死吧。</del></p>
@@ -1341,6 +1371,7 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="functio
 <span class="tag">&lt;/<span class="title">nav</span>&gt;</span>
 </pre></td></tr></table></figure>
 
+
 <p>選單的 HTML 如上，所有的選單物件都是可點選的連結，理論上無限層級。</p>
 <h3 id="CSS">CSS</h3>
 <figure class="highlight css"><table><tr><td class="gutter"><pre>1
@@ -1399,6 +1430,7 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="functio
 <span class="rule">}</span></span>
 </pre></td></tr></table></figure>
 
+
 <p>這樣就完成了所有步驟，不需要繁複的 JavaScript，是不是很簡單呢？</p>
 <p><a href="http://zespia.tw/demo/css-multi-level-menu/">範例</a>｜<a href="http://zespia.tw/demo/css-multi-level-menu/example.zip">下載</a></p>
 <h2 id=" 後記 ">後記</h2>
@@ -1453,6 +1485,7 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="functio
   <span class="tag">&lt;<span class="title">div</span>&gt;</span>頁籤 4 的內容<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 </pre></td></tr></table></figure>
+
 
 <p>以<code>ul#tabs</code>當作標籤，而<code>#contents</code>內則是頁籤內容。我盡可能簡化 HTML 中不必要的欄位，其他功能都將在 JS 中實現。</p>
 <h3 id="CSS">CSS</h3>
@@ -1520,6 +1553,7 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="functio
 <span class="rule">}</span></span>
 </pre></td></tr></table></figure>
 
+
 <h3 id="JS">JS</h3>
 <figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
@@ -1550,6 +1584,7 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="functio
   });
 })(jQuery);
 </pre></td></tr></table></figure>
+
 
 <p>首先透過<code>each</code>遍歷所有頁籤（<code>#tabs li</code>），並在所有頁籤上綁定事件。</p>
 <p>當事件觸發時，移除其它頁籤的<code>class</code>，隱藏其他頁籤的內容，並將<code>class</code>新增至所選頁籤，顯示所選頁籤的內容。</p>
@@ -1587,6 +1622,7 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="functio
   <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 </pre></td></tr></table></figure>
+
 
 <p>進階篇的 HTML 結構與基礎篇只有一點小差別，僅在原本的<code>#contents</code>的區塊外又包了一層<code>#container</code>。</p>
 <h3 id="CSS-1">CSS</h3>
@@ -1674,6 +1710,7 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="functio
 <span class="rule">}</span></span>
 </pre></td></tr></table></figure>
 
+
 <p><code>#contents</code>改為<code>absolute</code>（絕對定位），並設定寬度為「內容寬度 × 頁籤數量」。<code>#contents</code>內的<code>div</code>別忘了加上<code>float: left;</code>，如此一來頁籤內容才會排成一橫列，將寬度設為「內容寬度 － 左右 padding」。</p>
 <p>進階篇若少了 JS 的輔助，則無法正常顯示，除非事先設定<code>#container</code>的高度。</p>
 <h3 id="JS-1">JS</h3>
@@ -1742,6 +1779,7 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="functio
   });
 })(jQuery);
 </pre></td></tr></table></figure>
+
 
 <p>原理與基礎篇有些差別，必須在頁籤上新增<code>tabid</code>屬性，不過透過 JS 代勞即可。</p>
 <p>首先使<code>#container</code>的高度符合第一頁籤的高度，接著同樣遍歷所有頁籤（<code>#tabs li</code>），在所有頁籤上新增<code>tabid</code>屬性，順便綁定事件。</p>

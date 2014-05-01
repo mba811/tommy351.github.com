@@ -109,6 +109,7 @@ localStorage.setItem(<span class="string">'test'</span>, testValue);
 localStorage.test = testValue;
 </pre></td></tr></table></figure>
 
+
 <h3 id=" 取得資料 ">取得資料</h3>
 <figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
@@ -118,15 +119,18 @@ localStorage.getItem(<span class="string">'test'</span>);
 localStorage.test;
 </pre></td></tr></table></figure>
 
+
 <h3 id=" 刪除資料 ">刪除資料</h3>
 <figure class="highlight js"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>localStorage.removeItem(<span class="string">'test'</span>);
 </pre></td></tr></table></figure>
 
+
 <h3 id=" 資料全部清除 ">資料全部清除</h3>
 <figure class="highlight js"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>localStorage.clear();
 </pre></td></tr></table></figure>
+
 
 <h2 id=" 勾選框（checkbox）">勾選框（checkbox）</h2>
 <h3 id=" 設定資料 -1">設定資料</h3>
@@ -141,6 +145,7 @@ localStorage.test;
 localStorage[<span class="string">'test'</span>] = $(<span class="string">'#test'</span>).attr(<span class="string">'checked'</span>).toString();
 </pre></td></tr></table></figure>
 
+
 <h3 id=" 取得資料 -1">取得資料</h3>
 <p>使用<code>===</code>判斷資料。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre>1
@@ -151,12 +156,14 @@ localStorage[<span class="string">'test'</span>] = $(<span class="string">'#test
 }
 </pre></td></tr></table></figure>
 
+
 <h2 id=" 下拉式選單（select）">下拉式選單（select）</h2>
 <h3 id=" 設定資料 -2">設定資料</h3>
 <p>取得選單中<code>:selected</code>的值，並儲存即可。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>localStorage[<span class="string">'test'</span>] = $(<span class="string">'#test'</span>).find(<span class="string">':selected'</span>).val();
 </pre></td></tr></table></figure>
+
 
 <h2 id=" 陣列（array）">陣列（array）</h2>
 <h3 id=" 設定資料 -3">設定資料</h3>
@@ -183,6 +190,7 @@ localStorage[<span class="string">'test'</span>] = storage.join(<span class="str
 }
 localStorage[<span class="string">'test'</span>] = storage.join(<span class="string">'|||'</span>);
 </pre></td></tr></table></figure>
+
 
 <h3 id=" 取得資料 -2">取得資料</h3>
 <p>利用<code>split</code>函數分割字串。</p>
@@ -216,13 +224,14 @@ localStorage[<span class="string">'test'</span>] = storage.join(<span class="str
 }
 </pre></td></tr></table></figure>
 
+
 <h2 id=" 後記 ">後記</h2>
 <p>最近因為課業繁忙，網誌都放著生灰超過一個月了，於是心血來潮將最近寫腳本的心得寫成文章，可能會有錯誤，請多見諒。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zespia.tw/blog/2011/08/04/html5-storage/" data-id="qywr7vhz0v60gks3" class="article-share-link">Share</a>
+      <a data-url="http://zespia.tw/blog/2011/08/04/html5-storage/" data-id="pk9v01wew0ruphds" class="article-share-link">Share</a>
       
         <a href="http://zespia.tw/blog/2011/08/04/html5-storage/#disqus_thread" class="article-comment-link">Comments</a>
       

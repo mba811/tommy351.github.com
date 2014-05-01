@@ -108,6 +108,7 @@ ga('send', 'pageview');
 <span class="tag">&lt;/<span class="title">audio</span>&gt;</span>
 </pre></td></tr></table></figure>
 
+
 <p>輸入以上代碼後，便可在網頁中看到瀏覽器內建的播放器。每種瀏覽器支援的播放類型不一，最保險的方法是備妥<code>mp3</code>、<code>ogg</code>。</p>
 <p>為了浪費時間，當然不可能用瀏覽器的預設介面，所以刪除<code>controls</code>屬性，透過 JavaScript 操作：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre>1
@@ -121,6 +122,7 @@ audio.play();
 <span class="comment">// 暫停</span>
 audio.pause();
 </pre></td></tr></table></figure>
+
 
 <p>只需要懂這兩個函數，就可製作最基礎的播放器了，其他複雜的指令可參閱文末的參考出處。</p>
 <h2 id=" 介面 ">介面</h2>
@@ -138,10 +140,12 @@ audio.pause();
 </pre></td><td class="code"><pre>audio.currentTime = <span class="number">100</span>;
 </pre></td></tr></table></figure>
 
+
 <p>音量的控制方式如下，範圍為 0~1，例如將音量調整至一半大小：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>audio.volume = <span class="number">0.5</span>;
 </pre></td></tr></table></figure>
+
 
 <p><code>audio</code>可綁定<code>play</code>, <code>pause</code>, <code>ended</code>, <code>progress</code>, <code>canplay</code>, <code>timeupdate</code>等事件。<code>play</code>與<code>pause</code>如字面上意思，分別為播放、暫停後生效。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre>1
@@ -160,6 +164,7 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="functio
 }, <span class="literal">false</span>);
 </pre></td></tr></table></figure>
 
+
 <p><code>ended</code>為結束後生效，當音樂結束後，可透過此事件讓時間歸零。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
@@ -168,6 +173,7 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="functio
   <span class="keyword">this</span>.currentTime = <span class="number">0</span>;
 }, <span class="literal">false</span>);
 </pre></td></tr></table></figure>
+
 
 <p>當音樂檔案開始載入後，便會啟動<code>progress</code>事件，可透過此事件監測下載進度。Firefox 可能會發生問題，建議搭配<code>durationchange</code>事件使用。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre>1
@@ -180,6 +186,7 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="functio
 }, <span class="literal">false</span>);
 </pre></td></tr></table></figure>
 
+
 <p>當音樂下載到一定程度後，<code>canplay</code>事件便會生效，一般會透過此事件初始化播放器。相同類型的事件還有很多，依照啟動順序分別為：<code>loadstart</code>, <code>durationchange</code>, <code>loadeddata</code>, <code>progress</code>, <code>canplay</code>, <code>canplaythrough</code>。</p>
 <p><code>timeupdate</code>會在音樂播放時不斷生效，可透過此事件更新時間。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre>1
@@ -189,6 +196,7 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="functio
   progress.style.width = (<span class="keyword">this</span>.currentTime / <span class="keyword">this</span>.duration) * <span class="number">100</span> + <span class="string">'%'</span>;
 }, <span class="literal">false</span>);
 </pre></td></tr></table></figure>
+
 
 <h2 id=" 播放列表 ">播放列表</h2>
 <p>一個播放器的基礎功能就此完成，能夠播放、暫停、調整音量、調整時間。但這顯然還不夠，播放列表對於播放器而言相當重要。<em>（大概啦）</em></p>
@@ -219,6 +227,7 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="functio
 ];
 </pre></td></tr></table></figure>
 
+
 <p><code>title</code>為標題，<code>artist</code>為演出者，<code>album</code>為專輯名稱，<code>cover</code>為專輯封面的路徑，<code>mp3</code>、<code>ogg</code>分別為音樂檔案的路徑，建議備妥兩種格式的檔案，<del>要不然 Firefox 和 Opera 不就只能去死了嗎？</del></p>
 <p>因為做到最後頭腦快爆炸了，懶得做 Flash fallback，<del>IE 請去死一死吧。</del></p>
 <p><a href="http://zespia.tw/lab/coverart">範例</a>｜<a href="http://zespia.tw/lab/coverart/example.zip">下載</a></p>
@@ -234,7 +243,7 @@ audio.addEventListener(<span class="string">'pause'</span>, <span class="functio
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zespia.tw/blog/2012/02/04/lab-html5-audio/" data-id="7rkedw0gu5rm3hfc" class="article-share-link">Share</a>
+      <a data-url="http://zespia.tw/blog/2012/02/04/lab-html5-audio/" data-id="gq3q9ma4d6l4cohh" class="article-share-link">Share</a>
       
         <a href="http://zespia.tw/blog/2012/02/04/lab-html5-audio/#disqus_thread" class="article-comment-link">Comments</a>
       

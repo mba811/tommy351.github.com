@@ -127,6 +127,7 @@ ga('send', 'pageview');
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 </pre></td></tr></table></figure>
 
+
 <p>以<code>ul#tabs</code>當作標籤，而<code>#contents</code>內則是頁籤內容。我盡可能簡化 HTML 中不必要的欄位，其他功能都將在 JS 中實現。</p>
 <h3 id="CSS">CSS</h3>
 <figure class="highlight css"><table><tr><td class="gutter"><pre>1
@@ -193,6 +194,7 @@ ga('send', 'pageview');
 <span class="rule">}</span></span>
 </pre></td></tr></table></figure>
 
+
 <h3 id="JS">JS</h3>
 <figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
@@ -223,6 +225,7 @@ ga('send', 'pageview');
   });
 })(jQuery);
 </pre></td></tr></table></figure>
+
 
 <p>首先透過<code>each</code>遍歷所有頁籤（<code>#tabs li</code>），並在所有頁籤上綁定事件。</p>
 <p>當事件觸發時，移除其它頁籤的<code>class</code>，隱藏其他頁籤的內容，並將<code>class</code>新增至所選頁籤，顯示所選頁籤的內容。</p>
@@ -260,6 +263,7 @@ ga('send', 'pageview');
   <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 </pre></td></tr></table></figure>
+
 
 <p>進階篇的 HTML 結構與基礎篇只有一點小差別，僅在原本的<code>#contents</code>的區塊外又包了一層<code>#container</code>。</p>
 <h3 id="CSS-1">CSS</h3>
@@ -347,6 +351,7 @@ ga('send', 'pageview');
 <span class="rule">}</span></span>
 </pre></td></tr></table></figure>
 
+
 <p><code>#contents</code>改為<code>absolute</code>（絕對定位），並設定寬度為「內容寬度 × 頁籤數量」。<code>#contents</code>內的<code>div</code>別忘了加上<code>float: left;</code>，如此一來頁籤內容才會排成一橫列，將寬度設為「內容寬度 － 左右 padding」。</p>
 <p>進階篇若少了 JS 的輔助，則無法正常顯示，除非事先設定<code>#container</code>的高度。</p>
 <h3 id="JS-1">JS</h3>
@@ -416,6 +421,7 @@ ga('send', 'pageview');
 })(jQuery);
 </pre></td></tr></table></figure>
 
+
 <p>原理與基礎篇有些差別，必須在頁籤上新增<code>tabid</code>屬性，不過透過 JS 代勞即可。</p>
 <p>首先使<code>#container</code>的高度符合第一頁籤的高度，接著同樣遍歷所有頁籤（<code>#tabs li</code>），在所有頁籤上新增<code>tabid</code>屬性，順便綁定事件。</p>
 <p>當事件觸發時，確認使用者是否正在操作頁籤（<code>trigger == false</code>），若頁籤操作速度過於頻繁，可能會使得動畫錯亂。接著計算動畫間距，使內容依照間距左右移動，並使其高度符合所選頁籤內容的高度。</p>
@@ -429,7 +435,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zespia.tw/blog/2012/01/21/jquery-tabs/" data-id="772jqewa0y4kxe98" class="article-share-link">Share</a>
+      <a data-url="http://zespia.tw/blog/2012/01/21/jquery-tabs/" data-id="muo8jg0npgrj5jjc" class="article-share-link">Share</a>
       
         <a href="http://zespia.tw/blog/2012/01/21/jquery-tabs/#disqus_thread" class="article-comment-link">Comments</a>
       

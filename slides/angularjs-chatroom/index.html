@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular.js 聊天室</title>
+    <link rel="stylesheet" href="/slides/css/reveal.min.css">
+    <link rel="stylesheet" href="/slides/css/theme/custom.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+
+<p><img src="http://i.minus.com/ijx3gDg0pf7LS.png" alt=""></p>
+<h2 id="Angular-js_ 聊天室 ">Angular.js 聊天室</h2>
+</section>
+
+
+
+
+
+<section>
+
+
+<h2 id=" 先來試試看吧！">先來試試看吧！</h2>
+<p><a href="http://zespia.tw/angularjs-chatroom/">http://zespia.tw/angularjs-chatroom/</a></p>
+</section>
+
+
+
+
+
+<section>
+
+<h2 id=" 是怎麼做到的呢？">是怎麼做到的呢？</h2>
+<div class="fragment">
+
+<p>AJAX or WebSocket</p>
+</div>
+
+
+
+</section>
+
+
+
+
+
+<section>
+
+
+
+<section>
+
+<p>這次只談 Angular.js，不講後端<br>因此我們使用</p>
+<p><img src="http://i.minus.com/iwEH7lJ6MvuBU.png" alt=""></p>
+<p><a href="https://www.firebase.com/" target="_blank">https://www.firebase.com/</a></p>
+</section>
+
+
+
+<section>
+
+<h2 id=" 註冊帳號 ">註冊帳號</h2>
+<p><img src="https://www.evernote.com/shard/s55/sh/6f24cd68-4244-4463-85a7-ca0f66aab2df/7b5761d564417a34035ef53c06e6349d/deep/0/%E7%81%AB%E7%8B%90%E6%88%AA%E5%9C%96_2014-04-25T14-28-20.491Z.png" alt=""></p>
+</section>
+
+
+
+</section>
+
+
+
+
+
+<section>
+
+<p><img src="http://i.minus.com/id85BdzzVutld.png" alt=""></p>
+<p>Why not jQuery?</p>
+</section>
+
+
+
+
+
+<section>
+
+<h2 id=" 常見框架 ">常見框架</h2>
+<img src="http://i.minus.com/iTCzjPrwc0Fti.png" width="250">
+
+
+
+<img src="http://i.minus.com/ijx3gDg0pf7LS.png" width="250">
+
+
+
+<img src="http://i.minus.com/ibtYIXlAw3reHp.png" width="250">
+
+
+
+</section>
+
+
+
+
+
+<section>
+
+<h2 id="What’s_Angular?">What’s Angular?</h2>
+<div class="fragment">
+
+<p>Angular.js 是一個 MVVM 的 JavaScript 框架。</p>
+<p><img src="http://i.minus.com/ibgUQ7mW3znvTp.png" alt=""></p>
+</div>
+
+
+
+</section>
+
+
+
+
+
+<section>
+
+
+
+<section>
+
+<h1 id="JavaScript_ 入門 ">JavaScript 入門</h1>
+</section>
+
+
+
+<section>
+
+<h2 id=" 變數 ">變數</h2>
+<p>JavaScript 是弱型別語言，設立變數時無需指定型別。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="keyword">var</span> num = <span class="number">1</span>; <span class="comment">// Number</span>
+<span class="keyword">var</span> bool = <span class="literal">true</span>; <span class="comment">// Boolean</span>
+<span class="keyword">var</span> str = <span class="string">'string'</span>; <span class="comment">// String</span>
+<span class="keyword">var</span> arr = []; <span class="comment">// Array</span>
+<span class="keyword">var</span> obj = {}; <span class="comment">// Object</span>
+</pre></td></tr></table></figure>
+
+
+<p>設立變數時若沒有賦值，則變數值為 <code>undefined</code>。</p>
+</section>
+
+
+
+<section>
+
+<h2 id="Number">Number</h2>
+<p>JavaScript 無整數及浮點數之分，所有數字皆為 64 位元浮點數。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre><span class="keyword">var</span> x = <span class="number">3.14</span>;
+<span class="keyword">var</span> y = <span class="number">3</span>;
+</pre></td></tr></table></figure>
+
+
+<p>所有數值前方加上 <code>+</code> 即可強制轉換為 Number。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
+2
+3
+</pre></td><td class="code"><pre>+<span class="string">'1'</span> == <span class="number">1</span>
++<span class="literal">false</span> == <span class="number">0</span>
++{} == <span class="literal">NaN</span>
+</pre></td></tr></table></figure>
+
+
+<p>然而，必須注意 JavaScript 的浮點數並不精確。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="number">0.2</span> + <span class="number">0.1</span> = <span class="number">0.30000000000000004</span>
+</pre></td></tr></table></figure>
+
+
+</section>
+
+
+
+<section>
+
+<h2 id="String">String</h2>
+<p>JavaScript 沒有 char，所有字串都是 UTF-16 字串，<br>單引號或雙引號毫無差別。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="string">'str'</span> === <span class="string">"str"</span>
+</pre></td></tr></table></figure>
+
+
+<p>所有數值加上字串後，會自動轉換為字串。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="number">1</span> + <span class="string">'2'</span> == <span class="string">'12'</span>
+</pre></td></tr></table></figure>
+
+
+</section>
+
+
+
+<section>
+
+<h2 id="Array">Array</h2>
+<p>JavaScript 的陣列使用時不限長度，可以無限延伸。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
+2
+3
+</pre></td><td class="code"><pre><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>];
+arr.push(<span class="number">3</span>);
+arr.length == <span class="number">3</span>;
+</pre></td></tr></table></figure>
+
+
+<p>內容也不必都是同一型別，塞啥洨都沒差。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="literal">true</span>, <span class="string">'str'</span>, [], {}, <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>}];
+</pre></td></tr></table></figure>
+
+
+<p>若要清除陣列內容，只需將 <code>length</code> 設為 <code>0</code> 即可。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>arr.length = <span class="number">0</span>;
+</pre></td></tr></table></figure>
+
+
+</section>
+
+
+
+<section>
+
+<h2 id="Object">Object</h2>
+<p>JavaScript 的 Object 即為其他語言的 Map, Hash<br>與 Array 不同的是，Object 有 key 值，而 Array 沒有<br>（也可將 Array 是為 key 值為有序整數的 Object）</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="keyword">var</span> obj = {
+    foo: <span class="number">1</span>,
+    bar: <span class="number">2</span>
+};
+</pre></td></tr></table></figure>
+
+
+<p>與 Array 相同，Object 要塞啥洨都沒差。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="keyword">var</span> obj = {
+    num: <span class="number">1</span>,
+    str: <span class="string">'string'</span>,
+    bool: <span class="literal">true</span>
+};
+</pre></td></tr></table></figure>
+
+
+</section>
+
+
+
+<section>
+
+<h2 id="Condition">Condition</h2>
+<p>由於 JavaScript 是弱型別語言，進行判斷時會自動轉換型別。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre><span class="number">0</span> == <span class="string">''</span> == <span class="literal">false</span>
+<span class="number">1</span> == <span class="string">'a'</span> == <span class="literal">true</span>
+</pre></td></tr></table></figure>
+
+
+<p>雖然自動轉換型別很方便，但有時可能會產生問題，<br>可利用 <code>===</code> 和 <code>!==</code> 避免型別轉換。</p>
+</section>
+
+
+
+<section>
+
+<h2 id="Function">Function</h2>
+<p>在 JavaScript 中，有兩種方式可設立函數：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="keyword">var</span> func = <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
+};
+
+<span class="function"><span class="keyword">function</span> <span class="title">func</span><span class="params">()</span>{</span>
+}
+</pre></td></tr></table></figure>
+
+
+<p>兩種方式的區別在於：</p>
+<ul>
+<li>第一種方式其實是將匿名函數指派給一個變數</li>
+<li>第二種方式則是建立一個非匿名函數</li>
+</ul>
+<p>一般來說，習慣使用第一種方式避免變數污染，<br>因為第一種方式的函數在設立後才有效，<br>而第二種方式的函數會應用到目前的 scope。</p>
+</section>
+
+
+
+<section>
+
+<h2 id="Class">Class</h2>
+<p>JavaScript 目前沒有 Class（將在 ECMAScript 6 推出）<br>而是使用 <strong>prototype</strong> 實作物件導向。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="keyword">var</span> Person = <span class="function"><span class="keyword">function</span><span class="params">(name)</span>{</span>
+};
+
+Person.prototype.eat = <span class="function"><span class="keyword">function</span><span class="params">(food)</span>{</span>
+    alert(food + <span class="string">' is yummy!'</span>);
+};
+
+<span class="comment">// 繼承</span>
+Person.prototype = <span class="keyword">new</span> Parent();
+
+<span class="keyword">var</span> andy = <span class="keyword">new</span> Person(<span class="string">'Andy'</span>);
+andy.eat(<span class="string">'shit'</span>);
+</pre></td></tr></table></figure>
+
+
+<p>很麻煩對吧？如果不想寫這些的話請愛用 <a href="http://coffeescript.org/" target="_blank">CoffeeScript</a></p>
+</section>
+
+
+
+</section>
+
+
+
+
+
+<section>
+
+
+
+<section>
+
+<h1 id="Angular-js_ 入門 ">Angular.js 入門</h1>
+</section>
+
+
+
+<section>
+
+<h2 id="Data_Binding">Data Binding</h2>
+<p>Angular.js 最方便的功能之一：<strong>Data binding（資料繫結）</strong>。</p>
+<iframe width="100%" height="300" src="http://jsfiddle.net/NGG7P/embedded/result,html/light" frameborder="0" allowfullscreen></iframe>
+
+
+
+</section>
+
+
+
+<section>
+
+<h2 id="Controller">Controller</h2>
+<p>Controller 決定應用程式的行為。</p>
+<iframe width="100%" height="300" src="http://jsfiddle.net/vqJ5q/embedded/result,html,js/light" frameborder="0" allowfullscreen></iframe>
+
+
+
+</section>
+
+
+
+<section>
+
+<h2 id="Directive">Directive</h2>
+<p>Directive 可以讓你自定獨特的 HTML 組件。</p>
+<iframe width="100%" height="300" src="http://jsfiddle.net/gLWfL/embedded/result,html,js/light" frameborder="0" allowfullscreen></iframe>
+
+
+
+</section>
+
+
+
+<section>
+
+<h2 id="Filter">Filter</h2>
+<p>Filter 用於轉換資料內容，例如將時間轉為特定格式。</p>
+<iframe width="100%" height="300" src="http://jsfiddle.net/F9Aa9/embedded/result,html,js/light" frameborder="0" allowfullscreen></iframe>
+
+
+
+</section>
+
+
+
+</section>
+
+
+
+
+
+<section>
+
+<h1 id=" 正題 ">正題</h1>
+</section>
+
+
+
+
+
+<section>
+
+<h2 id=" 引入檔案 ">引入檔案</h2>
+<p>首先，建立 <code>index.html</code> 並引入 Angular.js，如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;<span class="title">html</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">head</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">title</span>&gt;</span>Angular.js 聊天室<span class="tag">&lt;/<span class="title">title</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">head</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">body</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">html</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+
+</section>
+
+
+
+
+
+<section>
+
+<h2 id=" 建立主程式 ">建立主程式</h2>
+<p>接著，建立 <code>script.js</code> 並引入它。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"script.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+
+<p>在 <code>script.js</code> 初始化 app。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="keyword">var</span> app = angular.module(<span class="string">'app'</span>, []);
+</pre></td></tr></table></figure>
+
+
+</section>
+
+
+
+
+
+<section>
+
+<h2 id=" 完成頁面結構 ">完成頁面結構</h2>
+<p>然後回到 <code>index.html</code>，完成頁面的主結構</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"chat-room"</span> <span class="attribute">ng-controller</span>=<span class="value">"ChatCtrl"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"message"</span> <span class="attribute">ng-repeat</span>=<span class="value">"msg in messages"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">strong</span>&gt;</span>{{ msg.name }}:<span class="tag">&lt;/<span class="title">strong</span>&gt;</span> {{ msg.content }}    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">form</span> <span class="attribute">ng-submit</span>=<span class="value">"submit()"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">ng-model</span>=<span class="value">"name"</span> <span class="attribute">required</span> <span class="attribute">placeholder</span>=<span class="value">" 姓名 "</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">ng-model</span>=<span class="value">"content"</span> <span class="attribute">required</span> <span class="attribute">placeholder</span>=<span class="value">" 內容 "</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"submit"</span>&gt;</span>送出<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">form</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+
+<p>完成後，便會得到以下畫面：</p>
+<p><img src="http://i.minus.com/iJylVXCSUxwnS.png" alt=""></p>
+</section>
+
+
+
+
+
+<section>
+
+<h2 id=" 新增 _Controller">新增 Controller</h2>
+<p>在 <code>script.js</code> 中新增 <code>ChatCtrl</code>，並設定留言送出的動作。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="code"><pre>app.controller(<span class="string">'ChatCtrl'</span>, [<span class="string">'$scope'</span>, <span class="function"><span class="keyword">function</span><span class="params">($scope)</span>{</span>
+    <span class="comment">// 初始化留言清單</span>
+    $scope.messages = [];
+    
+    <span class="comment">// 設定留言送出後的動作</span>
+    $scope.submit = <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
+        <span class="comment">// 驗證姓名與留言是否填寫</span>
+        <span class="keyword">if</span> (!$scope.name || !$scope.content) <span class="keyword">return</span>;
+        
+        <span class="comment">// 將留言新增到清單中</span>
+        $scope.messages.push({
+            name: $scope.name.
+            content: $scope.content
+        });
+        
+        <span class="comment">// 清空留言內容</span>
+        $scope.content = <span class="string">''</span>;
+    };
+}]);
+</pre></td></tr></table></figure>
+
+
+</section>
+
+
+
+
+
+<section>
+
+<p>到此為止單機版的留言室已經做好了，<br>已經完成了一大半！</p>
+</section>
+
+
+
+
+
+<section>
+
+<h2 id=" 引入 _Firebase">引入 Firebase</h2>
+<p>接著引入 Firebase 所需的檔案。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"https://cdn.firebase.com/js/client/1.0.11/firebase.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+<span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"https://cdn.firebase.com/libs/angularfire/0.7.1/angularfire.min.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+
+</section>
+
+
+
+
+
+<section>
+
+<h2 id="Firebase_ 網址 ">Firebase 網址</h2>
+<p>找到 Firebase 資料庫的網址</p>
+<p><img src="https://www.evernote.com/shard/s55/sh/911b4605-dfc9-456e-9298-bb2364944589/d31d98efeffa8c5c62f18a70c79aa7e1/deep/0/%E7%81%AB%E7%8B%90%E6%88%AA%E5%9C%96_2014-04-26T02-12-18.576Z.png" alt=""></p>
+</section>
+
+
+
+
+
+<section>
+
+<h2 id=" 修改主程式 ">修改主程式</h2>
+<p>對 <code>script.js</code> 稍作修改，網址請改成你的 Firebase 網址。</p>
+<p><img src="http://i.minus.com/idXeZ8ZpckirK.png" alt=""></p>
+</section>
+
+
+
+
+
+<section>
+
+<p>如此一來，即時聊天室就完成了！</p>
+</section>
+
+
+
+
+
+<section>
+
+<h2 id="Thanks!_Any_Question?">Thanks! Any Question?</h2>
+<p>今天的檔案都放在 GitHub 上<br><a href="https://github.com/tommy351/angularjs-chatroom" target="_blank">https://github.com/tommy351/angularjs-chatroom</a></p>
+</section>
+
+
+      </div>
+    </div>
+    <script src="/slides/js/reveal.min.js"></script>
+    <script>
+    Reveal.initialize({
+      dependencies: [
+        {src: '/slides/lib/js/classList.js', condition: function() { return !document.body.classList; }}
+      ],
+      controls: true,
+      progress: true,
+      slide_number: false,
+      history: false,
+      keyboard: true,
+      overview: true,
+      center: true,
+      touch: true,
+      loop: false,
+      rtl: false,
+      fragments: true,
+      embedded: false,
+      autoSlide: 0,
+      autoSlideStoppable: true,
+      mouseWheel: false,
+      hideAddressBar: true,
+      previewLinks: false,
+      transition: 'linear',
+      transitionSpeed: 'default',
+      backgroundTransition: 'default',
+      viewDistance: 3,
+      parallaxBackgroundImage: '',
+      parallaxBackgroundSize: ''
+    });
+    </script>
+  </body>
+</html>
