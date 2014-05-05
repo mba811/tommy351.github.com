@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://zespia.tw/"/>
-  <updated>2014-05-01T10:52:56.339Z</updated>
+  <updated>2014-05-05T10:10:39.503Z</updated>
   <id>http://zespia.tw/</id>
   
   <author>
@@ -13,6 +13,56 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[sprite.styl — 利用 Stylus 自動製作 Sprite]]></title>
+    <link href="http://zespia.tw/blog/2014/05/05/sprite-styl/"/>
+    <id>http://zespia.tw/blog/2014/05/05/sprite-styl/</id>
+    <published>2014-05-05T08:53:39.000Z</published>
+    <updated>2014-05-05T10:08:16.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://i.minus.com/ibpxy719URHw77.jpg" alt=" 駒野・ C ・ローサ - ほの綺羅 (id=43049066)"></p>
+<p>上週因為 <del>懶得更新</del> 期中考而沒寫新文章，本週的內容同樣是技術性質的文章，而主題就是「<strong>利用 Stylus 自動製作 Sprite</strong>」，為了避免各位感到無聊，我特地在文章開頭放了一張毫無關聯的圖片，<del>就是為了騙點閱率</del>。</p>
+<a id="more"></a>
+
+<h2 id="Sprite_ 是啥？">Sprite 是啥？</h2>
+<p><img src="http://i.minus.com/ibxXoah3EFr8Pm.png" alt=""></p>
+<p>有些人可能會對「Sprite」這詞感到疑惑，它並非飲料名稱，而是一種將數張圖片合併為一張圖片的技術，常見於網頁與遊戲設計中，例如上圖即是 Facebook 所使用的 Sprite。在網頁設計中使用 Sprite 可以大幅降低網路請求的數量，如果有用到圖片按鈕的話，使用 Sprite 可避免圖片按鈕的閃動效果。</p>
+<p>過去我用 <a href="http://sass-lang.com/" target="_blank">Sass</a> 時，一定會搭配 <a href="http://compass-style.org/" target="_blank">Compass</a> 使用，而 <a href="http://compass-style.org/" target="_blank">Compass</a> 最實用的功能之一就是自動製作 Sprite，它可以從指定資料夾中的所有圖片中，自動建立 Sprite，然而為人詬病的就是：</p>
+<ul>
+<li>速度頗慢</li>
+<li>Retina Sprite 處理麻煩</li>
+<li><del>林北現在只用 <a href="http://learnboost.github.io/stylus/" target="_blank">Stylus</a> 啦！</del></li>
+</ul>
+<p>然而，<a href="http://learnboost.github.io/stylus/" target="_blank">Stylus</a> 目前還沒有一個好用的 Sprite 工具能用，所以我一直以來都用 <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a> 來避免這種煩惱。日前剛好在公司研究如何使用 <a href="http://compass-style.org/" target="_blank">Compass</a> 製作 Retina Sprite，所以就花了點時間做了專為 <a href="http://learnboost.github.io/stylus/" target="_blank">Stylus</a> 設計的 Sprite 工具：<strong><a href="https://github.com/tommy351/sprite.styl" target="_blank">sprite.styl</a></strong>。</p>
+<h2 id=" 開發過程 ">開發過程</h2>
+<p><a href="https://github.com/tommy351/sprite.styl" target="_blank">sprite.styl</a> 是一個用起來與 <a href="http://compass-style.org/" target="_blank">Compass</a> 很相似的 Sprite 工具，只不過是為 <a href="http://learnboost.github.io/stylus/" target="_blank">Stylus</a> 設計的，使用方式很簡單，自己去看說明和範例，本文就不詳細說明了，下面將說明此工具的開發過程。</p>
+<p>要製作一個 Sprite 工具，首先最重要的就是一個高效的圖片處理工具，在 Node.js 常見的是：</p>
+<ul>
+<li><strong><a href="http://www.imagemagick.org/" target="_blank">imagemagick</a></strong> - 使用 <a href="http://www.imagemagick.org/" target="_blank">ImageMagick</a></li>
+<li><strong><a href="https://github.com/aheckmann/gm" target="_blank">gm</a></strong> - 使用 <a href="http://www.graphicsmagick.org/" target="_blank">GraphicsMagick</a> 或 <a href="http://www.imagemagick.org/" target="_blank">ImageMagick</a></li>
+<li><strong><a href="https://github.com/LearnBoost/node-canvas" target="_blank">canvas</a></strong> - 使用 <a href="http://cairographics.org/" target="_blank">Cairo</a></li>
+</ul>
+<p>第一個 [node-imagemagick] 因為效能太爛所以不考慮；而第二個 <a href="https://github.com/aheckmann/gm" target="_blank">gm</a> 雖然非常高效，但是非同步寫起來很麻煩，而且似乎只有圖片解析比較好用，圖片處理看起來較為麻煩。</p>
+<p>因此，只剩下最後一個選擇 <a href="https://github.com/LearnBoost/node-canvas" target="_blank">canvas</a>，<a href="https://github.com/LearnBoost/node-canvas" target="_blank">canvas</a> 可支援同步處理，而且支援 HTML5 的 Canvas API，比起 <a href="https://github.com/aheckmann/gm" target="_blank">gm</a> 來說好用多了，然而缺點就是 <a href="http://cairographics.org/" target="_blank">Cairo</a> 這鬼東西有夠難裝，我安裝時不知為何碰到一堆鬼問題。</p>
+<p>挑選出適合的圖片處理工具後，剩下的問題便相當簡單了，<del>只要照搬 <a href="http://compass-style.org/" target="_blank">Compass</a> 的內容就好</del>。</p>
+<h2 id=" 結語 ">結語</h2>
+<p><a href="https://github.com/tommy351/sprite.styl" target="_blank">sprite.styl</a> 只是一時興起而寫的工具，我實際上還未使用過，畢竟我大部分時間都使用 <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a>，在公司則是用 <a href="http://compass-style.org/" target="_blank">Compass</a>。目前還有些問題需要解決：</p>
+<ul>
+<li>支援 Smart Selector</li>
+<li>圖片壓縮</li>
+<li>更高效的 Sprite 演算法（<a href="http://codeincomplete.com/posts/2011/5/7/bin_packing/" target="_blank">Binary Tree Bin Packing Algorithm</a>）</li>
+</ul>
+<p>如果有興趣的人歡迎撿去用，<del>有問題的話本人一概不負責</del>。在連續兩篇的技術性文章後，接下來大概會是兩篇遊戲文章：<a href="http://www.jp.playstation.com/software/title/jp9000pcsc00047_000000000000000001.html" target="_blank">勇者有點太囂張 G</a> 及 <a href="http://www.danganronpa.com/2/" target="_blank">超級槍彈辯駁 2</a>，敬請期待！</p>
+]]></content>
+    <summary type="html"><![CDATA[<p><img src="http://i.minus.com/ibpxy719URHw77.jpg" alt=" 駒野・ C ・ローサ - ほの綺羅 (id=43049066)"></p>
+<p>上週因為 <del>懶得更新</del> 期中考而沒寫新文章，本週的內容同樣是技術性質的文章，而主題就是「<strong>利用 Stylus 自動製作 Sprite</strong>」，為了避免各位感到無聊，我特地在文章開頭放了一張毫無關聯的圖片，<del>就是為了騙點閱率</del>。</p>
+]]></summary>
+    
+      <category term="JavaScript" scheme="http://zespia.tw/tags/JavaScript/"/>
+    
+      <category term="Stylus" scheme="http://zespia.tw/tags/Stylus/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[E-Hentai 閱讀器 for Android]]></title>
@@ -1966,27 +2016,6 @@ sharing: true
       <category term="Octopress" scheme="http://zespia.tw/tags/Octopress/"/>
     
       <category term="Ruby" scheme="http://zespia.tw/tags/Ruby/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Google+ Motionless & Filter]]></title>
-    <link href="http://zespia.tw/blog/2011/09/17/google-scripts-2/"/>
-    <id>http://zespia.tw/blog/2011/09/17/google-scripts-2/</id>
-    <published>2011-09-17T00:00:00.000Z</published>
-    <updated>2012-10-10T16:39:03.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://i.minus.com/ieJceSDuuo3RS.png" alt=" サイノウサンプラー | ryosios（id=21795820）"></p>
-<p>最近課業繁重，無法抽出時間撰寫網誌，於是 <del>寫這篇文章來騙人氣</del> 再介紹一次之前寫的 2 個 Google+ 腳本。上圖與本文毫無關係，純粹是在 Pixiv 上隨便抓一張圖片而已。</p>
-<h2 id="Google+_Motionless">Google+ Motionless</h2>
-<p>看圖、影片或閱讀文章時，因為訊息串的快速更新，常會使畫面不斷上下抽動，不只妨礙視覺，有時還會誤按連結，因此當做練功寫了這個腳本，並於 1.0.4 版新增「自動載入下頁」功能。</p>
-<p><a href="http://userscripts.org/scripts/show/111484" target="_blank">下載（Ver. 1.0.4）</a></p>
-<h2 id="Google+_Fxxking_Filter">Google+ Fxxking Filter</h2>
-<p>「樹大必有枯枝，人多必有白痴」，有時在訊息串上會看到令人很不爽的發言，透過這腳本可以將不想看到的訊息過濾，還給使用者一片乾淨的訊息串。</p>
-<p><a href="http://userscripts.org/scripts/show/111206" target="_blank">下載（Ver. 1.0.1）</a></p>
-]]></content>
-    
-    
-      <category term="JavaScript" scheme="http://zespia.tw/tags/JavaScript/"/>
     
   </entry>
   
