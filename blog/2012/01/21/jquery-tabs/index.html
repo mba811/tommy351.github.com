@@ -5,17 +5,22 @@
   
   <title>如何利用 jQuery 製作頁籤？ | Zespia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta content="article" property="og:type">
-<meta content="如何利用 jQuery 製作頁籤？" property="og:title">
-<meta content="http://zespia.tw/blog/2012/01/21/jquery-tabs/" property="og:url">
-<meta content="http://i.minus.com/i3hFGFugcShjF.jpg" property="og:image">
-<meta content="Zespia" property="og:site_name">
-<meta content="最近花了一週的時間，終於完成 Octopress 的佈景主題，並搬移舊站（zespia.twbbs.org）的文章及留言，發現自已以前的文章實在有夠中二，看得連自己都想揍螢幕，於是偷偷撤下了部分文章。
-為了慶祝新站落成，便決定寫一篇超級簡易（大概啦）的 jQuery 頁籤製作教學，懷著感恩的心看吧！" property="og:description">
-<meta content="summary" name="twitter:card">
-<meta content="tommy351" name="twitter:creator">
+  <meta name="description" content="最近花了一週的時間，終於完成 Octopress 的佈景主題，並搬移舊站（zespia.twbbs.org）的文章及留言，發現自已以前的文章實在有夠中二，看得連自己都想揍螢幕，於是偷偷撤下了部分文章。
+為了慶祝新站落成，便決定寫一篇超級簡易（大概啦）的 jQuery 頁籤製作教學，懷著感恩的心看吧！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何利用 jQuery 製作頁籤？">
+<meta property="og:url" content="http://zespia.tw/blog/2012/01/21/jquery-tabs/">
+<meta property="og:image" content="http://i.minus.com/i3hFGFugcShjF.jpg">
+<meta property="og:site_name" content="Zespia">
+<meta property="og:description" content="最近花了一週的時間，終於完成 Octopress 的佈景主題，並搬移舊站（zespia.twbbs.org）的文章及留言，發現自已以前的文章實在有夠中二，看得連自己都想揍螢幕，於是偷偷撤下了部分文章。
+為了慶祝新站落成，便決定寫一篇超級簡易（大概啦）的 jQuery 頁籤製作教學，懷著感恩的心看吧！">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何利用 jQuery 製作頁籤？">
+<meta name="twitter:description" content="最近花了一週的時間，終於完成 Octopress 的佈景主題，並搬移舊站（zespia.twbbs.org）的文章及留言，發現自已以前的文章實在有夠中二，看得連自己都想揍螢幕，於是偷偷撤下了部分文章。
+為了慶祝新站落成，便決定寫一篇超級簡易（大概啦）的 jQuery 頁籤製作教學，懷著感恩的心看吧！">
+<meta name="twitter:creator" content="tommy351">
 <link rel="publisher" href="108777679171675250079">
-<meta content="100000247608790" property="fb:admins">
+<meta property="fb:admins" content="100000247608790">
   
     <link rel="alternative" href="/atom.xml" title="Zespia" type="application/atom+xml">
   
@@ -127,7 +132,6 @@ ga('send', 'pageview');
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 </pre></td></tr></table></figure>
 
-
 <p>以<code>ul#tabs</code>當作標籤，而<code>#contents</code>內則是頁籤內容。我盡可能簡化 HTML 中不必要的欄位，其他功能都將在 JS 中實現。</p>
 <h3 id="CSS">CSS</h3>
 <figure class="highlight css"><table><tr><td class="gutter"><pre>1
@@ -194,7 +198,6 @@ ga('send', 'pageview');
 <span class="rule">}</span></span>
 </pre></td></tr></table></figure>
 
-
 <h3 id="JS">JS</h3>
 <figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
@@ -226,11 +229,10 @@ ga('send', 'pageview');
 })(jQuery);
 </pre></td></tr></table></figure>
 
-
 <p>首先透過<code>each</code>遍歷所有頁籤（<code>#tabs li</code>），並在所有頁籤上綁定事件。</p>
 <p>當事件觸發時，移除其它頁籤的<code>class</code>，隱藏其他頁籤的內容，並將<code>class</code>新增至所選頁籤，顯示所選頁籤的內容。</p>
 <p>建議把 JS 放在頁尾（footer），可使頁面載入完成後才載入 JS，避免出現錯誤。</p>
-<p><a href="http://zespia.tw/demo/jquery-tabs/basic/">範例</a>｜<br><a href="http://zespia.tw/demo/jquery-tabs/basic/example.zip">下載</a></p>
+<p><a href="http://zespia.tw/demo/jquery-tabs/basic/" target="_blank">範例</a>｜<br><a href="http://zespia.tw/demo/jquery-tabs/basic/example.zip" target="_blank">下載</a></p>
 <h2 id=" 進階 ">進階</h2>
 <p>只有單純的顯示隱藏似乎太無趣了？那就加點動畫吧！只要稍微變更基礎結構，就能讓頁籤看起來更加華麗！</p>
 <h3 id="HTML-1">HTML</h3>
@@ -263,7 +265,6 @@ ga('send', 'pageview');
   <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 </pre></td></tr></table></figure>
-
 
 <p>進階篇的 HTML 結構與基礎篇只有一點小差別，僅在原本的<code>#contents</code>的區塊外又包了一層<code>#container</code>。</p>
 <h3 id="CSS-1">CSS</h3>
@@ -351,7 +352,6 @@ ga('send', 'pageview');
 <span class="rule">}</span></span>
 </pre></td></tr></table></figure>
 
-
 <p><code>#contents</code>改為<code>absolute</code>（絕對定位），並設定寬度為「內容寬度 × 頁籤數量」。<code>#contents</code>內的<code>div</code>別忘了加上<code>float: left;</code>，如此一來頁籤內容才會排成一橫列，將寬度設為「內容寬度 － 左右 padding」。</p>
 <p>進階篇若少了 JS 的輔助，則無法正常顯示，除非事先設定<code>#container</code>的高度。</p>
 <h3 id="JS-1">JS</h3>
@@ -421,13 +421,12 @@ ga('send', 'pageview');
 })(jQuery);
 </pre></td></tr></table></figure>
 
-
 <p>原理與基礎篇有些差別，必須在頁籤上新增<code>tabid</code>屬性，不過透過 JS 代勞即可。</p>
 <p>首先使<code>#container</code>的高度符合第一頁籤的高度，接著同樣遍歷所有頁籤（<code>#tabs li</code>），在所有頁籤上新增<code>tabid</code>屬性，順便綁定事件。</p>
 <p>當事件觸發時，確認使用者是否正在操作頁籤（<code>trigger == false</code>），若頁籤操作速度過於頻繁，可能會使得動畫錯亂。接著計算動畫間距，使內容依照間距左右移動，並使其高度符合所選頁籤內容的高度。</p>
 <p>當動畫全部結束後，返回<code>trigger = false</code>，讓使用者能夠再度操作頁籤。</p>
 <p>如此一來，平凡樸素的頁籤便多了左右滑動的動畫，如果想要更加華麗的話，可以使用<a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank">jQuery Easing Plugin</a>。</p>
-<p><a href="http://zespia.tw/demo/jquery-tabs/advanced/">範例</a>｜<br><a href="http://zespia.tw/demo/jquery-tabs/advanced/example.zip">下載</a></p>
+<p><a href="http://zespia.tw/demo/jquery-tabs/advanced/" target="_blank">範例</a>｜<br><a href="http://zespia.tw/demo/jquery-tabs/advanced/example.zip" target="_blank">下載</a></p>
 <h2 id=" 後記 ">後記</h2>
 <p><img src="http://i.minus.com/ibiEDX70iCDveF.PNG" alt=""></p>
 <p>最後的成果如上圖，當然細部的樣式、動畫請自行設定。希望這篇文章簡單易懂（？）的文章能夠幫助到你。最近預計再寫一篇 CSS Only 的多級選單教學，請拭目以待吧！</p>
@@ -435,7 +434,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zespia.tw/blog/2012/01/21/jquery-tabs/" data-id="1c8nq2lbo7j6cdzc" class="article-share-link">Share</a>
+      <a data-url="http://zespia.tw/blog/2012/01/21/jquery-tabs/" data-id="pgvt8ykzn7m6dv21" class="article-share-link">Share</a>
       
         <a href="http://zespia.tw/blog/2012/01/21/jquery-tabs/#disqus_thread" class="article-comment-link">Comments</a>
       

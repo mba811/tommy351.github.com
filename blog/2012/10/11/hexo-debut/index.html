@@ -5,17 +5,22 @@
   
   <title>Hexo 颯爽登場！ | Zespia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta content="article" property="og:type">
-<meta content="Hexo 颯爽登場！" property="og:title">
-<meta content="http://zespia.tw/blog/2012/10/11/hexo-debut/" property="og:url">
-<meta content="http://i.minus.com/ibpMKNkpRxVwsK.jpg" property="og:image">
-<meta content="Zespia" property="og:site_name">
-<meta content="我想每個 Octopress 的使用者一定都有這樣的煩惱──隨著文章數量愈來愈多，檔案建立的速度愈來愈慢。本站目前已累積至 54 篇文章，每次建立檔案時，至少都需要花費一分鐘以上的時間。
-或許是因為 Ruby 天生就比較慢，而這種問題未來似乎也不會改善，Jekyll 和 Octopress 已經一段時間沒有更新，那麼唯一的解決方案只有另覓其他 Blog Framework 了。" property="og:description">
-<meta content="summary" name="twitter:card">
-<meta content="tommy351" name="twitter:creator">
+  <meta name="description" content="我想每個 Octopress 的使用者一定都有這樣的煩惱──隨著文章數量愈來愈多，檔案建立的速度愈來愈慢。本站目前已累積至 54 篇文章，每次建立檔案時，至少都需要花費一分鐘以上的時間。
+或許是因為 Ruby 天生就比較慢，而這種問題未來似乎也不會改善，Jekyll 和 Octopress 已經一段時間沒有更新，那麼唯一的解決方案只有另覓其他 Blog Framework 了。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo 颯爽登場！">
+<meta property="og:url" content="http://zespia.tw/blog/2012/10/11/hexo-debut/">
+<meta property="og:image" content="http://i.minus.com/ibpMKNkpRxVwsK.jpg">
+<meta property="og:site_name" content="Zespia">
+<meta property="og:description" content="我想每個 Octopress 的使用者一定都有這樣的煩惱──隨著文章數量愈來愈多，檔案建立的速度愈來愈慢。本站目前已累積至 54 篇文章，每次建立檔案時，至少都需要花費一分鐘以上的時間。
+或許是因為 Ruby 天生就比較慢，而這種問題未來似乎也不會改善，Jekyll 和 Octopress 已經一段時間沒有更新，那麼唯一的解決方案只有另覓其他 Blog Framework 了。">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo 颯爽登場！">
+<meta name="twitter:description" content="我想每個 Octopress 的使用者一定都有這樣的煩惱──隨著文章數量愈來愈多，檔案建立的速度愈來愈慢。本站目前已累積至 54 篇文章，每次建立檔案時，至少都需要花費一分鐘以上的時間。
+或許是因為 Ruby 天生就比較慢，而這種問題未來似乎也不會改善，Jekyll 和 Octopress 已經一段時間沒有更新，那麼唯一的解決方案只有另覓其他 Blog Framework 了。">
+<meta name="twitter:creator" content="tommy351">
 <link rel="publisher" href="108777679171675250079">
-<meta content="100000247608790" property="fb:admins">
+<meta property="fb:admins" content="100000247608790">
   
     <link rel="alternative" href="/atom.xml" title="Zespia" type="application/atom+xml">
   
@@ -118,13 +123,11 @@ ga('send', 'pageview');
 </pre></td><td class="code"><pre>npm install hexo -g
 </pre></td></tr></table></figure>
 
-
 <p>僅需一步就把 Hexo 本體和所有相依套件安裝完畢，很簡單吧？</p>
 <h3 id=" 初始化 ">初始化</h3>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>hexo init &lt;folder&gt;
 </pre></td></tr></table></figure>
-
 
 <p>如果指定 <code>&lt;folder&gt;</code>，便會在目前的資料夾建立一個名為 <code>&lt;folder&gt;</code> 的新資料夾；否則會在目前資料夾初始化。</p>
 <p>設定請參閱 <a href="https://github.com/tommy351/hexo/wiki/Configure" target="_blank">Wiki</a>，我還不太會寫文件，如果看不懂的話請不要鞭太大力。</p>
@@ -136,7 +139,6 @@ ga('send', 'pageview');
 </pre></td><td class="code"><pre>hexo new_post &lt;title&gt;
 hexo new_page &lt;title&gt;
 </pre></td></tr></table></figure>
-
 
 <p>Hexo 已經內建一些外掛了，你可以用這些外掛快速插入元素：</p>
 <ul>
@@ -154,13 +156,11 @@ hexo new_page &lt;title&gt;
 </pre></td><td class="code"><pre>hexo generate
 </pre></td></tr></table></figure>
 
-
 <p>依照環境不同，速度可能會有差別，在我的電腦上需要大約 4 秒鐘。</p>
 <h3 id=" 伺服器 ">伺服器</h3>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>hexo server
 </pre></td></tr></table></figure>
-
 
 <p>伺服器會跑在 <code>http://localhost:port</code> （<code>port</code> 預設為 <code>4000</code>，可在 <code>_config.yml</code> 設定），也可以搭配 <a href="http://pow.cx/" target="_blank">Pow</a> 使用：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre>1
@@ -168,7 +168,6 @@ hexo new_page &lt;title&gt;
 </pre></td><td class="code"><pre><span class="built_in">cd</span> ~/.pow
 ln <span class="operator">-s</span> /path/to/myapp
 </pre></td></tr></table></figure>
-
 
 <p>基本使用差不多就是這樣子，非常簡單。至於外掛和主題的撰寫方法，我之後會在 <a href="https://github.com/tommy351/hexo/wiki" target="_blank">Wiki</a> 補完，你也可以嘗試看看<a href="https://github.com/tommy351/hexo" target="_blank">原始碼</a>。</p>
 <h2 id=" 結論 ">結論</h2>
@@ -190,7 +189,7 @@ ln <span class="operator">-s</span> /path/to/myapp
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zespia.tw/blog/2012/10/11/hexo-debut/" data-id="tvsgl9vgxrm7ed8f" class="article-share-link">Share</a>
+      <a data-url="http://zespia.tw/blog/2012/10/11/hexo-debut/" data-id="kncfg4lg54a712nf" class="article-share-link">Share</a>
       
         <a href="http://zespia.tw/blog/2012/10/11/hexo-debut/#disqus_thread" class="article-comment-link">Comments</a>
       

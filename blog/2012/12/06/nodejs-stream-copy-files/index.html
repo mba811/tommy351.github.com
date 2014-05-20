@@ -5,19 +5,28 @@
   
   <title>使用 Stream 來拷貝檔案 | Zespia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta content="article" property="og:type">
-<meta content="使用 Stream 來拷貝檔案" property="og:title">
-<meta content="http://zespia.tw/blog/2012/12/06/nodejs-stream-copy-files/" property="og:url">
-<meta content="http://i.minus.com/iFFlrSnC6IrC8.jpg" property="og:image">
-<meta content="Zespia" property="og:site_name">
-<meta content="Stream [strim] n. [C] 小河、溪流
+  <meta name="description" content="Stream [strim] n. [C] 小河、溪流
 
 因為 Stream 有這樣的意思，所以找了一張有溪流的圖片當做頁首圖片，要在 Pixiv 上找一張非 R-18 的濕身圖片真難。
-雖然 Hexo 本來就很快了，不過在 0.1.8 使用 Stream 代替原本的檔案複製方法，使靜態檔案的生成速度更加快速。" property="og:description">
-<meta content="summary" name="twitter:card">
-<meta content="tommy351" name="twitter:creator">
+雖然 Hexo 本來就很快了，不過在 0.1.8 使用 Stream 代替原本的檔案複製方法，使靜態檔案的生成速度更加快速。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用 Stream 來拷貝檔案">
+<meta property="og:url" content="http://zespia.tw/blog/2012/12/06/nodejs-stream-copy-files/">
+<meta property="og:image" content="http://i.minus.com/iFFlrSnC6IrC8.jpg">
+<meta property="og:site_name" content="Zespia">
+<meta property="og:description" content="Stream [strim] n. [C] 小河、溪流
+
+因為 Stream 有這樣的意思，所以找了一張有溪流的圖片當做頁首圖片，要在 Pixiv 上找一張非 R-18 的濕身圖片真難。
+雖然 Hexo 本來就很快了，不過在 0.1.8 使用 Stream 代替原本的檔案複製方法，使靜態檔案的生成速度更加快速。">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="使用 Stream 來拷貝檔案">
+<meta name="twitter:description" content="Stream [strim] n. [C] 小河、溪流
+
+因為 Stream 有這樣的意思，所以找了一張有溪流的圖片當做頁首圖片，要在 Pixiv 上找一張非 R-18 的濕身圖片真難。
+雖然 Hexo 本來就很快了，不過在 0.1.8 使用 Stream 代替原本的檔案複製方法，使靜態檔案的生成速度更加快速。">
+<meta name="twitter:creator" content="tommy351">
 <link rel="publisher" href="108777679171675250079">
-<meta content="100000247608790" property="fb:admins">
+<meta property="fb:admins" content="100000247608790">
   
     <link rel="alternative" href="/atom.xml" title="Zespia" type="application/atom+xml">
   
@@ -100,7 +109,7 @@ ga('send', 'pageview');
 <p><strong>Stream</strong> [strim] n. [C] 小河、溪流</p>
 </blockquote>
 <p>因為 Stream 有這樣的意思，所以找了一張有溪流的圖片當做頁首圖片，<del>要在 Pixiv 上找一張非 R-18 的濕身圖片真難</del>。</p>
-<p>雖然 <a href="http://zespia.tw/hexo">Hexo</a> 本來就很快了，不過在 <a href="https://github.com/tommy351/hexo/commit/1bfc6324285d7cadeb30f2c4bf4e8ea5fc451d5e" target="_blank">0.1.8</a> 使用 <a href="http://nodejs.org/api/stream.html" target="_blank">Stream</a> 代替原本的檔案複製方法，使靜態檔案的生成速度更加快速。</p>
+<p>雖然 <a href="http://zespia.tw/hexo" target="_blank">Hexo</a> 本來就很快了，不過在 <a href="https://github.com/tommy351/hexo/commit/1bfc6324285d7cadeb30f2c4bf4e8ea5fc451d5e" target="_blank">0.1.8</a> 使用 <a href="http://nodejs.org/api/stream.html" target="_blank">Stream</a> 代替原本的檔案複製方法，使靜態檔案的生成速度更加快速。</p>
 <a id="more"></a>
 
 <p>原本的檔案複製方式是：</p>
@@ -117,7 +126,6 @@ ga('send', 'pageview');
   });
 }
 </pre></td></tr></table></figure>
-
 
 <p>非常簡單，就是檔案讀取完後再將檔案寫入到目的地。這種方法必須將所有檔案讀取完成後才能寫入，將對地沒有效率多了，使用 <a href="http://nodejs.org/api/stream.html" target="_blank">Stream</a> 則是邊讀取邊寫入，當讀取完成後，寫入也差不多完成了，在處理大檔案時，差別更加明顯。</p>
 <p>除了檔案讀寫以外，<a href="http://nodejs.org/api/stream.html" target="_blank">Stream</a> 也常用於靜態檔案伺服器，例如 <a href="http://www.senchalabs.org/connect/" target="_blank">Connect</a> 就是用這種方式來處理靜態檔案的。</p>
@@ -148,7 +156,6 @@ ga('send', 'pageview');
 }
 </pre></td></tr></table></figure>
 
-
 <p>首先建立讀取 Stream <code>rs</code> 和寫入 Stream <code>ws</code>，使用 <code>rs.pipe</code> 讀取資料同時將資料寫入至 <code>ws</code>。</p>
 <p>Stream 使用 <a href="http://nodejs.org/api/events.html" target="_blank">EventEmitter</a>，當結束或發生錯誤時會觸發事件，必須利用 <code>rs.on</code> 和 <code>ws.on</code> 來監聽事件。</p>
 <p>這種方式實在有點麻煩，如果能寫成 <code>rs.pipe(ws, function(err, callback){})</code> 的形式就好了。</p>
@@ -158,7 +165,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zespia.tw/blog/2012/12/06/nodejs-stream-copy-files/" data-id="t6u4mv9jube9qve1" class="article-share-link">Share</a>
+      <a data-url="http://zespia.tw/blog/2012/12/06/nodejs-stream-copy-files/" data-id="rkzx2lm33xe6cua6" class="article-share-link">Share</a>
       
         <a href="http://zespia.tw/blog/2012/12/06/nodejs-stream-copy-files/#disqus_thread" class="article-comment-link">Comments</a>
       

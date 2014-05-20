@@ -5,17 +5,22 @@
   
   <title>如何使用 Settings API 製作佈景後台選項？ | Zespia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta content="article" property="og:type">
-<meta content="如何使用 Settings API 製作佈景後台選項？" property="og:title">
-<meta content="http://zespia.tw/blog/2011/05/22/how-to-use-settings-api/" property="og:url">
+  <meta name="description" content="隨著 WordPress 版本號的推進，不只系統越變越肥大，外掛、佈景主題的條件也越來越嚴苛，全部規定必須使用官方的現有函數製作，雖然 WordPress 的函數庫真的很豐富很好用，不過這麼獨裁的規定著實讓人很不爽。
+因此，由於官方要求，我必須使用 Settings API 來製作主題選項，但官方文件的資料的資訊實在太少了，在下沒慧根實在看不懂，經過 Google 百般尋覓後，將我較喜歡的幾篇文章">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何使用 Settings API 製作佈景後台選項？">
+<meta property="og:url" content="http://zespia.tw/blog/2011/05/22/how-to-use-settings-api/">
 <meta property="og:image">
-<meta content="Zespia" property="og:site_name">
-<meta content="隨著 WordPress 版本號的推進，不只系統越變越肥大，外掛、佈景主題的條件也越來越嚴苛，全部規定必須使用官方的現有函數製作，雖然 WordPress 的函數庫真的很豐富很好用，不過這麼獨裁的規定著實讓人很不爽。
-因此，由於官方要求，我必須使用 Settings API 來製作主題選項，但官方文件的資料的資訊實在太少了，在下沒慧根實在看不懂，經過 Google 百般尋覓後，將我較喜歡的幾篇文章" property="og:description">
-<meta content="summary" name="twitter:card">
-<meta content="tommy351" name="twitter:creator">
+<meta property="og:site_name" content="Zespia">
+<meta property="og:description" content="隨著 WordPress 版本號的推進，不只系統越變越肥大，外掛、佈景主題的條件也越來越嚴苛，全部規定必須使用官方的現有函數製作，雖然 WordPress 的函數庫真的很豐富很好用，不過這麼獨裁的規定著實讓人很不爽。
+因此，由於官方要求，我必須使用 Settings API 來製作主題選項，但官方文件的資料的資訊實在太少了，在下沒慧根實在看不懂，經過 Google 百般尋覓後，將我較喜歡的幾篇文章">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何使用 Settings API 製作佈景後台選項？">
+<meta name="twitter:description" content="隨著 WordPress 版本號的推進，不只系統越變越肥大，外掛、佈景主題的條件也越來越嚴苛，全部規定必須使用官方的現有函數製作，雖然 WordPress 的函數庫真的很豐富很好用，不過這麼獨裁的規定著實讓人很不爽。
+因此，由於官方要求，我必須使用 Settings API 來製作主題選項，但官方文件的資料的資訊實在太少了，在下沒慧根實在看不懂，經過 Google 百般尋覓後，將我較喜歡的幾篇文章">
+<meta name="twitter:creator" content="tommy351">
 <link rel="publisher" href="108777679171675250079">
-<meta content="100000247608790" property="fb:admins">
+<meta property="fb:admins" content="100000247608790">
   
     <link rel="alternative" href="/atom.xml" title="Zespia" type="application/atom+xml">
   
@@ -109,7 +114,6 @@ ga('send', 'pageview');
 }
 </pre></td></tr></table></figure>
 
-
 <p>接著在<code>function-admin.php</code>建立<code>class</code>，以下以<code>theme_option</code>為例：</p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre>1
 2
@@ -197,7 +201,6 @@ ga('send', 'pageview');
 <span class="preprocessor">?&gt;</span>
 </pre></td></tr></table></figure>
 
-
 <p>初始化完成後，接著就可邁入下一個步驟「<strong>註冊設定</strong>」。</p>
 <h2 id=" 註冊設定 ">註冊設定</h2>
 <p>為了要讓佈景選項出現在選單上，新增一個名為<code>add_pages</code>的函數：</p>
@@ -208,7 +211,6 @@ ga('send', 'pageview');
   <span class="variable">$admin_page</span> = add_theme_page( <span class="string">'Theme Options'</span>, <span class="string">'Theme Options'</span>, <span class="string">'edit_theme_options'</span>, <span class="string">'test-settings'</span>, <span class="keyword">array</span>( &<span class="variable">$this</span>, <span class="string">'display_page'</span> ) );
 }
 </pre></td></tr></table></figure>
-
 
 <p>Settings API 的設計雖然提供了一個更簡單的註冊設定的方式，但那僅限於選項很少的時候，若是 Pixiv Custom 這種選項數高達 51 項的主題就不可能一項一項編寫、呼叫個別的函數了，所以我們建立名為<code>create_setting</code>的函數，以精簡、整齊代碼。</p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre>1
@@ -276,7 +278,6 @@ ga('send', 'pageview');
     <span class="variable">$this</span>-&gt;checkboxes[] = <span class="variable">$id</span>;
 }
 </pre></td></tr></table></figure>
-
 
 <p>若陣列內容為空白，則會依照<code>defaults</code>來建立選項。可依個人使用的不同，加入或刪除變數。</p>
 <p>接著就得分別填入每個選項的參數了，建立一個名為<code>register_settings</code>的函數。</p>
@@ -394,7 +395,6 @@ ga('send', 'pageview');
 }
 </pre></td></tr></table></figure>
 
-
 <p>到了這裡，只不過是設定了各個選項的數值罷了，選項頁面還是一片空白，喝點水休息一下，下一步就要正式設定選項頁面的內容了。</p>
 <h2 id=" 顯示頁面 ">顯示頁面</h2>
 <p>首先，新增一個名為<code>display_page</code>的函數。</p>
@@ -436,7 +436,6 @@ ga('send', 'pageview');
 &lt;?php }
 </pre></td></tr></table></figure>
 
-
 <p>接著新增一個名為<code>display_section</code>的函數，該函數內容可以為空，也可以設定一些文字、HTML 內容等，輸出的內容會顯示在每個區段的最上方。</p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre>1
 2
@@ -445,7 +444,6 @@ ga('send', 'pageview');
   <span class="comment">// whatever</span>
 }
 </pre></td></tr></table></figure>
-
 
 <h2 id=" 顯示選項 ">顯示選項</h2>
 <p>到目前為止，主題選項頁面還是一片白，加入<code>display_settings</code>函數後，主題選項頁面就擁有最基礎的樣貌了。</p>
@@ -587,7 +585,6 @@ ga('send', 'pageview');
 }
 </pre></td></tr></table></figure>
 
-
 <p>設定完成後，主題選項頁面就不再孤寥無幾了，但儲存似乎有些問題？沒錯，因為 Settings API 在<code>checkbox</code>的處理上有些問題，<code>checkbox</code>若停用就不會將數值寫入資料庫了，所以我們必須在選項儲存前先進行驗證，把停用的<code>checkbox</code>值補上<code>0</code>，此外，目前重設按鈕也沒有反應，也必須透過同樣的方式，事先偵測輸入值，若使用者按下重設按鈕，則拋棄現有設定，將開頭所設定的<code>defaults</code>變數寫入資料庫。</p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre>1
 2
@@ -639,7 +636,6 @@ ga('send', 'pageview');
 }
 </pre></td></tr></table></figure>
 
-
 <h2 id=" 自定 _JavaScript_ 與 _CSS_ 樣式 ">自定 JavaScript 與 CSS 樣式</h2>
 <p>如果只是基本的主題選項的話，第四步便可以宣告結束了，但如果想要進一步的設定 Javascript 與 CSS 樣式呢？你可以加入以下的函數，直接引入外部檔案，或是直接寫在 PHP 檔案也可以。<br><em>※ 附註：若直接使用 $ 當作 jQuery 標籤的話，可能會有衝突問題，請使用其他字串代替，或改為<code>jQuery(document).ready(function($){...});</code></em></p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre>1
@@ -660,14 +656,12 @@ ga('send', 'pageview');
 }
 </pre></td></tr></table></figure>
 
-
 <p>然後在<code>add_pages</code>函數中，加入以下程式碼，就可成功引入 CSS 與 Javascript 了。</p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre>1
 2
 </pre></td><td class="code"><pre>add_action( <span class="string">'admin_print_scripts-'</span> . <span class="variable">$admin_page</span>, <span class="keyword">array</span>( &<span class="variable">$this</span>, <span class="string">'scripts'</span> ) );
 add_action( <span class="string">'admin_print_styles-'</span> . <span class="variable">$admin_page</span>, <span class="keyword">array</span>( &<span class="variable">$this</span>, <span class="string">'styles'</span> ) );
 </pre></td></tr></table></figure>
-
 
 <p>那麼該如何做出 Pixiv Custom 式樣的分頁呢？因為我 PHP 功力差，所以主要透過 Javascript 來包裝，你或許會有更好的方法也說不定。<br>首先，修改<code>display_page</code>函數，在你喜歡的地方加入以下程式碼：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre>1
@@ -681,7 +675,6 @@ add_action( <span class="string">'admin_print_styles-'</span> . <span class="var
 <span class="comment">&lt;!-- 依此類推... --&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 </pre></td></tr></table></figure>
-
 
 <p>這樣選項頁面就會出現各個區段的連結文字了，接下來只要透過 Javascript 包裝表格，搭配 CSS 控制表格顯示即可。<br><em>※ ID 必須符合<code>__construct</code>函數中的參數，前面再加上上述程式碼的前綴字元。</em></p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre>1
@@ -812,7 +805,6 @@ jQuery.cookie = <span class="function"><span class="keyword">function</span><spa
 };
 </pre></td></tr></table></figure>
 
-
 <h2 id=" 套用 ">套用</h2>
 <p>這個步驟相對而言就比較簡單了，首先在想要套用選項的位置加入以下程式碼，並設定</p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre>1
@@ -867,7 +859,6 @@ jQuery.cookie = <span class="function"><span class="keyword">function</span><spa
 }
 </pre></td></tr></table></figure>
 
-
 <h2 id=" 參考出處 ">參考出處</h2>
 <p><a href="http://alisothegeek.com/2011/01/wordpress-settings-api-tutorial-1/" target="_blank">Extended WordPress Settings API Tutorial</a><br><a href="http://www.chipbennett.net/2011/02/17/incorporating-the-settings-api-in-wordpress-themes" target="_blank">Incorporating the Settings API in WordPress Themes</a><br><a href="http://codex.wordpress.org/Main_Page" target="_blank">WordPress Codex</a><br><a href="https://github.com/carhartl/jquery-cookie" target="_blank">jQuery cookie plugin</a></p>
 <h2 id=" 後記 ">後記</h2>
@@ -876,7 +867,7 @@ jQuery.cookie = <span class="function"><span class="keyword">function</span><spa
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zespia.tw/blog/2011/05/22/how-to-use-settings-api/" data-id="9tyzjvnybiozw1z8" class="article-share-link">Share</a>
+      <a data-url="http://zespia.tw/blog/2011/05/22/how-to-use-settings-api/" data-id="2tzcmaz0w74f8u4d" class="article-share-link">Share</a>
       
         <a href="http://zespia.tw/blog/2011/05/22/how-to-use-settings-api/#disqus_thread" class="article-comment-link">Comments</a>
       
